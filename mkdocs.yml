@@ -1,0 +1,28 @@
+site_name: OSG Virtual School Pilot 2020
+site_url: https://opensciencegrid.org/virtual-school-pilot-2020/
+repo_name: null
+repo_url: null
+theme:
+  name: windmill
+  custom_dir: theme-customizations
+
+extra:
+  article_nav_top: false
+
+extra_css:
+  - css/extra.css
+  - css/codehilite.css
+
+# Suppress weird JavaScript problems with development server
+extra_javascript: []
+
+pages:
+  - Virtual School Pilot 2020:             index.md
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: False
+  - toc:
+      permalink: True
+  - osg_markdown.colors
