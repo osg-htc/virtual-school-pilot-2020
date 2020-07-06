@@ -17,8 +17,10 @@ extra_css:
 extra_javascript: []
 
 pages:
-  - Virtual School Pilot 2020:             index.md
-  - Schedule:                              schedule.md
+  - Virtual School Pilot 2020:    index.md
+  - Schedule:                     schedule.md
+  - Materials:
+    - Overview:                   materials/index.md
 
 markdown_extensions:
   - admonition
