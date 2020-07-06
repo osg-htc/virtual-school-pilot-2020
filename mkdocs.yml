@@ -21,6 +21,8 @@ pages:
   - Schedule:                     schedule.md
   - Materials:
     - Overview:                   materials/index.md
+    - HTC Exercises:
+      - Exercise 1.1:             materials/ex-a-1-1.md
 
 markdown_extensions:
   - admonition
