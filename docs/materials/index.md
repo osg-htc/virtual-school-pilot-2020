@@ -2,7 +2,7 @@
 
 ## HTC and HTCondor
 
-### Lecture: Introduction to High Throughput Computing and HTCondor
+### Lecture: Introduction to HTC and HTCondor
 
 ### Exercise Group A.1: Running and Viewing Simple Jobs
 
