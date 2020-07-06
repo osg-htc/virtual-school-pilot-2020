@@ -34,6 +34,41 @@
             "location": "/schedule/#week-2-july-2024",
             "text": "Monday (20th)  Work Time (1\u20133 PM)  Nothing scheduled in morning! (But some staff will be available.)    Tuesday (21st)  Lecture: Managing Data (11\u00a0AM and 3\u00a0PM)  Work Time (9\u201311 AM and 1\u20133 PM)    Wednesday (22nd)  Showcase: Other researchers using HTC (11\u00a0AM; only once, sorry!)  Work Time (9\u201311 AM and 1\u20133 PM)    Thursday (23rd)  Consultations with mentors all day (scheduled in advance)    Friday (17th)  Wrap-up: Lightning talks (optional!) and group discussion (11\u00a0AM to ?)  Consultations with mentors all day (scheduled in advance)",
             "title": "Week 2: July 20\u201324"
+        },
+        {
+            "location": "/materials/",
+            "text": "OSG-VSP Materials\n\u00b6\n\n\nHTC and HTCondor\n\u00b6\n\n\nLecture: Introduction to High Throughput Computing and HTCondor\n\u00b6\n\n\nExercise Group A.1: Running and Viewing Simple Jobs\n\u00b6\n\n\n\n\nExercise 1.1: Log in to the local submit machine and look around\n\n\n\n\nExercise Group A.2: Running Many HTC Jobs\n\u00b6\n\n\nExercise Group A.3: Job Attributes and Handling\n\u00b6",
+            "title": "Overview"
+        },
+        {
+            "location": "/materials/#osg-vsp-materials",
+            "text": "",
+            "title": "OSG-VSP Materials"
+        },
+        {
+            "location": "/materials/#htc-and-htcondor",
+            "text": "",
+            "title": "HTC and HTCondor"
+        },
+        {
+            "location": "/materials/#lecture-introduction-to-high-throughput-computing-and-htcondor",
+            "text": "",
+            "title": "Lecture: Introduction to High Throughput Computing and HTCondor"
+        },
+        {
+            "location": "/materials/#exercise-group-a1-running-and-viewing-simple-jobs",
+            "text": "Exercise 1.1: Log in to the local submit machine and look around",
+            "title": "Exercise Group A.1: Running and Viewing Simple Jobs"
+        },
+        {
+            "location": "/materials/#exercise-group-a2-running-many-htc-jobs",
+            "text": "",
+            "title": "Exercise Group A.2: Running Many HTC Jobs"
+        },
+        {
+            "location": "/materials/#exercise-group-a3-job-attributes-and-handling",
+            "text": "",
+            "title": "Exercise Group A.3: Job Attributes and Handling"
         }
     ]
 }
