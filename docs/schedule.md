@@ -38,3 +38,20 @@ Notes:
 *   Friday (17th)
     *   Work Time (9 AM&nbsp;&ndash; 12 PM)
     *   Nothing scheduled in afternoon! (But some staff will be available.)
+
+## Week 2: July 20–24
+
+*   Monday (20th)
+    *   Work Time (1&ndash;3 PM)
+    *   Nothing scheduled in morning! (But some staff will be available.)
+*   Tuesday (21st)
+    *   Lecture: Managing Data (11&nbsp;AM and 3&nbsp;PM)
+    *   Work Time (9&ndash;11 AM and 1&ndash;3 PM)
+*   Wednesday (22nd)
+    *   Showcase: Other researchers using HTC (11&nbsp;AM; only once, sorry!)
+    *   Work Time (9&ndash;11 AM and 1&ndash;3 PM)
+*   Thursday (23rd)
+    *   Consultations with mentors all day (scheduled in advance)
+*   Friday (17th)
+    *   Wrap-up: Lightning talks (optional!) and group discussion (11&nbsp;AM to ?)
+    *   Consultations with mentors all day (scheduled in advance)
