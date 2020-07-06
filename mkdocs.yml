@@ -22,7 +22,13 @@ pages:
   - Materials:
     - Overview:                   materials/index.md
     - HTC Exercises:
-      - Exercise 1.1:             materials/ex-a-1-1.md
+      - Exercise 1.1:             materials/htc/part1-ex1-login.md
+    - OSG Exercises:
+      - Placeholder:              materials/osg/temp.md
+    - Software Exercises:
+      - Placeholder:              materials/sw/temp.md
+    - Data Exercises:
+      - Placeholder:              materials/data/temp.md
 
 markdown_extensions:
   - admonition

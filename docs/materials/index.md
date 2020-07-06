@@ -2,13 +2,18 @@
 
 ## HTC and HTCondor
 
-### Lecture: Introduction to HTC and HTCondor
+Lecture recording will be linked here.
 
-### Exercise Group A.1: Running and Viewing Simple Jobs
+### HTC Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
-- [Exercise 1.1: Log in to the local submit machine and look around](/materials/ex-a-1-1)
+- [Exercise 1.1: Log in to the local submit machine and look around](/materials/htc/part1-ex1-login)
 
 ### Exercise Group A.2: Running Many HTC Jobs
 
 ### Exercise Group A.3: Job Attributes and Handling
 
+## OSG
+
+## Software
+
+## Data
