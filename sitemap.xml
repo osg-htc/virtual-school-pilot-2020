@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://opensciencegrid.org/virtual-school-pilot-2020/</loc>
-     <lastmod>2020-07-02</lastmod>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/schedule/</loc>
+     <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

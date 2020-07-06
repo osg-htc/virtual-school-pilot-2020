@@ -14,6 +14,21 @@
             "location": "/#contact-us",
             "text": "The OSG Virtual School Pilot is part of the OSG Outreach Area \u00a0\u2014 please visit that site to\nlearn about other OSG Outreach activities.  If you have any questions about the event, feel free to email us:  user-school@opensciencegrid.org         OSGUserSchool",
             "title": "Contact Us"
+        },
+        {
+            "location": "/schedule/",
+            "text": "OSG-VSP Schedule\n\u00b6\n\n\nBelow is the schedule for the OSG Virtual School Pilot 2020.  We will probably\nmake small changes up to and even during the event.  However, the overall plan\nwill probably not change much.\n\n\nAll times are U.S. Central Daylight Time.\n\n\nNotes:\n\n\n\n\n\n\nEach lecture is offered twice on the same day.  Choose one time that is\n  convenient for you or, if you like, attend both.  Lectures will be held in the\n  Blackboard Collaborate video conference system; more details will be posted\n  and emailed soon.\n\n\n\n\n\n\nTry to attend at least one Work Time per day.  This is time for you to work on\n  exercises or getting your research code running.  During a Work Time, plan to\n  be on Slack; from there, you can chat with staff and participants and, if\n  needed, arrange individual or group audio/video meetings.\n\n\n\n\n\n\nConsultations are one-on-one meetings with your mentor.  You will work with\n  your mentor to schedule exact times.\n\n\n\n\n\n\nWeek 1: July 13\u201317\n\u00b6\n\n\n\n\nMonday (13th)\n\n\nLecture and discussion: Brief overview of the event and time to meet others\n    (11\u00a0AM and 3\u00a0PM)\n\n\nConsultations with mentors all day (scheduled in advance)\n\n\nTuesday (14th)\n\n\nLecture: High Throughput Computing and Running Locally (11\u00a0AM and 3\u00a0PM)\n\n\nWork Time (1\u20133 PM\u00a0\u2014 just one scheduled this day)\n\n\nWednesday (15th)\n\n\nLecture: Running on OSG (11\u00a0AM and 3\u00a0PM)\n\n\nWork Time (9\u201311 AM and 1\u20133 PM)\n\n\nThursday (16th)\n\n\nLecture: Managing Software (11\u00a0AM and 3\u00a0PM)\n\n\nWork Time (9\u201311 AM and 1\u20133 PM)\n\n\nFriday (17th)\n\n\nWork Time (9 AM\u00a0\u2013 12 PM)\n\n\nNothing scheduled in afternoon! (But some staff will be available.)",
+            "title": "Schedule"
+        },
+        {
+            "location": "/schedule/#osg-vsp-schedule",
+            "text": "Below is the schedule for the OSG Virtual School Pilot 2020.  We will probably\nmake small changes up to and even during the event.  However, the overall plan\nwill probably not change much.  All times are U.S. Central Daylight Time.  Notes:    Each lecture is offered twice on the same day.  Choose one time that is\n  convenient for you or, if you like, attend both.  Lectures will be held in the\n  Blackboard Collaborate video conference system; more details will be posted\n  and emailed soon.    Try to attend at least one Work Time per day.  This is time for you to work on\n  exercises or getting your research code running.  During a Work Time, plan to\n  be on Slack; from there, you can chat with staff and participants and, if\n  needed, arrange individual or group audio/video meetings.    Consultations are one-on-one meetings with your mentor.  You will work with\n  your mentor to schedule exact times.",
+            "title": "OSG-VSP Schedule"
+        },
+        {
+            "location": "/schedule/#week-1-july-1317",
+            "text": "Monday (13th)  Lecture and discussion: Brief overview of the event and time to meet others\n    (11\u00a0AM and 3\u00a0PM)  Consultations with mentors all day (scheduled in advance)  Tuesday (14th)  Lecture: High Throughput Computing and Running Locally (11\u00a0AM and 3\u00a0PM)  Work Time (1\u20133 PM\u00a0\u2014 just one scheduled this day)  Wednesday (15th)  Lecture: Running on OSG (11\u00a0AM and 3\u00a0PM)  Work Time (9\u201311 AM and 1\u20133 PM)  Thursday (16th)  Lecture: Managing Software (11\u00a0AM and 3\u00a0PM)  Work Time (9\u201311 AM and 1\u20133 PM)  Friday (17th)  Work Time (9 AM\u00a0\u2013 12 PM)  Nothing scheduled in afternoon! (But some staff will be available.)",
+            "title": "Week 1: July 13\u201317"
         }
     ]
 }
