@@ -37,7 +37,7 @@
         },
         {
             "location": "/materials/",
-            "text": "OSG-VSP Materials\n\u00b6\n\n\nHTC and HTCondor\n\u00b6\n\n\nLecture: Introduction to High Throughput Computing and HTCondor\n\u00b6\n\n\nExercise Group A.1: Running and Viewing Simple Jobs\n\u00b6\n\n\n\n\nExercise 1.1: Log in to the local submit machine and look around\n\n\n\n\nExercise Group A.2: Running Many HTC Jobs\n\u00b6\n\n\nExercise Group A.3: Job Attributes and Handling\n\u00b6",
+            "text": "OSG-VSP Materials\n\u00b6\n\n\nHTC and HTCondor\n\u00b6\n\n\nLecture: Introduction to HTC and HTCondor\n\u00b6\n\n\nExercise Group A.1: Running and Viewing Simple Jobs\n\u00b6\n\n\n\n\nExercise 1.1: Log in to the local submit machine and look around\n\n\n\n\nExercise Group A.2: Running Many HTC Jobs\n\u00b6\n\n\nExercise Group A.3: Job Attributes and Handling\n\u00b6",
             "title": "Overview"
         },
         {
@@ -51,9 +51,9 @@
             "title": "HTC and HTCondor"
         },
         {
-            "location": "/materials/#lecture-introduction-to-high-throughput-computing-and-htcondor",
+            "location": "/materials/#lecture-introduction-to-htc-and-htcondor",
             "text": "",
-            "title": "Lecture: Introduction to High Throughput Computing and HTCondor"
+            "title": "Lecture: Introduction to HTC and HTCondor"
         },
         {
             "location": "/materials/#exercise-group-a1-running-and-viewing-simple-jobs",
