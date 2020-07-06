@@ -16,7 +16,22 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/ex-a-1-1/</loc>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/htc/part1-ex1-login/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/osg/temp/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/sw/temp/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/data/temp/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
