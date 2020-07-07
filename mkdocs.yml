@@ -26,7 +26,16 @@ pages:
     - OSG Exercises:
       - Placeholder:              materials/osg/temp.md
     - Software Exercises:
-      - Placeholder:              materials/sw/temp.md
+      - Exercise 1 (Required): materials/sw/ex1-required-download.md
+      - Exercise 2 (Required): materials/sw/ex2-required-wrapper.md
+      - Exercise 3a (Pick one of 3a-3d): materials/sw/ex3a-compiling.md
+      - Exercise 3b (Pick one of 3a-3d): materials/sw/ex3b-prepackaged.md
+      - Exercise 3c (Pick one of 3a-3d): materials/sw/ex3c-python-built.md
+      - Exercise 3d (Pick one of 3a-3d): materials/sw/ex3d-matlab.md
+      - Exercise 4 (Required): materials/sw/ex4-singularity.md
+      - Exercise 5a (optional): materials/sw/ex5a-arguments.md
+      - Exercise 5b (optional): materials/sw/ex5b-python-extras.md
+      - Exercise 5c (optional): materials/sw/ex5c-docker.md
     - Data Exercises:
       - Placeholder:              materials/data/temp.md
 
