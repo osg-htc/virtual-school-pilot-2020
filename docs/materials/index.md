@@ -1,4 +1,4 @@
-# OSG-VSP Materials
+# OSG Virtual School (pilot) Materials
 
 ## Intro to HTC and HTCondor
 
