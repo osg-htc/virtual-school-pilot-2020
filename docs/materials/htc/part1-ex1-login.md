@@ -1,6 +1,10 @@
+---
+status: testing
+---
+
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 1.1: Log In and Look Around
+HTC Exercise 1.1: Log In and Look Around
 ===========================================
 
 The goal of this first exercise is simply to log in to the local submit server and look around a little bit, which will take only a few minutes. 
