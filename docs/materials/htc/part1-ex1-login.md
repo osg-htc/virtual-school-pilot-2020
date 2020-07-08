@@ -1,3 +1,7 @@
+---
+status: testing
+---
+
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
 Monday Exercise 1.1: Log In and Look Around
