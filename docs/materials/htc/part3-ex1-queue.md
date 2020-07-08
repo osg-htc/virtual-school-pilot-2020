@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 3.1: Explore condor_q
+Bonus HTC Exercise 3.1: Explore condor_q
 ======================================
 
 The goal of this exercise is try out some of the most common options to the `condor_q` command, so that you can view jobs effectively.

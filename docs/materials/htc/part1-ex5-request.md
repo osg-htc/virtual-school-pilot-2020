@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 1.5: Declare Resource Needs
+HTC Exercise 1.5: Declare Resource Needs
 ===========================================
 
 The goal of this exercise is to demonstrate how to test and tune the `request_X` statements in a submit file for when you don't know what resources your job needs.

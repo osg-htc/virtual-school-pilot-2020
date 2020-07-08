@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 2.3: Submit With “queue matching”
+Bonus HTC Exercise 2.4: Submit With “queue matching”
 =================================================
 
 In this exercise and the next one, you will explore more ways to use a single submit file to submit many jobs. The focus of this exercise is to submit one job per filename that matches a given pattern.

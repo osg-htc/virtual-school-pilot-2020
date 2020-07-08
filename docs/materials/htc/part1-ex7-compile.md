@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Bonus Exercise 1.7: Compile and Run Some C Code
+HTC Bonus Exercise 1.7: Compile and Run Some C Code
 ======================================================
 
 The goal of this exercise is to show that compiled code works just fine in HTCondor. It is mainly of interest to people who have their own C code to run (or C++, or really any compiled code, although Java would be handled a bit differently).

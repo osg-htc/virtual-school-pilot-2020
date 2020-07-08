@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 1.2: Experiment With Basic HTCondor Commands
+HTC Exercise 1.2: Experiment With Basic HTCondor Commands
 ============================================================
 
 The goal of this exercise is to use the basic informational HTCondor commands, `condor_q` and `condor_status`. They will be useful for monitoring your jobs and available slots (respectively) throughout the week.

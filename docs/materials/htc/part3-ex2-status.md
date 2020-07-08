@@ -4,7 +4,7 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 3.2: Explore condor_status
+Bonus HTC Exercise 3.2: Explore condor_status
 ===========================================
 
 The goal of this exercise is try out some of the most common options to the `condor_status` command, so that you can view slots effectively.

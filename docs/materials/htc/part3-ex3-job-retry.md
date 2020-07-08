@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 3.3: Retries
+Bonus HTC Exercise 3.3: Retries
 ============================
 
 The goal of this exercise is to demonstrate running a job that intermittently fails and thus could benefit from having HTCondor automatically retry it.

@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 1.3: Run Jobs!
+HTC Exercise 1.3: Run Jobs!
 ==============================
 
 The goal of this exercise is to submit jobs to HTCondor and have them run on the local pool (CHTC). This is a huge step in learning to use an HTC system!

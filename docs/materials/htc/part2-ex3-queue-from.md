@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 2.4: Submit with “queue from”
+HTC Exercise 2.3: Submit with “queue from”
 =============================================
 
 The goal of this exercise is to submit many jobs from a single submit file by using the `queue ... from` syntax to read variable values from a file.

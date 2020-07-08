@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 2.1: Work With Input and Output Files
+HTC Exercise 2.1: Work With Input and Output Files
 =====================================================
 
 The goal of this exercise is make input files available to your job on the execute machine, and return output files back. This small change significantly adds to the kinds of jobs that you can run.

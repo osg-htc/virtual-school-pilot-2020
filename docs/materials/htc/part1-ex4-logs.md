@@ -4,7 +4,7 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Monday Exercise 1.4: Read and Interpret Log Files
+HTC Exercise 1.4: Read and Interpret Log Files
 =================================================
 
 The goal of this exercise is quite simple: 
