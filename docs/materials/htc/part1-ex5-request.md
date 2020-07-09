@@ -98,11 +98,10 @@ import os
 size = 1000000
 numbers = []
 for i in xrange(size): numbers.append(str(i))
-tempfile = open('temp', 'w')
+tempfile = open('numbers.txt', 'w')
 tempfile.write(' '.join(numbers))
 tempfile.close()
 time.sleep(60)
-os.remove('temp')
 ```
 
 Without trying to figure out what this code does or how many resources it uses, create a submit file for it, 
