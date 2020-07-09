@@ -23,6 +23,19 @@ pages:
     - Overview:                   materials/index.md
     - HTC Exercises:
       - Exercise 1.1:             materials/htc/part1-ex1-login.md
+      - Exercise 1.2:             materials/htc/part1-ex2-commands.md
+      - Exercise 1.3:             materials/htc/part1-ex3-jobs.md
+      - Exercise 1.4:             materials/htc/part1-ex4-logs.md
+      - Exercise 1.5:             materials/htc/part1-ex5-request.md
+      - Exercise 1.6:             materials/htc/part1-ex6-remove.md
+      - Bonus Exercise 1.7:       materials/htc/part1-ex7-compile.md
+      - Exercise 2.1:             materials/htc/part2-ex1-files.md
+      - Exercise 2.2:             materials/htc/part2-ex2-queue-n.md
+      - Exercise 2.3:             materials/htc/part2-ex3-queue-from.md
+      - Bonus Exercise 2.4:       materials/htc/part2-ex4-queue-matching.md
+      - Bonus Exercise 3.1:       materials/htc/part3-ex1-queue.md
+      - Bonus Exercise 3.2:       materials/htc/part3-ex2-status.md
+      - Bonus Exercise 3.3:       materials/htc/part3-ex3-job-retry.md
     - OSG Exercises:
       - Placeholder:              materials/osg/temp.md
     - Software Exercises:
