@@ -75,7 +75,7 @@ Swap:  4194296k total,      148k used,  4194148k free,  2960760k cached
 The `top` command (shown here with an option to limit the output to a single user ID) also shows information about running processes, but updates periodically by itself. Type the letter `q` to quit the interactive display. Again, the highlighted `RES` column shows an approximation of memory usage.
 
 #### For Disk: 
-Determining disk needs may be a bit simpler, because you can check on the size of files that a program is using while it runs. However, it is important to count all files that HTCondor counts to get an accurate size. HTCondor counts **everything** in your job sandbox toward your job’s disk usage:
+Determining disk needs may be a bit easier, because you can check on the size of files that a program is using while it runs. However, it is important to count all files that HTCondor counts to get an accurate size. HTCondor counts **everything** in your job sandbox toward your job’s disk usage:
 
 -   The executable itself
 -   All "input" files (anything else that gets transferred TO the job, even if you don't think of it as "input")
