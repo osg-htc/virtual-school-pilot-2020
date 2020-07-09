@@ -116,7 +116,7 @@ However, you may have access to other computers (your laptop, for example, or an
 
 <p>The <code>top</code> command (shown here with an option to limit the output to a single user ID) also shows information about running processes, but updates periodically by itself. Type the letter <code>q</code> to quit the interactive display. Again, the highlighted <code>RES</code> column shows an approximation of memory usage.</p>
 <h4 id="for-disk">For Disk:<a class="headerlink" href="#for-disk" title="Permanent link">&para;</a></h4>
-<p>Determining disk needs may be a bit simpler, because you can check on the size of files that a program is using while it runs. However, it is important to count all files that HTCondor counts to get an accurate size. HTCondor counts <strong>everything</strong> in your job sandbox toward your job’s disk usage:</p>
+<p>Determining disk needs may be a bit easier, because you can check on the size of files that a program is using while it runs. However, it is important to count all files that HTCondor counts to get an accurate size. HTCondor counts <strong>everything</strong> in your job sandbox toward your job’s disk usage:</p>
 <ul>
 <li>The executable itself</li>
 <li>All "input" files (anything else that gets transferred TO the job, even if you don't think of it as "input")</li>

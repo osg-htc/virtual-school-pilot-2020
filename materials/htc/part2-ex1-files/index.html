@@ -64,7 +64,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <h1 id="htc-exercise-21-work-with-input-and-output-files">HTC Exercise 2.1: Work With Input and Output Files<a class="headerlink" href="#htc-exercise-21-work-with-input-and-output-files" title="Permanent link">&para;</a></h1>
 <p>The goal of this exercise is make input files available to your job on the execute machine, and return output files back. This small change significantly adds to the kinds of jobs that you can run.</p>
 <h2 id="viewing-a-job-sandbox">Viewing a Job Sandbox<a class="headerlink" href="#viewing-a-job-sandbox" title="Permanent link">&para;</a></h2>
-<p>Before you learn to transfer files to and from your job, it is good to understand a bit more about the environment in which your job runs. When the HTCondor <code>starter</code> process prepares to run your job, it creates a new directory for your job and all of its files. We call this directory the <em>job sandbox</em>, because it is your job’s private space to play. Let’s see what is in the job sandbox for a very simple job with no special input or output files.</p>
+<p>Before you learn to transfer files to and from your job, it is good to understand a bit more about the environment in which your job runs.
+When the HTCondor <code>starter</code> process prepares to run your job, it creates a new directory for your job and all of its files.
+We call this directory the <em>job sandbox</em>, because it is your job’s private space to play.
+Let’s see what is in the job sandbox for a minimal job with no special input or output files.</p>
 <ol>
 <li>
 <p>Save the script below in a file named <code>sandbox.sh</code>:</p>
@@ -127,7 +130,7 @@ ls -alF
 <p>Now that we know something about the sandbox, we can transfer more files to and from it.</p>
 <h2 id="running-a-job-with-input-files">Running a Job With Input Files<a class="headerlink" href="#running-a-job-with-input-files" title="Permanent link">&para;</a></h2>
 <p>Next, you will run a job that requires an input file. Remember, the initial job sandbox will contain only the renamed job executable, unless you tell HTCondor explicitly about every other file that needs to be transferred. Fortunately, this is easy.</p>
-<p>Here is a simple Python script that takes the name of an input file (containing one word per line) from the command line, counts the number of times each (lowercased) word occurs in the text, and prints out the final list of words and their counts.</p>
+<p>Here is a Python script that takes the name of an input file (containing one word per line) from the command line, counts the number of times each (lowercased) word occurs in the text, and prints out the final list of words and their counts.</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
 
 <span class="kn">import</span> <span class="nn">os</span>
@@ -164,7 +167,7 @@ ls -alF
 
 </li>
 <li>
-<p>Create a basic submit file for the <code>freq.py</code> executable.</p>
+<p>Create a submit file for the <code>freq.py</code> executable.</p>
 </li>
 <li>
 <p>Add a line to tell HTCondor to transfer the input file:</p>
@@ -192,7 +195,8 @@ For example, if there are three input files:</p>
 </div>
 <h2 id="transferring-output-files">Transferring Output Files<a class="headerlink" href="#transferring-output-files" title="Permanent link">&para;</a></h2>
 <p>So far, we have relied on programs that send their output to the standard output and error streams, which HTCondor captures, saves, and returns back to the submit directory. But what if your program writes one or more files for its output? How do you tell HTCondor to bring them back?</p>
-<p>Let’s start by exploring what happens to files that a job creates in the sandbox. We will use a very simple method for creating a new file: We will copy an input file to another name.</p>
+<p>Let’s start by exploring what happens to files that a job creates in the sandbox.
+We will use a very simple method for creating a new file: we will copy an input file to another name.</p>
 <ol>
 <li>Find or create a small input file (it is fine to use any small file from a previous exercise).</li>
 <li>Create a submit file that transfers the input file and copies it to another name (as if doing <code>/bin/cp input.txt output.txt</code> on the command line)<ul>
@@ -209,7 +213,7 @@ For example, if there are three input files:</p>
 <h2 id="transferring-specific-output-files">Transferring Specific Output Files<a class="headerlink" href="#transferring-specific-output-files" title="Permanent link">&para;</a></h2>
 <p>As you saw in the last exercise, by default HTCondor transfers files that are created in the job sandbox back to the submit directory when the job finishes. In fact, HTCondor will also transfer back <strong>changed</strong> input files, too. But, this only works for files that are in the top-level sandbox directory, and <strong>not</strong> for ones contained in subdirectories.</p>
 <p>What if you want to bring back only <strong>some</strong> output files, or output files contained in subdirectories?</p>
-<p>Here is a simple shell script that creates several files, including a copy of an input file in a new subdirectory:</p>
+<p>Here is a shell script that creates several files, including a copy of an input file in a new subdirectory:</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/bin/sh</span>
 <span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -ne <span class="m">1</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="nb">echo</span> <span class="s2">&quot;Usage: </span><span class="nv">$0</span><span class="s2"> INPUT&quot;</span><span class="p">;</span> <span class="nb">exit</span> <span class="m">1</span><span class="p">;</span> <span class="k">fi</span>
 date &gt; output-timestamp.txt

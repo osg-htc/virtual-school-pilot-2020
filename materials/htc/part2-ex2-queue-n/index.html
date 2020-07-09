@@ -70,7 +70,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </ul>
 <p>Neither of these options seems very satisfying. Fortunately, we can do better with HTCondor.</p>
 <h2 id="running-many-jobs-with-one-queue-statement">Running Many Jobs With One queue Statement<a class="headerlink" href="#running-many-jobs-with-one-queue-statement" title="Permanent link">&para;</a></h2>
-<p>Here is a C program that uses a simple stochastic (random) method to estimate the value of π — feel free to try to figure out the method from the code, but it is not critical for this exercise. The single argument to the program is the number of samples to take. More samples should result in better estimates!</p>
+<p>Here is a C program that uses a stochastic (random) method to estimate the value of π — feel free to try to figure out the method from the code, but it is not critical for this exercise. The single argument to the program is the number of samples to take. More samples should result in better estimates!</p>
 <div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;sys/time.h&gt;</span><span class="cp"></span>
@@ -236,7 +236,7 @@ queue 10
 <p>During the lecture, it was mentioned that you can define arbitrary attributes in your submit file, and that one purpose of such attributes is to track or report on different jobs separately. In this optional exercise, you will see how this technique can be used.</p>
 <p>Once again, we will use <code>sleep</code> jobs, so that your jobs remain in the queue long enough to experiment on.</p>
 <ol>
-<li>Create a basic submit file that runs <code>sleep 120</code> (or some reasonable duration).</li>
+<li>Create a submit file that runs <code>sleep 120</code> (or some reasonable duration).</li>
 <li>
 <p>Instead of a single <code>queue</code> statement, write this:</p>
 <div class="codehilite"><pre><span></span>jobbatchname = 1

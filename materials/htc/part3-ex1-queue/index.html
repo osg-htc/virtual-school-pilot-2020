@@ -85,7 +85,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </pre></div>
 
 
-<p>There are two other, simple selection criteria that you can use. To list just the jobs associated with a single cluster number:</p>
+<p>To list just the jobs associated with a single cluster number:</p>
 <div class="codehilite"><pre><span></span><span class="gp">username@learn $</span> condor_q &lt;CLUSTER&gt;
 </pre></div>
 
@@ -253,7 +253,7 @@ Reason for last match failure: no match found
 </pre></div>
 
 
-<p><strong>Bonus Question</strong>: If you wanted to print out the <code>Requirements</code> expression of a job, how would you do that with <code>-af</code>? Is the output what you expected? (HINT: for ClassAd attributes like "Requirements" that are long expressions, instead of simple values, you can use <code>-af:r</code> to view the expressions, instead of what it's current evaluation.)</p>
+<p><strong>Bonus Question</strong>: If you wanted to print out the <code>Requirements</code> expression of a job, how would you do that with <code>-af</code>? Is the output what you expected? (HINT: for ClassAd attributes like "Requirements" that are long expressions, instead of plain values, you can use <code>-af:r</code> to view the expressions, instead of what it's current evaluation.)</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <p>As suggested above, if you want to learn more about <code>condor_q</code>, you can do some reading:</p>
 <ul>
