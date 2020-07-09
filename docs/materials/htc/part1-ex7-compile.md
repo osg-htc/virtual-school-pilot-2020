@@ -64,7 +64,7 @@ username@learn $ ./simple 5 21
 Running a Compiled C Program
 ----------------------------
 
-The rest is simple. In fact, it is no different than running any other program. Here is a basic submit file for the C program (call it simple.sub):
+Running the compiled program is no different than running any other program. Here is a submit file for the C program (call it simple.sub):
 
 ``` file
 executable = simple
