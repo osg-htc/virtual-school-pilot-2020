@@ -77,6 +77,10 @@ log = c-program.log
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 
+request_cpus = 1
+request_memory = 1GB
+request_disk = 1MB
+
 queue
 ```
 
