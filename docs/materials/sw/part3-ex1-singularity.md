@@ -4,7 +4,7 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Software Exercise 4: Use Singularity from OSG Connect
+Software Exercise 3.1: Use Singularity from OSG Connect
 ============================================================
 
 Background
@@ -17,14 +17,14 @@ One caveat for using containers: not all systems will support them. HTCondor has
 Setup
 -----
 
-Make sure you are logged into `training.osgconnect.net` (the OSG Connect submit server for this workshop).  For this exercise (and the next) we will be using Singularity containers that are hosted by OSG Connect, in a very similar way to the software modules. 
+Make sure you are logged into `login05.osgconnect.net` (the OSG Connect submit server for this workshop).  For this exercise we will be using Singularity containers that are hosted by OSG Connect, in a very similar way to the software modules. 
 
 To get an idea on what container images are available on the OSG, take a look at the directory path `/cvmfs/singularity.opensciencegrid.org/opensciencegrid`.  
 
 Job Submission
 --------------
 
-For this job, we will use the OSG Connect Ubuntu "Xenial" image. Copy a submit file you used for a previous exercise and add the following lines: 
+For this job, we will use the OSG Connect Ubuntu "Xenial" image. Copy a submit file you used for a previous exercise on OSG Connect and add the following lines: 
 
 	:::file
 	requirements = HAS_SINGULARITY == true

@@ -4,7 +4,7 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Software Exercise 1 (Required): Using a Pre-compiled Binary
+Software Exercise 1.1: Using a Pre-compiled Binary
 ===================================================
 
 In this exercise, we will run a job using a downloaded, pre-compiled binary. This exercise should take 10-15 minutes.
@@ -22,15 +22,15 @@ reference database, the BLAST program.
 
 1.  Search the internet for the BLAST software.  Searches might include "blast executable or "download blast software".  Hopefully these searches will lead you to a BLAST website page that looks like this:
 
-    ![BLAST landing page][blast-page]
+    ![BLAST landing page](/materials/sw/files/part1-ex1-blast-landing-page.png)
 
-1.  Click on the title that says "Download BLAST" and then look for the link that has the latest installation and source code.  You should end up on a page with a list of each version of BLAST that is available for different operating systems.
+1.  Click on the title that says ["Download BLAST"](/materials/sw/files/part1-ex1-blast-front-page.png) and then look for the link that has the [latest installation and source code](/materials/sw/files/part1-ex1-blast-dl-page.png).  You should end up on a page with a list of each version of BLAST that is available for different operating systems.
 
 1.  We could download the source and compile it ourselves, but instead, we're going to use one of the pre-built binaries.  Before proceeding, look at the list of downloads and try to determine which one you want. 
 
 1.  Based on our operating system, we want to use the Linux binary, which is labelled with the `x64-linux` suffix. 
 
-	![BLAST downloads][blast-downloads]
+	![BLAST downloads](/materials/sw/files/part1-ex1-blast-src-page.png)
 
 	All the other links are either for source code or other operating systems. 
 	
@@ -68,7 +68,7 @@ We now have our program (the pre-compiled `blastx` binary) and our input files, 
 blastx -db <database_dir/prefix> -query <input_file> -out <output_file>
 ```
 
-1.   Copy the submit file from **TBD**
+1.   Copy a submit file from one of the intro exercises to use for this exercise. 
 
 1. Think about which lines you will need to change or add to your submit file in order to submit the job successfully. In particular:    
 	-   What is the executable?
@@ -104,6 +104,3 @@ blastx -db <database_dir/prefix> -query <input_file> -out <output_file>
             requirements = (OSGVO_OS_STRING == "RHEL 7")
 
 1. Submit the blast job using `condor_submit`. Once the job starts, it should run in just a few minutes and produce a file called `results.txt`.
-
-[blast-page]: /materials/day2/files/osgus19-day2-part3-ex2-blast-src-page.png
-[blast-downloads]: /materials/day2/files/osgus19-day2-part3-ex2-blast-src-page.png

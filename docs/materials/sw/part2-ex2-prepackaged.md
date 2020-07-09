@@ -4,7 +4,7 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
 
-Software Exercise 3b: Pre-package a Research Code
+Software Exercise 2.2: Pre-package a Research Code
 ==========================================
 
 In this exercise, you will create an installation of a Bayesian inference package (OpenBUGS) and then create a wrapper script to unpack that installation to run jobs. It should take 30-35 minutes.
@@ -12,7 +12,7 @@ In this exercise, you will create an installation of a Bayesian inference packag
 Background
 ----------
 
-Some software cannot be compiled into a single executable, whether you compile it yourself (as in [Software Exercise 3a](/materials/day2/part3-ex1-compiling)) or download it already compiled (as in [Software Exercise 1](/materials/day2/part3-ex2-precompiled)). In this case, it is necessary to download or create a portable copy of the software and then use a wrapper script (as in [this exercise](/materials/day2/part3-ex3-wrapper)) to "install" the software on a per job basis. This script can either install the software from the source code, or (as in this exercise), unpack a portable software package that you've pre-built yourself.
+Some software cannot be compiled into a single executable, whether you compile it yourself (as in [Software Exercise 2.1](/materials/sw/part2-ex1-compiling)) or download it already compiled (as in [Software Exercise 1.1](/materials/sw/part1-ex1-download)). In this case, it is necessary to download or create a portable copy of the software and then use a wrapper script (as in [this exercise](/materials/sw/part1-ex2-wrapper)) to "install" or run the software on a per job basis. This script can either install the software from the source code, or (as in this exercise), unpack a portable software package that you've pre-built yourself.
 
 Our Software Example
 --------------------
@@ -88,10 +88,10 @@ Your interactive job should have started by now and we've learned about installi
 		username@host $ tar -zxf OpenBUGS-3.2.3.tar.gz
 		username@host $ cd OpenBUGS-3.2.3
 
-1.  Now we can follow the second set of installation instructions. For the prefix, we'll use the command `$(pwd)` to capture the name of our current working directory and then a relative path to the `openbugs` directory we created in step 1: 
+1.  Now we can follow the second set of installation instructions. For the prefix, we'll use the variable `$PWD` to capture the name of our current working directory and then a relative path to the `openbugs` directory we created in step 1: 
 
 		:::console
-		username@host $ ./configure --prefix=$(pwd)/../openbugs
+		username@host $ ./configure --prefix=$PWD/../openbugs
 		username@host $ make
 		username@host $ make install
 
@@ -121,7 +121,7 @@ Note that we now have two tarballs in our directory -- the *source* tarball (`Op
 Wrapper Script
 --------------
 
-Now that we've created our portable installation, we need to write a script that opens and uses the installation, similar to the process we used in the  [previous exercise](part3-ex3-wrapper.md). These steps should be performed back on the submit server (`learn.chtc.wisc.edu`).
+Now that we've created our portable installation, we need to write a script that opens and uses the installation, similar to the process we used in a [previous exercise](/materials/sw/part1-ex2-wrapper.md). These steps should be performed back on the submit server (`learn.chtc.wisc.edu`).
 
 1. Create a script called `run_openbugs.sh`. 
 

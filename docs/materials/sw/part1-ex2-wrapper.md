@@ -4,10 +4,10 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
 
-Software Exercise 2 (Required): Writing a Wrapper Script
+Software Exercise 1.2: Writing a Wrapper Script
 ============================================================
 
-In this exercise, you will create a wrapper script to run the same program (`blastx`) as the [previous exercise][software-ex1].
+In this exercise, you will create a wrapper script to run the same program (`blastx`) as the [previous exercise](/materials/sw/part1-ex1-download.md).
 
 Background
 ----------
@@ -61,7 +61,7 @@ Wrapper Script, part 2
 
 Now that our database and BLAST software are being transferred to the job as `tar.gz` files, our script needs to accommodate.
 
-1. Opening your `run_blast.sh` script, add two commands at the start to un-tar the BLAST and pdbaa `tar.gz` files. See the [previous exercise][software-ex1] if you're not sure what these commands looks like. 
+1. Opening your `run_blast.sh` script, add two commands at the start to un-tar the BLAST and pdbaa `tar.gz` files. See the [previous exercise](/materials/sw/part1-ex1-download) if you're not sure what these commands looks like. 
 
 1. In order to distinguish this job from our previous job, change the output file name to something besides `results.txt`. 
 
@@ -81,5 +81,3 @@ Now that our database and BLAST software are being transferred to the job as `ta
         username@login $ chmod u+x run_blast.sh
 
 Your job is now ready to submit. Submit it using `condor_submit` and monitor using `condor_q`.
-
-[software-ex1]: /path/to/first/exercise

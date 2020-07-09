@@ -4,7 +4,7 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-Software Exercise 3a: Compile Statically Linked Code
+Software Exercise 2.1: Compile Statically Linked Code
 ==========================================================
 
 The goal of this exercise is to compile and statically link a piece of code and then submit it as a job. This exercise should take 5-10 minutes.
@@ -21,7 +21,7 @@ For this compiling example, we will use a script written in C. C code depends on
 
 Our C code prints 7 rows of Pascal's triangle.
 
-1.  Log into the OSG submit node `login.osgconnect.net`. Create a directory for this exercise and `cd` into it.
+1.  Log into the OSG submit node `login05.osgconnect.net`. Create a directory for this exercise and `cd` into it.
 1.  Copy and paste the following code into a file named `pascal.c`.
 
 		:::c++
@@ -99,7 +99,7 @@ Now that our code is compiled, we can use it to submit a job.
     -   Are there command line arguments?
     -   Where is its output written?
 
-1.  Based on what you thought about in 1., find a submit file from earlier in the week that you can modify to run our compiled `pascal` code.
+1.  Based on what you thought about in 1., find a submit file from earlier that you can modify to run our compiled `pascal` code.
 
 1. Copy it to the directory with the `pascal` binary and make those changes. 
 

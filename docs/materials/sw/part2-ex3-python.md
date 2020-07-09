@@ -4,7 +4,7 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
 
-Software Exercise 3c: Using Python, Pre-Built
+Software Exercise 2.3: Using Python, Pre-Built
 ===============================================
 
 In this exercise, you will install Python, package your installation, and then use it to run jobs. It should take about 20 minutes.
@@ -47,14 +47,14 @@ The first step in our job process is building a Python installation that we can 
 			make test
 			sudo make install
 
-		This looks a lot like the OpenBUGS installation from earlier today! It turns out that this three-stage process (configure, make, make install) is a common  way to install many software packages.   Also like the OpenBUGS installation, the default installation  location for Python requires `sudo` (administrative privileges) to install. However, we'd like to install to a specific location in the working directory  so that we can compress that installation directory into a tarball. How did we do this with OpenBugs? 
+		This three-stage process (configure, make, make install) is a common  way to install many software packages.   The default installation  location for Python requires `sudo` (administrative privileges) to install. However, we'd like to install to a specific location in the working directory  so that we can compress that installation directory into a tarball. 
 
-	1.   With OpenBugs we used the `-prefix` option with the `configure` script. Let's see if the Python `configure` script has this option by using the "help" option (as suggested in the `README.rst` file): 
+	1.   You can often use an option called `-prefix` with the `configure` script to change the default installation directory. Let's see if the Python `configure` script has this option by using the "help" option (as suggested in the `README.rst` file): 
 
 			:::console
 			username@host $ ./configure --help
 
-		Sure enough, there's a list of all the different options that can be passed to the `configure` script, which includes `--prefix`.  (To see the `--prefix` option, you may need to scroll towards the top of the output.)  Therefore, we can use the  `$(pwd)` command in order to set the path correctly, just as we did earlier today.
+		Sure enough, there's a list of all the different options that can be passed to the `configure` script, which includes `--prefix`.  (To see the `--prefix` option, you may need to scroll towards the top of the output.)  Therefore, we can use the  `$PWD` command in order to set the path correctly to a custom installation directory. 
 
 1.  Now let's actually install Python!
     1.  **From the job's main working directory**, create a directory to hold the installation. 
@@ -67,7 +67,7 @@ The first step in our job process is building a Python installation that we can 
 
 			:::console
 			username@host $ cd Python-3.7.0
-			username@host $ ./configure --prefix=$(pwd)/../python
+			username@host $ ./configure --prefix=$PWD/../python
 			username@host $ make
 			username@host $ make install
 

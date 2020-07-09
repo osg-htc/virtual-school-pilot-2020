@@ -4,10 +4,10 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
 
-Software Exercise 5b (Optional): More Python Job Features
+Software Exercise 4.2: More Python Job Features
 ===========================================
 
-If you have time and  did the previous Python exercise, try one (or more) of these exercises. 
+If you have time and  did the previous Python exercise ([Exercise 2.3](/materials/sw/part2-ex3-python.md)), try one (or more) of these exercises. 
 
 Arguments
 ---------

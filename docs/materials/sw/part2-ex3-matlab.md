@@ -4,10 +4,10 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
 
-Software Exercise 3d: Running Compiled Matlab
+Software Exercise 2.4: Running Compiled Matlab
 ==============================
 
-The goal of this exercise is to compile Matlab code and run it. This exercise will draw on the idea of writing a wrapper script to install and run code, first introduced in [Exercise 3.3](/materials/day2/part3-ex3-wrapper) and should take 25-30 minutes.
+The goal of this exercise is to compile Matlab code and run it. This exercise will draw on the idea of writing a wrapper script to install and run code, first introduced in [Exercise 1.2](/materials/sw/part1-ex2-wrapper.md) and should take 25-30 minutes.
 
 Background
 ----------
@@ -34,7 +34,7 @@ The first step in making Matlab portable is compiling our Matlab script.
 To compile this code, we need to access the machines with the Matlab compiler installed.
 For this exercise, we will use the compilers installed on special CHTC build machines.
 In the CHTC pool, you can't use `ssh` to directly connect to these machines.
-Instead, you must submit an interactive job (just like in yesterday's [Exercise 3.4](/materials/day2/part3-ex4-prepackaged)) that
+Instead, you must submit an interactive job (similar to [Exercise 2.2](/materials/sw/part2-ex2-prepackaged.md)) that
 specifically requests these build machines.
 
 1.   Create a file called `compile.submit` with the lines below: 
@@ -48,7 +48,7 @@ specifically requests these build machines.
 
 		+IsBuildJob = true
 		request_memory = 1GB
-		request_disk = 100MB 
+		request_disk = 512MB
 
 		queue
 
@@ -93,7 +93,7 @@ The newly compiled binary will require the 2015b Matlab runtime to run. You can 
 Wrapper Script
 --------------
 
-Like the [OpenBUGS](/materials/day2/part3-ex4-prepackaged) example from yesterday, we will need a wrapper script to open the Matlab runtime and then run our compiled Matlab code. Our wrapper script will need to accomplish the following steps:
+We will need a wrapper script to open the Matlab runtime and then run our compiled Matlab code. Our wrapper script will need to accomplish the following steps:
 
 -   Unpack the transferred runtime
 -   Set the environment variables
@@ -120,7 +120,7 @@ Fortunately, the Matlab compiler has pre-written most of this wrapper script for
 Submitting the Job
 ------------------
 
-1.  Copy an existing submit file into your current directory. The submit file we used for the [Open Bugs](/materials/day2/part3-ex4-prepackaged.md) example would be a good candidate, as that example also used a wrapper script. 
+1.  Copy an existing submit file into your current directory. The submit file we used for  [Exercise 1.2](/materials/sw/part1-ex2-wrapper.md) example would be a good candidate, as that example also used a wrapper script. 
 
 2. Modify your submit file for this job. 
 

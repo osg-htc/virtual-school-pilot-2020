@@ -4,15 +4,15 @@ status: in progress
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: #008; } </style>
 
-Software Exercise 5a (Optional): Passing Arguments Through the Wrapper Script
+Software Exercise 4.1: Passing Arguments Through the Wrapper Script
 ===================================================
 
-In this exercise, you will change the wrapper script and submit file from a previous exercise to use arguments.
+In this exercise, you will change the wrapper script and submit file from a previous exercise to use arguments. It builds on [Exercise 2.2](/materials/sw/part2-ex2-prepackaged) from earlier, so only do this exercise if you've already done Exercise 2.2.
 
 Background
 ----------
 
-This exercise builds on [Exercise 2]() from earlier. In that exercise, the wrapper scripts  had all files and options written out explicitly. However, imagine if you wanted to run the same job multiple times, or even just try out one or two different options or inputs. Instead of writing new wrapper scripts for each job, you can modify the script so that some of the values are set by *arguments*. Using script arguments will allow you to use the same script for multiple jobs, by providing different inputs or parameters. These arguments are normally passed on the command line:
+In Exercise 2.2, the wrapper scripts had all files and options written out explicitly. However, imagine if you wanted to run the same job multiple times, or even just try out one or two different options or inputs. Instead of writing new wrapper scripts for each job, you can modify the script so that some of the values are set by *arguments*. Using script arguments will allow you to use the same script for multiple jobs, by providing different inputs or parameters. These arguments are normally passed on the command line:
 
 But in our world of job submission, the arguments will be listed in the submit file, in the arguments line.
 
