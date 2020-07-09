@@ -203,8 +203,24 @@ or perhaps a shell script of commands that you'd like to run within a job. In th
         In other words, in this format the executable must be in the same directory as the submit file.
 
     !!! note
-        As this example shows, blank lines and spaces around the = sign do not matter to HTCondor.
-        Use whitespace to make things clear to **you**. What format do you prefer to read?
+        Blank lines between commands and spaces around the `=` do not matter to HTCondor.
+        For example, this submit file is equivalent to the one above:
+        
+            :::file
+            executable = test-script.sh
+            arguments =  foo bar baz
+            output =     script.out
+            error =      script.err
+            log =        script.log
+     
+            request_cpus=1
+            request_memory=1GB
+            request_disk=1MB
+    
+            queue
+        
+        Use whitespace to make things clear to **you**. 
+        What format do you prefer to read?
 
 1.  Submit the job, wait for it to finish, and check the output (and error, which should be empty).
 
