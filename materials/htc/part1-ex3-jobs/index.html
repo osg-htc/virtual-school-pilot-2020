@@ -259,8 +259,24 @@ queue
     In other words, in this format the executable must be in the same directory as the submit file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>As this example shows, blank lines and spaces around the = sign do not matter to HTCondor.
-Use whitespace to make things clear to <strong>you</strong>. What format do you prefer to read?</p>
+<p>Blank lines between commands and spaces around the <code>=</code> do not matter to HTCondor.
+For example, this submit file is equivalent to the one above:</p>
+<div class="codehilite"><pre><span></span>executable = test-script.sh
+arguments =  foo bar baz
+output =     script.out
+error =      script.err
+log =        script.log
+
+request_cpus=1
+request_memory=1GB
+request_disk=1MB
+
+queue
+</pre></div>
+
+
+<p>Use whitespace to make things clear to <strong>you</strong>. 
+What format do you prefer to read?</p>
 </div>
 </li>
 <li>
