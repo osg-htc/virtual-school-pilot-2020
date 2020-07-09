@@ -19,7 +19,7 @@ Neither of these options seems very satisfying. Fortunately, we can do better wi
 Running Many Jobs With One queue Statement
 ------------------------------------------
 
-Here is a C program that uses a simple stochastic (random) method to estimate the value of π — feel free to try to figure out the method from the code, but it is not critical for this exercise. The single argument to the program is the number of samples to take. More samples should result in better estimates!
+Here is a C program that uses a stochastic (random) method to estimate the value of π — feel free to try to figure out the method from the code, but it is not critical for this exercise. The single argument to the program is the number of samples to take. More samples should result in better estimates!
 
 ``` c
 #include <stdio.h>
@@ -174,7 +174,7 @@ During the lecture, it was mentioned that you can define arbitrary attributes in
 
 Once again, we will use `sleep` jobs, so that your jobs remain in the queue long enough to experiment on.
 
-1.  Create a basic submit file that runs `sleep 120` (or some reasonable duration).
+1.  Create a submit file that runs `sleep 120` (or some reasonable duration).
 1.  Instead of a single `queue` statement, write this:
 
         :::file

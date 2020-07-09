@@ -7,8 +7,7 @@ status: testing
 HTC Exercise 1.4: Read and Interpret Log Files
 =================================================
 
-The goal of this exercise is quite simple: 
-Learn to understand the contents of a job log file, which is where HTCondor describes the steps 
+The goal of this exercise is to learn how to understand the contents of a job log file, which is where HTCondor describes the steps 
 taken to run your job.
 When things go wrong with your job, the log is the best place to look for first pointers (in addition to the .err file).
 

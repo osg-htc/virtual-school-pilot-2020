@@ -12,7 +12,10 @@ The goal of this exercise is make input files available to your job on the execu
 Viewing a Job Sandbox
 ---------------------
 
-Before you learn to transfer files to and from your job, it is good to understand a bit more about the environment in which your job runs. When the HTCondor `starter` process prepares to run your job, it creates a new directory for your job and all of its files. We call this directory the *job sandbox*, because it is your job’s private space to play. Let’s see what is in the job sandbox for a very simple job with no special input or output files.
+Before you learn to transfer files to and from your job, it is good to understand a bit more about the environment in which your job runs.
+When the HTCondor `starter` process prepares to run your job, it creates a new directory for your job and all of its files.
+We call this directory the *job sandbox*, because it is your job’s private space to play.
+Let’s see what is in the job sandbox for a minimal job with no special input or output files.
 
 1.  Save the script below in a file named `sandbox.sh`:
 
@@ -50,7 +53,7 @@ Running a Job With Input Files
 
 Next, you will run a job that requires an input file. Remember, the initial job sandbox will contain only the renamed job executable, unless you tell HTCondor explicitly about every other file that needs to be transferred. Fortunately, this is easy.
 
-Here is a simple Python script that takes the name of an input file (containing one word per line) from the command line, counts the number of times each (lowercased) word occurs in the text, and prints out the final list of words and their counts.
+Here is a Python script that takes the name of an input file (containing one word per line) from the command line, counts the number of times each (lowercased) word occurs in the text, and prints out the final list of words and their counts.
 
 ``` python
 #!/usr/bin/env python
@@ -84,7 +87,7 @@ for word in sorted(words.keys()):
         :::console
         username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool19/mon-2.1-words.txt
 
-1.  Create a basic submit file for the `freq.py` executable.
+1.  Create a submit file for the `freq.py` executable.
 1.  Add a line to tell HTCondor to transfer the input file:
 
         :::file
@@ -110,7 +113,8 @@ Transferring Output Files
 
 So far, we have relied on programs that send their output to the standard output and error streams, which HTCondor captures, saves, and returns back to the submit directory. But what if your program writes one or more files for its output? How do you tell HTCondor to bring them back?
 
-Let’s start by exploring what happens to files that a job creates in the sandbox. We will use a very simple method for creating a new file: We will copy an input file to another name.
+Let’s start by exploring what happens to files that a job creates in the sandbox.
+We will use a very simple method for creating a new file: we will copy an input file to another name.
 
 1.  Find or create a small input file (it is fine to use any small file from a previous exercise).
 1.  Create a submit file that transfers the input file and copies it to another name (as if doing `/bin/cp input.txt output.txt` on the command line)
@@ -130,7 +134,7 @@ As you saw in the last exercise, by default HTCondor transfers files that are cr
 
 What if you want to bring back only **some** output files, or output files contained in subdirectories?
 
-Here is a simple shell script that creates several files, including a copy of an input file in a new subdirectory:
+Here is a shell script that creates several files, including a copy of an input file in a new subdirectory:
 
 ``` shell
 #!/bin/sh
