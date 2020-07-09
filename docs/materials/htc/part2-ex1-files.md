@@ -12,7 +12,10 @@ The goal of this exercise is make input files available to your job on the execu
 Viewing a Job Sandbox
 ---------------------
 
-Before you learn to transfer files to and from your job, it is good to understand a bit more about the environment in which your job runs. When the HTCondor `starter` process prepares to run your job, it creates a new directory for your job and all of its files. We call this directory the *job sandbox*, because it is your job’s private space to play. Let’s see what is in the job sandbox for a job with no special input or output files.
+Before you learn to transfer files to and from your job, it is good to understand a bit more about the environment in which your job runs.
+When the HTCondor `starter` process prepares to run your job, it creates a new directory for your job and all of its files.
+We call this directory the *job sandbox*, because it is your job’s private space to play.
+Let’s see what is in the job sandbox for a minimal job with no special input or output files.
 
 1.  Save the script below in a file named `sandbox.sh`:
 
@@ -110,7 +113,8 @@ Transferring Output Files
 
 So far, we have relied on programs that send their output to the standard output and error streams, which HTCondor captures, saves, and returns back to the submit directory. But what if your program writes one or more files for its output? How do you tell HTCondor to bring them back?
 
-Let’s start by exploring what happens to files that a job creates in the sandbox. We will use a very crude method for creating a new file: We will copy an input file to another name.
+Let’s start by exploring what happens to files that a job creates in the sandbox.
+We will use a very simple method for creating a new file: we will copy an input file to another name.
 
 1.  Find or create a small input file (it is fine to use any small file from a previous exercise).
 1.  Create a submit file that transfers the input file and copies it to another name (as if doing `/bin/cp input.txt output.txt` on the command line)

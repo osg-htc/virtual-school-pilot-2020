@@ -48,7 +48,7 @@ The lines of the submit file have the following meanings:
 | `output`     | The filename where HTCondor will write the standard output from your job.                                                                                                  |
 | `error`      | The filename where HTCondor will write the standard error from your job. This particular job is not likely to have any, but it is best to include this line for every job. |
 | `log`        | The filename where HTCondor will write information about your job run. Technically not required, it is a **really** good idea to have a log file for every job.            |
-| `request_*`  | Tells HTCondor how many `cpus` and how much `memory` and `disk` we want, which is not much, because the 'hostname' executable is pretty small                             |
+| `request_*`  | Tells HTCondor how many `cpus` and how much `memory` and `disk` we want, which is not much, because the 'hostname' executable is very small.                               |
 | `queue`      | Tells HTCondor to run your job with the settings above.                                                                                                                    |
 
 Note that we are not using the `arguments` or `transfer_input_files` lines that were mentioned during lecture because the `hostname` program is all that needs to be transferred from the submit server, and we want to run it without any additional options.
@@ -178,7 +178,9 @@ or perhaps a shell script of commands that you'd like to run within a job. In th
         Args: hello 42
         ls: hostname.sub montage hostname.err hostname.log hostname.out test-script.sh
 
-    This step is **really** important! If you cannot run your executable from the command-line, HTCondor probably cannot run it on another machine, either. Debugging problems like this one is surprisingly difficult. So, if possible, test your `executable` and `arguments` as a command at the command-line first.
+    This step is **really** important! If you cannot run your executable from the command-line, HTCondor probably cannot run it on another machine, either. 
+    Further, debugging problems like this one is surprisingly difficult. 
+    So, if possible, test your `executable` and `arguments` as a command at the command-line first.
 
 1. Write the submit file (this should be getting easier by now):
 

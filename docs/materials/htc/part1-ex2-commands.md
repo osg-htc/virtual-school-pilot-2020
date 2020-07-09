@@ -7,7 +7,8 @@ status: testing
 HTC Exercise 1.2: Experiment With HTCondor Commands
 ===================================================
 
-The goal of this exercise is to use the basic informational HTCondor commands, `condor_q` and `condor_status`. They will be useful for monitoring your jobs and available slots (respectively) throughout the week.
+The goal of this exercise is to learn about two foundational HTCondor commands, `condor_q` and `condor_status`.
+They will be useful for monitoring your jobs and available slots (respectively) throughout the week.
 
 This exercise should take only a few minutes.
 
