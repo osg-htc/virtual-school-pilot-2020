@@ -178,6 +178,6 @@ Both `condor_status` and `condor_q` have many command-line options, some of whic
 
 -   Use the (brief) built-in help for the commands, e.g.: `condor_q -h`
 -   Read the installed man(ual) pages for the commands, e.g.: `man condor_q`
--   Find the command in [the online manual](https://htcondor.readthedocs.io/en/v8_9_2/); **note:** the text online is the same as the `man` text, only formatted for the web
+-   Find the command in [the online manual](https://htcondor.readthedocs.io/en/latest/); **note:** the text online is the same as the `man` text, only formatted for the web
 
 
