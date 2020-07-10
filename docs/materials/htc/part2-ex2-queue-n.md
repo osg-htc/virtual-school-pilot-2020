@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 ```
 
 1.  In a new directory for this exercise, save the code to a file named `circlepi.c`
-1.  Compile the code (we will cover this in more detail Wednesday):
+1.  Compile the code (we will cover this in more detail during the Software lecture):
 
         :::console
         username@learn $ gcc -static -o circlepi circlepi.c
