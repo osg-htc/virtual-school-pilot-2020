@@ -37,7 +37,11 @@ pages:
       - Bonus Exercise 3.2:       materials/htc/part3-ex2-status.md
       - Bonus Exercise 3.3:       materials/htc/part3-ex3-job-retry.md
     - OSG Exercises:
-      - Placeholder:              materials/osg/temp.md
+      - Exercise 1:               materials/osg/ex1-submit-refresher.md
+      - Exercise 2:               materials/osg/ex2-login-scp.md
+      - Exercise 3:               materials/osg/ex3-submit-osg.md
+      - Exercise 4:               materials/osg/ex4-hardware-diffs.md
+      - Exercise 5:               materials/osg/ex5-software-diffs.md
     - Software Exercises:
       - Exercise 1.1:             materials/sw/part1-ex1-download.md
       - Exercise 1.2:             materials/sw/part1-ex2-wrapper.md
