@@ -42,7 +42,7 @@ Next, look at the output that appears after the `Sandbox:` line; it is the outpu
 | `_condor_stderr`  | Saved standard error from the job           |
 | `_condor_stdout`  | Saved standard output from the job          |
 | `condor_exec.exe` | The executable, renamed from `sandbox.sh`   |
-| `tmp/`            | A directory in which to put temporary files |
+| `tmp/`, `var/tmp/`| Directories in which to put temporary files |
 
 So, HTCondor wrote copies of the job and machine ads (for use by the job, if desired), transferred your executable (`sandbox.sh`), renamed it (`condor_exec.exe`), ran it, and saved its standard output and standard error into files. Notice that your submit file, which was in the same directory on the submit machine as your executable, was **not** transferred, nor were any other files that happened to be in directory with the submit file.
 
