@@ -16,10 +16,10 @@ There are three special resource request statements that you can use (optionally
 -  `request_disk` for the maximum amount of disk space your job may use (including the executable and all other data that may show up during the job)
 
 HTCondor defaults to certain reasonable values for these request settings, so you do not need to use them to get *small* jobs to run. 
-However, it is in **YOUR** best interest to always estimate resource requests before submitting any job, but to definitely tune your requests before submitting multiple jobs. In many HTCondor pools:
+However, it is in **YOUR** best interest to always estimate resource requests before submitting any job, and to definitely tune your requests before submitting multiple jobs. In many HTCondor pools:
 
 -  If your job goes over the request values, it may be removed from the execute machine and held (status 'H' in the `condor_q` output, awaiting action on your part) without saving any partial job output files. So it is a disadvantage to not declare your resource needs or if you underestimate them. 
--  Conversely, if you overestimate them by too much, your jobs will match to fewer slots (and with a longer average wait time) *and* you'll be hogging up resources that you don't need, but that could be used for the jobs of other users. In the long run, it works better for all users of the pool if you declare what you really need.
+-  Conversely, if you overestimate them by too much, your jobs will match to fewer slots, with a longer average wait time. Additionally, by hogging up resources that you don't need, other users may be deprived of the resources they require. In the long run, it works better for all users of the pool if you declare what you really need.
 
 But how do you know what to request? In particular, we are concerned with memory and disk here; requesting multiple CPUs and using them is covered a bit in later school materials, but true HTC splits work up into jobs that each use as few CPU cores as possible (one CPU core is always best to have the most jobs running and completing soonest).
 
@@ -75,7 +75,7 @@ Swap:  4194296k total,      148k used,  4194148k free,  2960760k cached
 The `top` command (shown here with an option to limit the output to a single user ID) also shows information about running processes, but updates periodically by itself. Type the letter `q` to quit the interactive display. Again, the highlighted `RES` column shows an approximation of memory usage.
 
 #### For Disk: 
-Determining disk needs may be a bit simpler, because you can check on the size of files that a program is using while it runs. However, it is important to count all files that HTCondor counts to get an accurate size. HTCondor counts **everything** in your job sandbox toward your job’s disk usage:
+Determining disk needs may be a bit easier, because you can check on the size of files that a program is using while it runs. However, it is important to count all files that HTCondor counts to get an accurate size. HTCondor counts **everything** in your job sandbox toward your job’s disk usage:
 
 -   The executable itself
 -   All "input" files (anything else that gets transferred TO the job, even if you don't think of it as "input")
@@ -98,11 +98,10 @@ import os
 size = 1000000
 numbers = []
 for i in xrange(size): numbers.append(str(i))
-tempfile = open('temp', 'w')
+tempfile = open('numbers.txt', 'w')
 tempfile.write(' '.join(numbers))
 tempfile.close()
 time.sleep(60)
-os.remove('temp')
 ```
 
 Without trying to figure out what this code does or how many resources it uses, create a submit file for it, 

@@ -16,7 +16,7 @@ Bad Job
 
 Let’s assume that a colleague has shared with you a program, and it fails once in a while. In the real world, we would probably just fix the program, but what if you cannot change the software? Unfortunately, this situation happens more often than we would like.
 
-Below is a simple Python script that fails once in a while. We will not fix it, but use it to simulate a program that can fail and that we **cannot** fix.
+Below is a Python script that fails once in a while. We will not fix it, but use it to simulate a program that can fail and that we **cannot** fix.
 
 ``` file
 #!/usr/bin/env python

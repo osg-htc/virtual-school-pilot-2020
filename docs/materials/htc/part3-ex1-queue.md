@@ -39,7 +39,7 @@ Did you know you can also name one or more user IDs on the command line, in whic
 username@learn $ condor_q <USERNAME1> <USERNAME2> <USERNAME3>
 ```
 
-There are two other, simple selection criteria that you can use. To list just the jobs associated with a single cluster number:
+To list just the jobs associated with a single cluster number:
 
 ``` console
 username@learn $ condor_q <CLUSTER>
@@ -221,7 +221,7 @@ cat 2421 /bin/sleep
 cat 2422 /bin/sleep
 ```
 
-**Bonus Question**: If you wanted to print out the `Requirements` expression of a job, how would you do that with `-af`? Is the output what you expected? (HINT: for ClassAd attributes like "Requirements" that are long expressions, instead of simple values, you can use `-af:r` to view the expressions, instead of what it's current evaluation.)
+**Bonus Question**: If you wanted to print out the `Requirements` expression of a job, how would you do that with `-af`? Is the output what you expected? (HINT: for ClassAd attributes like "Requirements" that are long expressions, instead of plain values, you can use `-af:r` to view the expressions, instead of what it's current evaluation.)
 
 References
 ----------

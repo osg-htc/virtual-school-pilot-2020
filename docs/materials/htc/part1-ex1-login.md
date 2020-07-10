@@ -29,7 +29,7 @@ username@learn $ ssh %RED%<USERNAME>%ENDCOLOR%@learn.chtc.wisc.edu
 **If you need help finding or using an SSH client, ask the instructors for help right away**!
 
 ### About Your Password
--   Your username and initial password are located on the Accounts sheet of paper that you received this morning
+-   Your username and initial password should have been provided by your mentor. If this is not true, or you have lost the password, reach out to one of the instructors for help. 
 -   While the `passwd` command will work (and will change your password temporarily), your initial password will be automatically reset for you on an hourly basis. (So you probably don't want to change your password, in the first place, and definitely want to keep your sheet of paper or memorize the password).
 
 Running Commands
@@ -79,17 +79,17 @@ HTCondor is installed on this server. But what version? You can ask HTCondor its
 
 ``` console
 username@learn $ condor_version
-$CondorVersion: 8.9.2 May 13 2019 BuildID: 469000 PackageID: 8.9.2-0.469000 $
-$CondorPlatform: x86_64_RedHat7 $
+$CondorVersion: 8.9.8 Jun 29 2020 BuildID: 508520 PackageID: 8.9.8-0.508520 $
+$CondorPlatform: x86_64_CentOS7 $
 ```
 
-As you can see from the output, we are using HTCondor 8.9.2.
+As you can see from the output, we are using HTCondor 8.9.8.
 
 ### FYI: Background information about HTCondor version numbers
 
 HTCondor always has two types of releases at one time: stable and development. HTCondor 8.6.x and 8.8.x are considered stable releases, indicated by even-numbered second digits (e.g., 6 or 8 in these cases). Within one stable series, all versions have the same features (for example 8.6.0 and 8.6.8 have the same set of features) and differ only in bug and security fixes.
 
-HTCondor 8.9.2 is the latest _development_ release series of HTCondor. You know that these are a development release because the second digit (i.e., 9) is an odd number. CHTC is usually running the latest development series as the local CHTC Pool is somewhat of a final testing ground for new features. Other HTCondor pools and submit servers that you use outside of CHTC (including the OSG submit server you'll use later) may run different versions. In general, the user-facing HTCondor features in 8.6 forward are mostly the same, but you may see some differences in the format of output from `condor_` commands or in more advanced or non-user features.
+HTCondor 8.9.8 is the latest _development_ release series of HTCondor. You know that these are a development release because the second digit (i.e., 9) is an odd number. CHTC is usually running the latest development series as the local CHTC Pool is somewhat of a final testing ground for new features. Other HTCondor pools and submit servers that you use outside of CHTC (including the OSG submit server you'll use later) may run different versions. In general, the user-facing HTCondor features in 8.6 forward are mostly the same, but you may see some differences in the format of output from `condor_` commands or in more advanced or non-user features.
 
 Reference Materials
 -------------------
@@ -97,5 +97,5 @@ Reference Materials
 Here are a few links to reference materials that might be interesting after the school (or perhaps during).
 
 -   [HTCondor home page](http://research.cs.wisc.edu/htcondor/)
--   [HTCondor manuals](https://htcondor.readthedocs.io/en/v8_9_2/); it is probably best to read the manual corresponding to the version of HTCondor that you use (8.9.2 for today)
--   [Center for High Throughput Computing](http://chtc.cs.wisc.edu/), our campus research computing center, and home to HTCondor and other development of distributed computing tools
+-   [HTCondor manuals](https://htcondor.readthedocs.io/en/latest/); it is probably best to read the manual corresponding to the version of HTCondor that you use. That link points to the latest version of the manual, but you can switch versions using the toggle in the lower left corner of that page.
+-   [Center for High Throughput Computing](http://chtc.cs.wisc.edu/), our campus research computing center, and home to HTCondor and other development of distributed computing tools.

@@ -4,10 +4,11 @@ status: testing
 
 <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
-HTC Exercise 1.2: Experiment With Basic HTCondor Commands
-============================================================
+HTC Exercise 1.2: Experiment With HTCondor Commands
+===================================================
 
-The goal of this exercise is to use the basic informational HTCondor commands, `condor_q` and `condor_status`. They will be useful for monitoring your jobs and available slots (respectively) throughout the week.
+The goal of this exercise is to learn about two foundational HTCondor commands, `condor_q` and `condor_status`.
+They will be useful for monitoring your jobs and available slots (respectively) throughout the week.
 
 This exercise should take only a few minutes.
 
@@ -16,7 +17,7 @@ Viewing Slots
 
 As discussed in the lecture, the `condor_status` command is used to view the current state of slots in an HTCondor pool.
 
-At its most basic, the command is very simple:
+At its most basic, the command is very straightforward:
 
 ``` console
 username@learn $ condor_status
@@ -84,7 +85,7 @@ The `condor_q` command lists jobs that are on this submit machine and that are r
 
 ### Viewing Your Own Jobs
 
-The simplest form of the command lists only your jobs:
+The default behavior of the command lists only your jobs:
 
 ``` console
 username@learn $ condor_q
@@ -178,6 +179,6 @@ Both `condor_status` and `condor_q` have many command-line options, some of whic
 
 -   Use the (brief) built-in help for the commands, e.g.: `condor_q -h`
 -   Read the installed man(ual) pages for the commands, e.g.: `man condor_q`
--   Find the command in [the online manual](https://htcondor.readthedocs.io/en/v8_9_2/); **note:** the text online is the same as the `man` text, only formatted for the web
+-   Find the command in [the online manual](https://htcondor.readthedocs.io/en/latest/); **note:** the text online is the same as the `man` text, only formatted for the web
 
 

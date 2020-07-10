@@ -64,7 +64,7 @@ username@learn $ ./simple 5 21
 Running a Compiled C Program
 ----------------------------
 
-The rest is simple. In fact, it is no different than running any other program. Here is a basic submit file for the C program (call it simple.sub):
+Running the compiled program is no different than running any other program. Here is a submit file for the C program (call it simple.sub):
 
 ``` file
 executable = simple
@@ -77,11 +77,15 @@ log = c-program.log
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 
+request_cpus = 1
+request_memory = 1GB
+request_disk = 1MB
+
 queue
 ```
 
 Then submit the job as usual!
 
-In summary, it is easy to work with statically linked compiled code. It **is** possible to handle dynamically linked compiled code, but it is trickier. We will only mention this topic briefly on Wednesday.
+In summary, it is easy to work with statically linked compiled code. It **is** possible to handle dynamically linked compiled code, but it is trickier. We will only mention this topic briefly on Thursday.
 
 

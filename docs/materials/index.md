@@ -7,7 +7,7 @@ Lecture recording will be linked here.
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
 - [Exercise 1.1: Log in to the local submit machine and look around](/materials/htc/part1-ex1-login)
-- [Exercise 1.2: Experiment with basic HTCondor commands](/materials/htc/part1-ex2-commands.md)
+- [Exercise 1.2: Experiment with HTCondor commands](/materials/htc/part1-ex2-commands.md)
 - [Exercise 1.3: Run jobs!](/materials/htc/part1-ex3-jobs.md)
 - [Exercise 1.4: Read and interpret log files](/materials/htc/part1-ex4-logs.md)
 - [Exercise 1.5: Determining Resource Needs](/materials/htc/part1-ex5-request.md)
@@ -30,6 +30,28 @@ Lecture recording will be linked here.
 ## OSG
 
 ## Software
+
+### Software Exercises 1: Basic Software and Wrapper Script Use (Strongly Recommended)
+
+- [Exercise 1.1: Work With Downloaded Software](/materials/sw/part1-ex1-download.md)
+- [Exercise 1.2: Use a Wrapper Script To Run Software](/materials/sw/part1-ex2-wrapper.md)
+
+### Software Exercises 2: Specific Software Examples (Pick One)
+
+- [Exercise 2.1: Compiling and Running a Simple Code](/materials/sw/part2-ex1-compiling.md)
+- [Exercise 2.2: Compiling a Research Software](/materials/sw/part2-ex2-prepackaged.md)
+- [Exercise 2.3: Compiling Python and Running Jobs](/materials/sw/part2-ex3-python.md)
+- [Exercise 2.4: Compiling Matlab and Running Jobs](/materials/sw/part2-ex4-matlab.md)
+
+### Software Exercises 3: Using Containers in Jobs (Strongly Recommended)
+
+- [Exercise 3.1: Using Software in a Singularity Container](/materials/sw/part3-ex1-singularity.md)
+
+### Software Exercises 4: Bonus Exercises
+
+- [Exercise 4.1: Using Arguments With Wrapper Scripts](/materials/sw/part4-ex1-arguments.md)
+- [Exercise 4.2: Additional Python ](/materials/sw/part4-ex2-python-extras.md)
+- [Exercise 4.3: Using Software in a Docker Container](/materials/sw/part4-ex3-docker.md)
 
 ## Data
 

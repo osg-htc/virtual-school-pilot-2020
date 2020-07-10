@@ -39,7 +39,16 @@ pages:
     - OSG Exercises:
       - Placeholder:              materials/osg/temp.md
     - Software Exercises:
-      - Placeholder:              materials/sw/temp.md
+      - Exercise 1.1:             materials/sw/part1-ex1-download.md
+      - Exercise 1.2:             materials/sw/part1-ex2-wrapper.md
+      - Exercise 2.1:             materials/sw/part2-ex1-compiling.md
+      - Exercise 2.2:             materials/sw/part2-ex2-prepackaged.md
+      - Exercise 2.3:             materials/sw/part2-ex3-python.md
+      - Exercise 2.4:             materials/sw/part2-ex4-matlab.md
+      - Exercise 3.1:             materials/sw/part3-ex1-singularity.md
+      - Exercise 4.1:             materials/sw/part4-ex1-arguments.md
+      - Exercise 4.2:             materials/sw/part4-ex2-python-extras.md
+      - Exercise 4.3:             materials/sw/part4-ex3-docker.md
     - Data Exercises:
       - Placeholder:              materials/data/temp.md
 
