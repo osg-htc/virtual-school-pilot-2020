@@ -59,6 +59,8 @@ Lecture recording will be linked here.
 
 ## Workflows with DAGMan
 
+Lecture Slides([PPT](/materials/workflows/files/osgvsp20-bonus-dagman.pptx),[PDF](/materials/workflows/files/osgvsp20-bonus-dagman.pdf))
+
 ## GPUs and Containers
 
 ## More Grid
