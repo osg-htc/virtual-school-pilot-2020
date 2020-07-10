@@ -58,7 +58,7 @@ To use the script:
 
 1.  Save it as `wordcount.py`.
 1.  Verify the script by running it on one book manually.
-1.  Create a new submit file to submit one job (pick a book file and model your submit file off of the one above), including memory and disk requests of 20 MB; submit it, if you like.
+1.  Create a new submit file to submit one job (pick a book file and model your submit file off of the one above)
 1.  Modify the following submit file statements to work for all books:
 
         :::text
@@ -105,22 +105,8 @@ How many jobs were created? Is this what you expected? If you ran this in the
 same directory as Exercise 2.3, you may have noticed that a job was submitted
 for the `books_n.txt` file that holds the variable values in the `queue from`
 statement. Beware the dangers of matching more files than intended! One
-solution would be to put all of the books into an `input` directory and `queue
-matching input/*.txt`. 
-
-
-Here is some example `condor_q -nobatch` output:
-
-``` console
- ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
-  89.0   iaross          7/17 11:41   0+00:00:00 I  0    0.0 wordcount.py AAiW.txt
-  89.1   iaross          7/17 11:41   0+00:00:00 I  0    0.0 wordcount.py PandP.txt
-  89.2   iaross          7/17 11:41   0+00:00:00 I  0    0.0 wordcount.py TAoSH.txt
-```
-
-All three jobs were part of cluster 89. The first filename that was matched in the queue statement resulted in a process ID of 0, the second match has a process ID of 1, and the third has a process ID of 2.
-
-When the three jobs finish, carefully look at the resulting files. Do they match your expectations? There should be a single log file, but three separate output files and three separate (and hopefully empty) error files, one for each job.
+solution may be to put all of the books into an `books` directory and `queue
+matching books/*.txt`. Can you think of other solutions? If you have time, try one!
 
 Extra Challenge 1
 -----------------
