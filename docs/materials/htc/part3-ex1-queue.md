@@ -14,7 +14,7 @@ The main part of this exercise should take just a few minutes, but if you have m
 Selecting Jobs
 --------------
 
-The `condor_q` program has many options for selecting which jobs are listed. You have already seen that the default mode (as of version 8.5) is to show only your jobs in "batch" mode:
+The `condor_q` program has many options for selecting which jobs are listed. You have already seen that the default mode is to show only your jobs in "batch" mode:
 
 ``` console
 username@learn $ condor_q
