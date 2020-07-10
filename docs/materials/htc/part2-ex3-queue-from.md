@@ -7,7 +7,10 @@ status: testing
 HTC Exercise 2.3: Submit with “queue from”
 =============================================
 
-In this exercise and the next one, you will explore more ways to use a single submit file to submit many jobs. The focus of this exercise is to submit one job per filename that matches a given pattern.
+In this exercise and the next one, you will explore more ways to use a single
+submit file to submit many jobs. The goal of this exercise is to submit many
+jobs from a single submit file by using the `queue ... from` syntax to read
+variable values from a file.
 
 In all cases of submitting many jobs from a single submit file, the key questions are:
 
@@ -19,7 +22,7 @@ For `queue *N*`, jobs are distinguished simply by the built-in "process" variabl
 Counting Words in Files
 -----------------------
 
-Suppose you have a collection of books, and you want to analyze how word usage varies from book to book or author to author. As mentioned in the lecture, HTCondor provides many ways to submit jobs for this task. You could create a separate submit file for each book, and submit all of the files manually, but you'd have a lot of file lines to modify each time (in particular, all five of the last lines before `queue` below):
+Imagine you have a collection of books, and you want to analyze how word usage varies from book to book or author to author. As mentioned in the lecture, HTCondor provides many ways to submit jobs for this task. You could create a separate submit file for each book, and submit all of the files manually, but you'd have a lot of file lines to modify each time (in particular, all five of the last lines before `queue` below):
 
 ``` file
 executable              = freq.py
@@ -35,7 +38,7 @@ error                = AAiW.err
 log                  = AAiW.log
 queue
 ```
-...but this would be overly verbose and tedious. Let's do better.
+This would be overly verbose and tedious. Let's do better.
 
 Queue Jobs From a List of Values
 --------------------------------
@@ -87,7 +90,7 @@ To submit this program with a collection of two variable values for each run, on
         username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/books.zip
         username@learn $ unzip books.zip
 
-1.  Create a new submit file (or base it off a previous one!) named `wordcount-top.sub`.
+1.  Create a new submit file (or base it off a previous one!) named `wordcount-top.sub`, including memory and disk requests of 20 MB.
 1.  All of the jobs will use the same `executable` and `log` statements.
 1.  Update other statements to work with two variables, `book` and `n`:
 
