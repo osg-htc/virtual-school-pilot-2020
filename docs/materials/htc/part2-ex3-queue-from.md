@@ -43,7 +43,7 @@ This would be overly verbose and tedious. Let's do better.
 Queue Jobs From a List of Values
 --------------------------------
 
-Suppose we want to modify our word-frequency analysis from a previous exercuse so that it outputs only the most common *N* words of a document. However, we want to experiment with different values of *N*. 
+Suppose we want to modify our word-frequency analysis from a previous exercise so that it outputs only the most common *N* words of a document. However, we want to experiment with different values of *N*. 
 
 For this analysis, we will have a new version of the word-frequency counting
 script.  First, we need a new version of the word counting program so that it
