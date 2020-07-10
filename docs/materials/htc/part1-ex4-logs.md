@@ -21,13 +21,15 @@ For this exercise, we can examine a log file for any previous job that you have 
 A job log file is updated throughout the life of a job, usually at key events. Each event starts with a heading that indicates what happened and when. Here are **all** of the event headings from the `sleep` job log (detailed output in between headings has been omitted here):
 
 ``` file
-000 (5739.000.000) 07/25 10:44:20 Job submitted from host: <128.104.100.43:9618?addrs=...>
-001 (5739.000.000) 07/25 10:45:11 Job executing on host: <128.104.55.42:9618?addrs=...>
-006 (5739.000.000) 07/25 10:45:20 Image size of job updated: 72
-040 (5739.000.000) 07/25 10:45:20 Started transferring output files
-040 (5739.000.000) 07/25 10:45:20 Finished transferring output files
-006 (5739.000.000) 07/25 10:46:11 Image size of job updated: 4072
-005 (5739.000.000) 07/25 10:46:11 Job terminated.
+000 (5739.000.000) 2020-07-10 10:44:20 Job submitted from host: <128.104.100.43:9618?addrs=...>
+040 (5739.000.000) 2020-07-10 10:45:10 Started transferring input files
+040 (5739.000.000) 2020-07-10 10:45:10 Finished transferring input files
+001 (5739.000.000) 2020-07-10 10:45:11 Job executing on host: <128.104.55.42:9618?addrs=...>
+006 (5739.000.000) 2020-07-10 10:45:20 Image size of job updated: 72
+040 (5739.000.000) 2020-07-10 10:45:20 Started transferring output files
+040 (5739.000.000) 2020-07-10 10:45:20 Finished transferring output files
+006 (5739.000.000) 2020-07-10 10:46:11 Image size of job updated: 4072
+005 (5739.000.000) 2020-07-10 10:46:11 Job terminated.
 ```
 
 There is a lot of extra information in those lines, but you can see:
@@ -39,14 +41,14 @@ There is a lot of extra information in those lines, but you can see:
 Some events provide no information in addition to the heading. For example:
 
 ``` file
-000 (5739.000.000) 07/25 10:44:20 Job submitted from host: <128.104.100.43:9618?addrs=...>
+000 (5739.000.000) 2020-07-10 10:44:20 Job submitted from host: <128.104.100.43:9618?addrs=...>
 ...
 ```
 
 and
 
 ``` file
-001 (5739.000.000) 07/25 10:45:11 Job executing on host: <128.104.55.42:9618?addrs=...>
+001 (5739.000.000) 2020-07-10 10:45:11 Job executing on host: <128.104.55.42:9618?addrs=...>
 ...
 ```
 
@@ -56,7 +58,7 @@ and
 But the periodic information update event contains some additional information:
 
 ``` file
-006 (5739.000.000) 07/25 10:45:20 Image size of job updated: 72
+006 (5739.000.000) 2020-07-10 10:45:20 Image size of job updated: 72
     1  -  MemoryUsage of job (MB)
     72  -  ResidentSetSize of job (KB)
 ...
@@ -67,7 +69,7 @@ These updates record the amount of memory that the job is using on the execute m
 The job termination event includes a great deal of additional information:
 
 ``` file
-005 (5739.000.000) 07/25 10:46:11 Job terminated.
+005 (5739.000.000) 2020-07-10 10:46:11 Job terminated.
     (1) Normal termination (return value 0)
         Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
         Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
