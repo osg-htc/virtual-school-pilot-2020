@@ -98,7 +98,7 @@ for word in sorted(words.keys()):
 1.  Do not forget to add a line to name the input file as the argument to the Python script.
 1.  Submit the job, wait for it to finish, and check the output!
 
-If things do not work the first time, keep trying! At this point in the exercises, we are telling you less and less explicitly how to do steps that you have done before. If you get stuck, ask a neighbor or one of the instructors.
+If things do not work the first time, keep trying! At this point in the exercises, we are telling you less and less explicitly how to do steps that you have done before. If you get stuck, ask for help in the Slack channel.
 
 !!! note
     If you want to transfer more than one input file, list all of them on a single `transfer_input_files` command,
@@ -179,5 +179,5 @@ In some ways, everything after this exercise shows you how to submit multiple jo
 References
 ----------
 
-There are many more details about HTCondor’s file transfer mechanism not covered here. For more information, read the ["Submitting Jobs Without a Shared Filesystem"](https://htcondor.readthedocs.io/en/v8_9_2/users-manual/submitting-a-job.html#submitting-jobs-without-a-shared-file-system-htcondor-s-file-transfer-mechanism) of the HTCondor Manual.
+There are many more details about HTCondor’s file transfer mechanism not covered here. For more information, read the ["Submitting Jobs Without a Shared Filesystem"](https://htcondor.readthedocs.io/en/latest/users-manual/submitting-a-job.html#submitting-jobs-without-a-shared-file-system-htcondor-s-file-transfer-mechanism) of the HTCondor Manual.
 
