@@ -87,7 +87,7 @@ The output from this command is long and complex. Most of the attributes that HT
 ``` file
 MyType = "Job"
 Err = "sleep.err"
-UserLog = "/home/cat/1-monday-2.1-queue/sleep.log"
+UserLog = "/home/cat/intro-2.1-queue/sleep.log"
 Requirements = ( IsOSGSchoolSlot =?= true ) &&
         ( TARGET.Arch == "X86_64" ) &&
         ( TARGET.OpSys == "LINUX" ) &&

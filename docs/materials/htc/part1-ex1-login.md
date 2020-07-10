@@ -64,12 +64,11 @@ Organizing Your Workspace
 
 You will be doing many different exercises over the next few days, many of them on this submit server. Each exercise may use many files, once finished. To avoid confusion, it may be useful to create a separate directory for each exercise.
 
-For instance, for the rest of this exercise, you may wish to create and use a directory named `monday-1.1-login`, or something like that.
+For instance, for the rest of this exercise, you may wish to create and use a directory named `intro-1.1-login`, or something like that.
 
 ``` console
-username@learn $ mkdir Mon
-username@learn $ mkdir Mon/1.1
-username@learn $ cd Mon/1.1
+username@learn $ mkdir intro-1.1-login
+username@learn $ cd intro-1.1-login
 ```
 
 Showing the Version of HTCondor
