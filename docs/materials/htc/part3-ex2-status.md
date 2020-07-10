@@ -30,10 +30,10 @@ Similar to `condor_q`, you can limit the slots that are listed in two easy ways.
 username@learn $ condor_status <hostname>
 ```
 
-For example, if you want to see the slots on `e242.chtc.wisc.edu` (in the CHTC pool):
+For example, if you want to see the slots on `e2337.chtc.wisc.edu` (in the CHTC pool):
 
 ``` console
-username@learn $ condor_status e242.chtc.wisc.edu
+username@learn $ condor_status e2337.chtc.wisc.edu
 ```
 
 To list a specific slot on a machine:
@@ -45,7 +45,7 @@ username@learn $ condor_status <slot>@<hostname>
 For example, to see the “first” slot on the machine above:
 
 ``` console
-username@learn $ condor_status slot1@e242.chtc.wisc.edu
+username@learn $ condor_status slot1@e2337.chtc.wisc.edu
 ```
 
 !!! note
@@ -57,7 +57,7 @@ Let’s get some practice using `condor_status` selections!
 1.  List all slots in the pool — how many are there total?
 1.  Practice using all forms of `condor_status` that you have learned:
     -   List the available slots.
-    -   List the slots on a specific machine (e.g., `e242.chtc.wisc.edu`).
+    -   List the slots on a specific machine (e.g., `e2337.chtc.wisc.edu`).
     -   List a specific slot from that machine.
     -   Try listing the slots from a few (but not all) machines at once.
     -   Try using a mix of hostnames and slot IDs at once.
@@ -91,7 +91,7 @@ Memory = 1024
 
 As you may be able to tell, there is a mix of attributes about the machine as a whole (hence the name “machine ad”) and about the slot in particular.
 
-Go ahead and examine a machine ClassAd now. I suggest looking at one of the slots on, say, `e242.chtc.wisc.edu` because of its relatively simple configuration.
+Go ahead and examine a machine ClassAd now. I suggest looking at one of the slots on, say, `e2337.chtc.wisc.edu` because of its relatively simple configuration.
 
 Viewing Slots by ClassAd Expression
 -----------------------------------
@@ -122,10 +122,10 @@ Bonus: Formatting Output
 
 The `condor_status` command accepts the same `-autoformat` (`-af`) options that `condor_q` accepts, and the options have the same meanings in both commands. Of course, the attributes available in machine ads may differ from the ones that are available in job ads. Use the HTCondor Manual or look at individual slot ClassAds to get a better idea of what attributes are available.
 
-For example, I was curious about the Windows slots listed in the `condor_status` summary output. Here are two commands that show the full hostnames and major version information for the Windows slots:
+For example, I was curious about the host name and operating system of the slots with more than 32GB of memory:
 
 ``` console
-username@learn $ condor_status -af Machine -af OpSysAndVer -constraint 'OpSys == "WINDOWS"'
+username@learn $ condor_status -af Machine -af OpSysAndVer -constraint 'Memory >= 32000'
 ```
 
 If you like, spend a few minutes now or later experimenting with `condor_status` formatting.
@@ -136,7 +136,7 @@ References
 As suggested above, if you want to learn more about `condor_q`, you can do some reading:
 
 -   Read the `condor_status` man page or HTCondor Manual section (same text) to learn about more options
--   Read about [ClassAd attributes](https://htcondor.readthedocs.io/en/v8_9_2/classad-attributes/index.html) in the appendix of the HTCondor Manual
+-   Read about [ClassAd attributes](https://htcondor.readthedocs.io/en/latest/classad-attributes/index.html) in the appendix of the HTCondor Manual
 -   Read about [ClassAd expressions](https://htcondor.readthedocs.io/en/latest/misc-concepts/classad-mechanism.html#old-classads-in-the-htcondor-system) in section 4.1.4 of the HTCondor Manual
 
 
