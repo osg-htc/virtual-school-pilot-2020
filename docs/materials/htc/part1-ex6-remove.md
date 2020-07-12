@@ -16,8 +16,7 @@ The goal of this exercise is to show you how to remove jobs from the queue. This
 
 This exercise is very short, but if you are out of time, you can come back to it later.
 
-Removing a Job or Cluster From the Queue
------------------------------
+## Removing a Job or Cluster From the Queue
 
 To practice removing jobs from the queue, you need a job in the queue!
 
@@ -44,8 +43,7 @@ Finally, you can include many job clusters and full job IDs in a single `condor_
 username@learn $ condor_rm 5768 5769 5770.0 5771.2
 ```
 
-Removing All of Your Jobs
--------------------------
+## Removing All of Your Jobs
 
 If you really want to remove all of your jobs at once, you can do that with:
 
@@ -54,11 +52,11 @@ username@learn $ condor_rm <USERNAME>
 ```
 
 If you want to test it: (optional, though you'll likely need this in the future)
+
 1.  Quickly submit several jobs from past exercises
 1.  View the jobs in the queue with `condor_q`
 1.  Remove them all with the above command
 1.  Use `condor_q` to track progress
 
-In case you are wondering, you can remove only your own jobs. HTCondor administrators can remove anyone’s jobs, so be nice to them.
-
-
+In case you are wondering, you can remove only your own jobs.
+HTCondor administrators can remove anyone’s jobs, so be nice to them.
