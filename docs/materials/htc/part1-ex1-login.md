@@ -29,8 +29,13 @@ username@learn $ ssh %RED%<USERNAME>%ENDCOLOR%@learn.chtc.wisc.edu
 **If you need help finding or using an SSH client, ask the instructors for help right away**!
 
 ### About Your Password
--   Your username and initial password should have been provided by your mentor. If this is not true, or you have lost the password, reach out to one of the instructors for help. 
--   While the `passwd` command will work (and will change your password temporarily), your initial password will be automatically reset for you on an hourly basis. (So you probably don't want to change your password, in the first place, and definitely want to keep your sheet of paper or memorize the password).
+
+-   Your mentor should have given you your username and password.
+    If this is not true or you have lost the password, reach out to any staff member for help.
+
+-   While the `passwd` command will work (and will change your password temporarily),
+    your initial password will be automatically reset for you on an hourly basis.
+    So consider not changing your password and save the one provided in a secure place.
 
 Running Commands
 ----------------
