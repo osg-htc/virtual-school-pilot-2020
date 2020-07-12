@@ -20,11 +20,11 @@ To log in, use a [Secure Shell](http://en.wikipedia.org/wiki/Secure_Shell) (SSH)
 
 -   From a Mac or Linux computer, run the Terminal app and use the `ssh` command, like so:
 
-``` console
-username@learn $ ssh %RED%<USERNAME>%ENDCOLOR%@learn.chtc.wisc.edu
-```
+        :::console
+        username@learn $ ssh %RED%<USERNAME>%ENDCOLOR%@learn.chtc.wisc.edu
 
--   On Windows, we recommend a free client called [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/), but any SSH client should be fine.
+-   On Windows, we recommend a free client called [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/),
+    but any SSH client should be fine.
 
 **If you need help finding or using an SSH client, ask the instructors for help right away**!
 
