@@ -51,6 +51,7 @@ pages:
       - Exercise 4.3:             materials/sw/part4-ex3-docker.md
     - Data Exercises:
       - Placeholder:              materials/data/temp.md
+  - Staff:                        staff.md
 
 markdown_extensions:
   - admonition
