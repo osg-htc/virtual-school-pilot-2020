@@ -18,7 +18,7 @@ Let’s assume that a colleague has shared with you a program, and it fails once
 
 Below is a Python script that fails once in a while. We will not fix it, but use it to simulate a program that can fail and that we **cannot** fix.
 
-``` file
+``` python
 #!/usr/bin/env python
 
 # murphy.py simulates a real program with real problems
@@ -73,7 +73,7 @@ A (Too) Long Running Job
 
 Sometimes, an ill-behaved job will get stuck in a loop and run forever, instead of exiting with a failure code, and it may just need to be re-run (or run on a different execute server) to complete without getting stuck. We can modify our Python program to simulate this kind of bad job with the following file:
 
-``` file
+``` python
 #!/usr/bin/env python
 
 # murphy.py simulate a real program with real problems
