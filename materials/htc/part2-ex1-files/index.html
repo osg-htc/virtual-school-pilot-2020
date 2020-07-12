@@ -121,8 +121,8 @@ ls -alF
 <td>The executable, renamed from <code>sandbox.sh</code></td>
 </tr>
 <tr>
-<td><code>tmp/</code></td>
-<td>A directory in which to put temporary files</td>
+<td><code>tmp/</code>, <code>var/tmp/</code></td>
+<td>Directories in which to put temporary files</td>
 </tr>
 </tbody>
 </table>
@@ -182,7 +182,7 @@ ls -alF
 </li>
 <li>Submit the job, wait for it to finish, and check the output!</li>
 </ol>
-<p>If things do not work the first time, keep trying! At this point in the exercises, we are telling you less and less explicitly how to do steps that you have done before. If you get stuck, ask a neighbor or one of the instructors.</p>
+<p>If things do not work the first time, keep trying! At this point in the exercises, we are telling you less and less explicitly how to do steps that you have done before. If you get stuck, ask for help in the #intro-to-htc Slack channel.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you want to transfer more than one input file, list all of them on a single <code>transfer_input_files</code> command,
@@ -251,7 +251,7 @@ If you want HTCondor to transfer back an entire directory, leave off the trailin
 <p>At this point, you can do just about everything that you need in order to run jobs on a local HTC pool. You can identify the executable, arguments, and input files, and you can get output back from the job. This is a big achievement!</p>
 <p>In some ways, everything after this exercise shows you how to submit multiple jobs at once and makes it easier to run certain kinds of jobs and deal with certain kinds of situations.</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<p>There are many more details about HTCondor’s file transfer mechanism not covered here. For more information, read the <a href="https://htcondor.readthedocs.io/en/v8_9_2/users-manual/submitting-a-job.html#submitting-jobs-without-a-shared-file-system-htcondor-s-file-transfer-mechanism">"Submitting Jobs Without a Shared Filesystem"</a> of the HTCondor Manual.</p>
+<p>There are many more details about HTCondor’s file transfer mechanism not covered here. For more information, read the <a href="https://htcondor.readthedocs.io/en/latest/users-manual/submitting-a-job.html#submitting-jobs-without-a-shared-file-system-htcondor-s-file-transfer-mechanism">"Submitting Jobs Without a Shared Filesystem"</a> of the HTCondor Manual.</p>
 
   <br>
     

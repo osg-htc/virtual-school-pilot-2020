@@ -35,10 +35,9 @@
         
         var pageToc = [
           {title: "HTC Exercise 2.3: Submit with \u201cqueue from\u201d", url: "#_top", children: [
-              {title: "More Job Submission Alternatives", url: "#more-job-submission-alternatives" },
+              {title: "Counting Words in Files", url: "#counting-words-in-files" },
               {title: "Queue Jobs From a List of Values", url: "#queue-jobs-from-a-list-of-values" },
               {title: "Extra Challenge 1", url: "#extra-challenge-1" },
-              {title: "Extra Challenge 2", url: "#extra-challenge-2" },
           ]},
         ];
 
@@ -60,13 +59,41 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
 <h1 id="htc-exercise-23-submit-with-queue-from">HTC Exercise 2.3: Submit with “queue from”<a class="headerlink" href="#htc-exercise-23-submit-with-queue-from" title="Permanent link">&para;</a></h1>
-<p>The goal of this exercise is to submit many jobs from a single submit file by using the <code>queue ... from</code> syntax to read variable values from a file.</p>
-<h2 id="more-job-submission-alternatives">More Job Submission Alternatives<a class="headerlink" href="#more-job-submission-alternatives" title="Permanent link">&para;</a></h2>
-<p>In the previous exercise, we used the <code>queue ... matching</code> syntax, which is primarily useful for collections of files with similar names. But that method has its weaknesses, too. 
-It is less useful when the values for different job conditions are <strong>not</strong> filenames, or if you have other filenames with a similar naming pattern that should <em>not</em> be used for jobs.</p>
+<p>In this exercise and the next one, you will explore more ways to use a single
+submit file to submit many jobs. The goal of this exercise is to submit many
+jobs from a single submit file by using the <code>queue ... from</code> syntax to read
+variable values from a file.</p>
+<p>In all cases of submitting many jobs from a single submit file, the key questions are:</p>
+<ul>
+<li>What makes each job unique? In other words, there is one job per _____?</li>
+<li>So, how should you tell HTCondor to distinguish each job?</li>
+</ul>
+<p>For <code>queue *N*</code>, jobs are distinguished simply by the built-in "process" variable. But with the remaining <code>queue</code> forms, you help HTCondor distinguish jobs by other, more meaningful <em>custom</em> variables.</p>
+<h2 id="counting-words-in-files">Counting Words in Files<a class="headerlink" href="#counting-words-in-files" title="Permanent link">&para;</a></h2>
+<p>Imagine you have a collection of books, and you want to analyze how word usage varies from book to book or author to author. As mentioned in the lecture, HTCondor provides many ways to submit jobs for this task. You could create a separate submit file for each book, and submit all of the files manually, but you'd have a lot of file lines to modify each time (in particular, all five of the last lines before <code>queue</code> below):</p>
+<div class="codehilite"><pre><span></span>executable              = freq.py
+request_memory          = 1GB
+request_disk            = 20MB
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+
+transfer_input_files = AAiW.txt
+arguments            = AAiW.txt
+output               = AAiW.out
+error                = AAiW.err
+log                  = AAiW.log
+queue
+</pre></div>
+
+
+<p>This would be overly verbose and tedious. Let's do better.</p>
 <h2 id="queue-jobs-from-a-list-of-values">Queue Jobs From a List of Values<a class="headerlink" href="#queue-jobs-from-a-list-of-values" title="Permanent link">&para;</a></h2>
-<p>Suppose we want to modify our word-frequency analysis a little bit so that it outputs only the most common <em>N</em> words of a document. Further, we want to experiment with different values of <em>N</em>. And finally, even though we downloaded it, we no longer want to analyze the Sherlock Holmes stories in the <code>TAoSH.txt</code> file. Clearly, <code>queue ... matching</code> will not help us in this case.</p>
-<p>First, we need a new version of the word counting program so that it accepts an extra number as a command line argument and outputs only that many of the most common words. Here is the new code (it's still not important that you understand this code):</p>
+<p>Suppose we want to modify our word-frequency analysis from a previous exercise so that it outputs only the most common <em>N</em> words of a document. However, we want to experiment with different values of <em>N</em>. </p>
+<p>For this analysis, we will have a new version of the word-frequency counting
+script.  First, we need a new version of the word counting program so that it
+accepts an extra number as a command line argument and outputs only that many
+of the most common words. Here is the new code (it's still not important that
+you understand this code):</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
 
 <span class="kn">import</span> <span class="nn">os</span>
@@ -99,9 +126,19 @@ It is less useful when the values for different job conditions are <strong>not</
 
 <p>To submit this program with a collection of two variable values for each run, one for the number of top words and one for the filename:</p>
 <ol>
-<li>In the same directory as the last exercise, save the script as <code>wordcount-top-n.py</code>.</li>
-<li>Copy your submit file from the last exercise to a new name (maybe <code>wordcount-top.sub</code>).</li>
-<li>Update the <code>executable</code> and <code>log</code> statements as appropriate.</li>
+<li>Save the script as <code>wordcount-top-n.py</code>.</li>
+<li>
+<p>Download and unpack some books from Project Gutenberg:</p>
+<div class="codehilite"><pre><span></span><span class="gp">username@learn $</span> wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/books.zip
+<span class="gp">username@learn $</span> unzip books.zip
+</pre></div>
+
+
+</li>
+<li>
+<p>Create a new submit file (or base it off a previous one!) named <code>wordcount-top.sub</code>, including memory and disk requests of 20 MB.</p>
+</li>
+<li>All of the jobs will use the same <code>executable</code> and <code>log</code> statements.</li>
 <li>
 <p>Update other statements to work with two variables, <code>book</code> and <code>n</code>:</p>
 <div class="codehilite"><pre><span></span>output = $(book)_top_$(n).out 
@@ -122,10 +159,13 @@ AAiW.txt, 50
 PandP.txt, 10 
 PandP.txt, 25 
 PandP.txt, 50
+TAoSH.txt, 10
+TAoSH.txt, 25
+TAoSH.txt, 50
 </pre></div>
 
 
-<p>Note that we used 3 different values for <em>n</em> for each book, and that we dropped the Sherlock Holmes book, <code>TAoSH.txt</code>.</p>
+<p>Note that we used 3 different values for <em>n</em> for each book.</p>
 </li>
 <li>
 <p>Submit the file</p>
@@ -133,8 +173,6 @@ PandP.txt, 50
 <li>Do a quick sanity check: How many jobs were submitted? How many log, output, and error files were created?</li>
 </ol>
 <h2 id="extra-challenge-1">Extra Challenge 1<a class="headerlink" href="#extra-challenge-1" title="Permanent link">&para;</a></h2>
-<p>Between this exercise and the previous one, you have explored two of the three primary <code>queue</code> statements. How would you use the <code>queue in ... list</code> statement to accomplish the same thing(s) as one or both of the exercises?</p>
-<h2 id="extra-challenge-2">Extra Challenge 2<a class="headerlink" href="#extra-challenge-2" title="Permanent link">&para;</a></h2>
 <p>You may have noticed that the output of these jobs has a messy naming convention. Because our macros resolve to the filenames, including their extension (e.g., <code>AAiW.txt</code>), the output filenames contain with multiple extensions (e.g., <code>AAiW.txt.err</code>). Although the extra extension is acceptable, it makes the filenames harder to read and possibly organize. <em>Change your submit file and variable file for this exercise so that the output filenames do not include the <code>.txt</code> extension.</em></p>
 
   <br>
