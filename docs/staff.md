@@ -1,9 +1,13 @@
 # OSG-VSP&rsquo;20 &ndash; Staff
 
+<style>
+img { margin: 5px 0; }
+tr { vertical-align: baseline; }
+</style>
 <table>
   <tbody>
-    <tr style="vertical-align: baseline;">
-      <td><img alt="Tim C. photo" src="files/staff/tim-cartwright.png" height="128" width="128"></td>
+    <tr>
+      <td><img alt="Tim C. photo" src="/files/staff/tim-cartwright.png" height="128" width="128"></td>
       <td>
         <p style="font-weight: bold;">Tim Cartwright</p>
         <p>
@@ -14,8 +18,8 @@
         </p>
       </td>
     </tr>
-    <tr style="vertical-align: baseline;">
-      <td><img alt="Lauren M. photo" src="files/staff/lauren-michael.png" height="128" width="128"></td>
+    <tr>
+      <td><img alt="Lauren M. photo" src="/files/staff/lauren-michael.png" height="128" width="128"></td>
       <td>
         <p style="font-weight: bold;">Lauren Michael</p>
         <p>
