@@ -47,7 +47,7 @@ The lines of the submit file have the following meanings:
 | `executable` | The name of the program to run (relative to the directory from which you submit).                                                                                          |
 | `output`     | The filename where HTCondor will write the standard output from your job.                                                                                                  |
 | `error`      | The filename where HTCondor will write the standard error from your job. This particular job is not likely to have any, but it is best to include this line for every job. |
-| `log`        | The filename where HTCondor will write information about your job run. Technically not required, it is a **really** good idea to have a log file for every job.            |
+| `log`        | The filename where HTCondor will write information about your job run. While not required, it is a **really** good idea to have a log file for every job.                  |
 | `request_*`  | Tells HTCondor how many `cpus` and how much `memory` and `disk` we want, which is not much, because the 'hostname' executable is very small.                               |
 | `queue`      | Tells HTCondor to run your job with the settings above.                                                                                                                    |
 
