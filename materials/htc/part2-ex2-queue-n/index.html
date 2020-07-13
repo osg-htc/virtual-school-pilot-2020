@@ -62,7 +62,9 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <style type="text/css"> pre em { font-style: normal; background-color: yellow; } pre strong { font-style: normal; font-weight: bold; color: \#008; } </style>
 
 <h1 id="htc-exercise-22-use-queue-n-cluster-and-process">HTC Exercise 2.2: Use queue <em>N</em>, $(Cluster), and $(Process)<a class="headerlink" href="#htc-exercise-22-use-queue-n-cluster-and-process" title="Permanent link">&para;</a></h1>
-<p>The goal of the next several exercises is to learn to submit many jobs from a single <code>queue</code> statement, and then to control filenames and arguments per job.</p>
+<p>The goal of the next several exercises is
+to learn to submit many jobs from a single <code>queue</code> statement,
+and to control things like filenames and arguments on a per-job basis when doing so.</p>
 <p>Suppose you have a program that you want to run many times with different arguments each time. With what you know so far, you have a couple of choices:</p>
 <ul>
 <li>Write one submit file; submit one job, change the argument in the submit file, submit another job, change the submit file, …</li>
@@ -124,11 +126,14 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 </li>
 </ol>
-<p>Now suppose that you want to run the program many times, to produce many estimates. This is exactly what a statement like <code>queue 3</code> is useful for. Let’s see how it works:</p>
+<p>Now suppose that you want to run the program many times, to produce many estimates.
+To do so, we can tell HTCondor how many jobs to "queue up" via the <code>queue</code> statement
+we've been putting at the end of each of our submit files.
+Let’s see how it works:</p>
 <ol>
 <li>Write a normal submit file for this program<ul>
 <li>Pass 1 million (<code>1000000</code>) as the command line argument to <code>circlepi</code></li>
-<li>Remember to use <code>queue 3</code> instead of just <code>queue</code></li>
+<li>At the end of the file, write <code>queue 3</code> instead of just <code>queue</code> ("queue 3 jobs" vs. "queue a job").</li>
 </ul>
 </li>
 <li>
@@ -150,8 +155,14 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </pre></div>
 
 
-<p>In this sample, all three jobs are part of <strong>cluster</strong> <code>10228</code>, but the first job was assigned <strong>process</strong> <code>0</code>, the second job was assigned process <code>1</code>, and the third one was assigned process <code>2</code>. (Historical note: Programmers like to start counting from 0, hence the odd numbering scheme.)</p>
-<p>At this time, it is worth reviewing the definition of a <strong><em>job ID</em></strong>. It is a job’s cluster number, a dot (<code>.</code>), and the job’s process number. So in the example above, the job ID of the second job is <code>10228.1</code>.</p>
+<p>In this sample, all three jobs are part of <strong>cluster</strong> <code>10228</code>, 
+but the first job was assigned <strong>process</strong> <code>0</code>, 
+the second job was assigned process <code>1</code>, 
+and the third one was assigned process <code>2</code>.
+(Programmers like to start counting from 0.)</p>
+<p>Now we can understand what the first column in the output, the <strong><em>job ID</em></strong>, represents.
+It is a job’s cluster number, a dot (<code>.</code>), and the job’s process number.
+So in the example above, the job ID of the second job is <code>10228.1</code>.</p>
 <p><strong>Pop Quiz:</strong> Do you remember how to ask HTCondor to list all of the jobs from one cluster? How about one specific job ID?</p>
 <h2 id="using-queue-n-with-output">Using queue <em>N</em> With Output<a class="headerlink" href="#using-queue-n-with-output" title="Permanent link">&para;</a></h2>
 <p>When all three jobs in your single cluster are finished, examine the resulting files.</p>
@@ -172,6 +183,7 @@ queue 10
 </pre></div>
 
 
+<p>These variables are sometimes called "submit macros".</p>
 <p>Even though the <code>output</code> filename is defined only once, HTCondor will create separate output filenames for each job:</p>
 <table>
 <thead>
@@ -195,7 +207,7 @@ queue 10
 </tr>
 <tr>
 <td>...</td>
-<td></td>
+<td>...</td>
 </tr>
 <tr>
 <td>Last (tenth) job</td>
