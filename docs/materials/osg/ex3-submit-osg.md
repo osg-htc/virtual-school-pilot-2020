@@ -19,7 +19,6 @@ You will be using the same exact payload as you did in [OSG exercise 1](/materia
 Now to create submit files that will run in the OSG!
 
 1. If not already logged in, `ssh` into `login04.osgconnect.net`
-1. Change to your local scratch directory
 1. Make a new directory for this exercise, `osg-ex3` and change into it
 1. Use `scp` or `rsync` from [OSG exercise 2](/materials/osg/ex2-login-scp) to copy over the executable and input
    file from the `osg-ex1` directory from `learn`.

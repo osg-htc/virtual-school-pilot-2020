@@ -37,7 +37,7 @@ tarballs) whose usage is as follows:
 -   To **create** a tarball named `<archive filename>` containing `<archive contents>`, use the following command:
 
         :::console
-        user@login04 $ tar -czvf <archive filename> <archive contents>
+        user@learn $ tar -czvf <archive filename> <archive contents>
 
     Where `<archive filename>` should end in `.tar.gz` and `<archive contents>` can be a list of any number of files
     and/or folders, separated by spaces.
@@ -45,15 +45,15 @@ tarballs) whose usage is as follows:
 -   To **extract** the files from a tarball into the current directory:
 
         :::console
-        user@login04 $ tar -xzvf <archive filename>
+        user@learn $ tar -xzvf <archive filename>
 
 -   To **list** the files within a tarball:
 
         :::console
-        user@login04 $ tar -tzvf <archive filename>
+        user@learn $ tar -tzvf <archive filename>
 
-Using the above knowledge, log into `learn.chtc.wisc.edu`, create a tarball that contains today's exercise 4.1
-directory, and verify that it contains all the proper files.
+Using the above knowledge, log into `learn.chtc.wisc.edu`, create a tarball that contains the OSG exercise 1 directory,
+and verify that it contains all the proper files.
 
 ### Comparing compressed sizes
 
@@ -61,6 +61,8 @@ You can adjust the level of compression of `tar` by prepending your command with
 `<COMPRESSION>` can be either `fast` for the least compression, or `best` for the most compression (the default
 compression is between `best` and `fast`).
 
+1.  Log in to `learn.chtc.wisc.edu`
+1.  Create and change into a new folder for this exercise, for example `osg-ex2`
 1.  Use `wget` to download the following files from our web server:
     1.  Text file: <http://proxy.chtc.wisc.edu/SQUID/osgschool19/random_text>
     1.  Archive: <http://proxy.chtc.wisc.edu/SQUID/osgschool19/pdbaa.tar.gz>
@@ -79,34 +81,35 @@ files between two different hosts.
 It takes similar arguments to the `cp` command that you are familiar with but also takes additional host information:
 
 ```console
-user@learn $ scp <source 1> <source 2>...<source N> <remote host>:<remote path>
+user@login04 $ scp <source 1> <source 2>...<source N> <remote host>:<remote path>
 ```
 
 `<remote path>` may be excluded if you want to copy your sources to your remote home directory.
-For example, if I were logged in to `learn.chtc.wisc.edu` and wanted to copy the file `foo` from my current directory to
-my home directory on `login04.osgconnect.net`, the command would look like this:
+For example, if I were logged in to `login04.osgconnect.net` and wanted to copy the file `foo` from my current directory to
+my home directory on `learn.chtc.wisc.edu`, the command would look like this:
 
 ```console
-user@learn $ scp foo login04.osgconnect.net:
+user@login04 $ scp foo learn.chtc.wisc.edu:
 ```
 
-Additionally, I could also pull files from `login04.osgconnect.net` to `learn.chtc.wisc.edu`.
-The following command copies `bar` from my home directory on `login04.osgconnect.net` to my current directory on
-`learn.chtc.wisc.edu`:
+Additionally, I could also pull files from  `learn.chtc.wisc.edu` to `login04.osgconnect.net`.
+The following command copies `bar` from my home directory on `learn.chtc.wisc.edu` to my current directory on
+`login04.osgconnect.net`:
 
 ``` console
-user@learn $ scp login04.osgconnect.net:bar .
+user@login04 $ scp learn.chtc.wisc.edu:bar .
 ```
 
 You can also copy folders between hosts using the `-r` option.
 If I kept all my files from the HTC exercise 1.3 in a folder named `htc-1.3` on `learn.chtc.wisc.edu`, I could use
-the following command to copy them to my local scratch directory on `login04.osgconnect.net`:
+the following command to copy them to my home directory on `login04.osgconnect.net`:
 
 ``` console
-user@learn $ scp -r htc-1.3 login04.osgconnect.net:
+user@login04 $ scp -r learn.chtc.wisc.edu:htc-1.3 .
 ```
 
-Try copying the tarball you created earlier in this exercise on `learn.chtc.wisc.edu` to `login04.osgconnect.net`.
+From `login04.osgconnect.net`, try copying the tarball you created earlier in this exercise on `learn.chtc.wisc.edu` to
+`login04.osgconnect.net`.
 
 ### Secure copy from your laptop
 
@@ -146,13 +149,15 @@ create a tarball) and the ability to only transfer files that have changed.
 Both of these feature are helpful when you're having connectivity issues so that you don't have to restart the transfer
 from scratch every time your connection fails.
 
-1.  Use `rsync` to transfer the folder containing OSG exercise 1 to `login04.osgconnect.net`
+1.  Log in to `login04.osgconnect.net`
+1.  Use `rsync` to transfer the folder containing OSG exercise 1 on `learn.chtc.wisc.edu` to `login04.osgconnect.net`
+1.  In a separate terminal window, log in to `learn.chtc.wisc.edu`
 1.  Create a new file in your OSG exercise 1 folder on `learn.chtc.wisc.edu` with the `touch` command:
 
         :::console
         user@learn $ touch <filename>
 
-1. Use the same `rsync` command to transfer the folder with the new file you just created.
+1. From `login04.osgconnect.net`, use the same `rsync` command to transfer the folder with the new file you just created.
    How many files were transferred the first time? How many files were transferred if you run the same rsync command
    again?
 
