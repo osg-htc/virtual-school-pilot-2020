@@ -16,32 +16,28 @@ Bad Job
 
 Let’s assume that a colleague has shared with you a program, and it fails once in a while. In the real world, we would probably just fix the program, but what if you cannot change the software? Unfortunately, this situation happens more often than we would like.
 
-Below is a Python script that fails once in a while. We will not fix it, but use it to simulate a program that can fail and that we **cannot** fix.
+Below is a Python script that fails once in a while.
+We will not fix it, but instead use it to simulate a program that can fail and that we **cannot** fix.
 
 ``` python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # murphy.py simulates a real program with real problems
 import random
 import sys
 import time
 
-# Create a random number seeded by system entropy
-r = random.SystemRandom()
-
-# One time in three, simulate a runtime error
-if (r.randint(0,2) == 0):
-    # intentionally print no output
+# For one out of every three attempts, simulate a runtime error
+if random.randint(0, 2) == 0:
+    # Intentionally don't print any output
     sys.exit(15)
 else:
     time.sleep(3)
-    print "All work done correctly"
+    print("All work done correctly")
 
 # By convention, zero exit code means success
 sys.exit(0)
 ```
-
-Even if you are not a Python expert, you may be able to figure out what this program does.
 
 Let’s see what happens when a program like this one is run in HTCondor.
 
@@ -74,30 +70,27 @@ A (Too) Long Running Job
 Sometimes, an ill-behaved job will get stuck in a loop and run forever, instead of exiting with a failure code, and it may just need to be re-run (or run on a different execute server) to complete without getting stuck. We can modify our Python program to simulate this kind of bad job with the following file:
 
 ``` python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # murphy.py simulate a real program with real problems
 import random
 import sys
 import time
 
-# Create a random number seeded by system entropy
-r = random.SystemRandom()
-
-# One time in three, simulate an infinite loop
-if (r.randint(0,2) == 0):
-        # intentionally print no output
-        time.sleep(3600)
-        sys.exit(15)
+# For one out of every three attempts, simulate an "infinite" loop
+if random.randint(0, 2) == 0:
+    # Intentionally don't print any output
+    time.sleep(3600)
+    sys.exit(15)
 else:
-        time.sleep(3)
-        print "All work done correctly"
+    time.sleep(3)
+    print("All work done correctly")
 
 # By convention, zero exit code means success
 sys.exit(0)
 ```
 
-Again, you may be able to figure out what this new program does.
+Let’s see what happens when a program like this one is run in HTCondor.
 
 1.  Save the script to a new file named `murphy2.py`.
 1.  Copy your previous submit file to a new name and change the `executable` to `murphy2.py`.
@@ -112,5 +105,7 @@ Again, you may be able to figure out what this new program does.
 Bonus Exercise
 --------------
 
-If you have time, edit your submit file so that instead of removing long running jobs, have HTCondor automatically put the long-running job on hold, and then automatically release it.
+If you have time, edit your submit file so that instead of removing long running jobs,
+HTCondor will automatically put the long-running job on hold,
+and then automatically release it.
 

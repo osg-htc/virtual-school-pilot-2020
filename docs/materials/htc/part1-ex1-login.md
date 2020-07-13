@@ -62,7 +62,8 @@ username@learn $ date
 username@learn $ uname -a
 ```
 
-A suggestion for the day: Try typing into the command line as many of the commands as you can. Copy-and-paste is fine, of course, but **you WILL learn more if you take the time to type each command, yourself.**
+A suggestion for the day: try typing into the command line as many of the commands as you can.
+Copy-and-paste is fine, of course, but **you WILL learn more if you take the time to type each command yourself.**
 
 Organizing Your Workspace
 -------------------------

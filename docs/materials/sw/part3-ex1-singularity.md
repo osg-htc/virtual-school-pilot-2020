@@ -35,7 +35,7 @@ If you had other requirements in the submit file, remove them. These options wil
 * require that your job runs on servers that have Singularity installed and can access the OSG Connect repository of Singularity containers
 * tells the job which Singularity container to use
 
-To test and see if our job is really running in Ubuntu, use a simple script for the job's executable: 
+To test and see if our job is really running in Ubuntu, use this script for the job's executable: 
 
 	:::bash
 	#!/bin/bash
