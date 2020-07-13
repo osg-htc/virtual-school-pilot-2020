@@ -2,8 +2,8 @@
 status: testing
 ---
 
-OSG Exercise 1: Refresher – Submitting Multiple Jobs
-====================================================
+dHTC Exercise 1: Refresher – Submitting Multiple Jobs
+=====================================================
 
 The goal of this exercise is to map the physical locations of some worker servers in our local cluster.
 To do this, you will write a simple submit file that will queue multiple jobs and then manually collate the results.
@@ -19,7 +19,7 @@ Geolocation uses a registry to match a computer’s network address to an approx
 Now, let’s try to remember some basic HTCondor ideas from earlier today:
 
 1.  Log in to `learn.chtc.wisc.edu`
-1.  Create and change into a new folder for this exercise, for example `osg-ex1`
+1.  Create and change into a new folder for this exercise, for example `dhtc-ex1`
 1.  Download the geolocation code:
 
         :::console

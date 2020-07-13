@@ -2,8 +2,8 @@
 status: testing
 ---
 
-OSG Exercise 5: Software Differences in the OSG
-===============================================
+dHTC Exercise 5: Software Differences in the OSG
+================================================
 
 The goal of this exercise is to see the differences in availability of software in the OSG.
 At your local cluster, you may be used to having certain versions of software but out on the OSG, it's possible that the
@@ -110,7 +110,7 @@ get_version 'nslookup'
 For this part of the exercise, try creating a submit file without referring to previous exercises!
 
 1.  Log in to `login04.osgconnect.net`
-1.  Create and change into a new folder for this exercise, e.g. `osg-ex5`
+1.  Create and change into a new folder for this exercise, e.g. `dhtc-ex5`
 1.  Save the above script as a file named `sw_probe.sh`
 1.  Create a submit file that runs `sw_probe.sh` 100 times and uses macros to write different `output`, `error`, and
     `log` files
