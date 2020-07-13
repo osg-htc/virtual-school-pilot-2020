@@ -7,7 +7,7 @@ tr { vertical-align: baseline; }
 <table>
   <tbody>
     <tr>
-      <td><img alt="Tim C. photo" src="../files/staff/tim-cartwright.png" height="128" width="128"></td>
+      <td width="150px"><img alt="Tim C. photo" src="../files/staff/tim-cartwright.png" height="128" width="128"></td>
       <td>
         <p style="font-weight: bold;">Tim Cartwright</p>
         <p>
@@ -19,7 +19,7 @@ tr { vertical-align: baseline; }
       </td>
     </tr>
     <tr>
-      <td><img alt="Lauren M. photo" src="../files/staff/lauren-michael.png" height="128" width="128"></td>
+      <td width="150px"><img alt="Lauren M. photo" src="../files/staff/lauren-michael.png" height="128" width="128"></td>
       <td>
         <p style="font-weight: bold;">Lauren Michael</p>
         <p>
