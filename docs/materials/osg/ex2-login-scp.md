@@ -1,5 +1,5 @@
 ---
-status: in progress
+status: testing
 ---
 
 OSG Exercise 2: Log in to the OSG Submit Server

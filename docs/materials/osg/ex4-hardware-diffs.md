@@ -1,5 +1,5 @@
 ---
-status: in progress
+status: testing
 ---
 
 OSG Exercise 4: Hardware Differences in the OSG

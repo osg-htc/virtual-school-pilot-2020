@@ -1,5 +1,5 @@
 ---
-status: in progress
+status: testing
 ---
 
 OSG Exercise 5: Software Differences in the OSG

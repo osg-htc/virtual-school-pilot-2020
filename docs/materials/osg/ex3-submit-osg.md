@@ -1,5 +1,5 @@
 ---
-status: in progress
+status: testing
 ---
 
 OSG Exercise 3: Running jobs in the OSG

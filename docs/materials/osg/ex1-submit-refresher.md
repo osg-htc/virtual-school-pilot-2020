@@ -1,5 +1,5 @@
 ---
-status: in progress
+status: testing
 ---
 
 OSG Exercise 1: Refresher – Submitting Multiple Jobs
