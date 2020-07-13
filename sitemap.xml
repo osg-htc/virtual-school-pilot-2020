@@ -86,7 +86,27 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/osg/temp/</loc>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/osg/ex1-submit-refresher/</loc>
+     <lastmod>2020-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/osg/ex2-login-scp/</loc>
+     <lastmod>2020-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/osg/ex3-submit-osg/</loc>
+     <lastmod>2020-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/osg/ex4-hardware-diffs/</loc>
+     <lastmod>2020-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/osg/ex5-software-diffs/</loc>
      <lastmod>2020-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
