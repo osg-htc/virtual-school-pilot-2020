@@ -58,7 +58,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <h1 id="grid-exercise-2-log-in-to-the-osg-submit-server">Grid Exercise 2: Log in to the OSG Submit Server<a class="headerlink" href="#grid-exercise-2-log-in-to-the-osg-submit-server" title="Permanent link">&para;</a></h1>
-<p>The goal of this exercise is to log in to a different submit host so that you can start submitting jobs into the OSG
+<p>The goal of this exercise is to log in to a different submit server so that you can start submitting jobs into the OSG
 instead of the local cluster here at UW-Madison.
 Additionally, you will learn about the <code>tar</code> and <code>scp</code> commands, which will allow you to efficiently copy files between
 the two submit servers.</p>
@@ -123,13 +123,14 @@ compression is between <code>best</code> and <code>fast</code>).</p>
 <h2 id="transferring-files">Transferring files<a class="headerlink" href="#transferring-files" title="Permanent link">&para;</a></h2>
 <h3 id="using-secure-copy">Using secure copy<a class="headerlink" href="#using-secure-copy" title="Permanent link">&para;</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Secure_copy">Secure copy</a> (<code>scp</code>) is a command based on <code>SSH</code> that lets you securely copy
-files between two different hosts.
-It takes similar arguments to the <code>cp</code> command that you are familiar with but also takes additional host information:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> scp &lt;<span class="nb">source</span> <span class="m">1</span>&gt; &lt;<span class="nb">source</span> <span class="m">2</span>&gt;...&lt;<span class="nb">source</span> N&gt; &lt;remote host&gt;:&lt;remote path&gt;
+files between two different servers.
+It takes similar arguments to the <code>cp</code> command that you are familiar with but also takes additional server information:</p>
+<div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> scp &lt;<span class="nb">source</span> <span class="m">1</span>&gt; &lt;<span class="nb">source</span> <span class="m">2</span>&gt;...&lt;<span class="nb">source</span> N&gt; <span class="o">[</span>username@<span class="o">]</span>&lt;remote server&gt;:&lt;remote path&gt;
 </pre></div>
 
 
-<p><code>&lt;remote path&gt;</code> may be excluded if you want to copy your sources to your remote home directory.
+<p><code>&lt;remote path&gt;</code> may be excluded if you want to copy your sources to your remote home directory and <code>[username@]</code> may be
+excluded if your usernames are the same across both servers.
 For example, if I were logged in to <code>login04.osgconnect.net</code> and wanted to copy the file <code>foo</code> from my current directory to
 my home directory on <code>learn.chtc.wisc.edu</code>, the command would look like this:</p>
 <div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> scp foo learn.chtc.wisc.edu:
@@ -139,21 +140,21 @@ my home directory on <code>learn.chtc.wisc.edu</code>, the command would look li
 <p>Additionally, I could also pull files from  <code>learn.chtc.wisc.edu</code> to <code>login04.osgconnect.net</code>.
 The following command copies <code>bar</code> from my home directory on <code>learn.chtc.wisc.edu</code> to my current directory on
 <code>login04.osgconnect.net</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> scp learn.chtc.wisc.edu:bar .
+<div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> scp s20_user@learn.chtc.wisc.edu:bar .
 </pre></div>
 
 
-<p>You can also copy folders between hosts using the <code>-r</code> option.
+<p>You can also copy folders between servers using the <code>-r</code> option.
 If I kept all my files from the HTC exercise 1.3 in a folder named <code>htc-1.3</code> on <code>learn.chtc.wisc.edu</code>, I could use
 the following command to copy them to my home directory on <code>login04.osgconnect.net</code>:</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> scp -r learn.chtc.wisc.edu:htc-1.3 .
+<div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> scp -r s20_user@learn.chtc.wisc.edu:htc-1.3 .
 </pre></div>
 
 
 <p>From <code>login04.osgconnect.net</code>, try copying the tarball you created earlier in this exercise on <code>learn.chtc.wisc.edu</code> to
 <code>login04.osgconnect.net</code>.</p>
 <h3 id="secure-copy-from-your-laptop">Secure copy from your laptop<a class="headerlink" href="#secure-copy-from-your-laptop" title="Permanent link">&para;</a></h3>
-<p>During your research, you may need to retrieve output files from your submit host to inspect them on your personal
+<p>During your research, you may need to retrieve output files from your submit server to inspect them on your personal
 server, which can also be done with <code>scp</code>! To use <code>scp</code> on your laptop, follow the instructions relevant to your
 server's operating system:</p>
 <h4 id="mac-and-linux-users">Mac and Linux users<a class="headerlink" href="#mac-and-linux-users" title="Permanent link">&para;</a></h4>
@@ -174,7 +175,7 @@ Another common tool available on many Linux server is <code>rsync</code>, which 
 The invocation is similar to <code>scp</code>: you can transfer files and/or folders, but the options are different and when
 transferring folders, make sure they don't have a trailing slash (<code>/</code>, this means to copy all the files within the
 folder instead of the folder itself):</p>
-<div class="codehilite"><pre><span></span><span class="gp">user@learn $</span> rsync -Pavz &lt;<span class="nb">source</span> <span class="m">1</span>&gt; &lt;<span class="nb">source</span> <span class="m">2</span>&gt;...&lt;<span class="nb">source</span> N&gt; &lt;remote host&gt;:&lt;remote path&gt;
+<div class="codehilite"><pre><span></span><span class="gp">user@learn $</span> rsync -Pavz &lt;<span class="nb">source</span> <span class="m">1</span>&gt; &lt;<span class="nb">source</span> <span class="m">2</span>&gt;...&lt;<span class="nb">source</span> N&gt; <span class="o">[</span>username@<span class="o">]</span>&lt;remote server&gt;:&lt;remote path&gt;
 </pre></div>
 
 
