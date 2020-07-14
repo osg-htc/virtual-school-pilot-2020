@@ -35,7 +35,7 @@ Now, let’s try to remember some basic HTCondor ideas from the HTC exercises:
         Requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
 
     Try to do this step without looking at materials from the earlier exercises.
-    But if you are stuck, see [Exercise 2.2](/materials/htc/part2-ex2-queue-n.md).
+    But if you are stuck, see [HTC Exercise 2.2](/materials/htc/part2-ex2-queue-n.md).
 
 1.  Submit your jobs and wait for the results
 

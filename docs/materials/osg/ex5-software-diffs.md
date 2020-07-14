@@ -15,7 +15,7 @@ Refresher - condor\_status
 The OSG pool, like the local pool you used earlier, is just another HTCondor pool.
 This means that the commands you use will be the same and the jobs you submit can have similar payloads but there is one
 major difference: the slots are different!
-You can use the `condor_status` command to inspect these differences.
+As before, you can use the `condor_status` command to inspect these differences.
 
 1.  Open two terminal windows side-by-side
 1.  Log in to `learn.chtc.wisc.edu` in one window and `login04.osgconnect.net` in the other

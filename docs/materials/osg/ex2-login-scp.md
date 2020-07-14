@@ -16,7 +16,7 @@ critical for all remaining exercises.
 Log in to the OSG submit server
 --------------------------------
 
-For some of the remaining exercises in this section, you will be using a server named `login04.osgconnect.net`.
+For some of the remaining exercises in this topic, you will be using a server named `login04.osgconnect.net`.
 To log in to this server, you will be using the username and SSH key that you setup when you registered for OSG Connect.
 If you no longer have this information, please ask your mentor for help.
 
