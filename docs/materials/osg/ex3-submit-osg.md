@@ -25,7 +25,7 @@ Now to create submit files that will run in the OSG!
         connect project
 
     If you are given a choice and don't know which project to select, reach out to OSG staff.
-    The default project may be changed at a later time, or overriden in your submit files.
+    The default project will stay in effect until changed at a later time.
 
 1. Make a new directory for this exercise, `grid-ex3` and change into it
 1. Use `scp` or `rsync` from [Grid exercise 2](/materials/osg/ex2-login-scp) to copy over the executable and input
