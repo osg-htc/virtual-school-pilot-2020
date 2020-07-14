@@ -2,7 +2,7 @@
 status: testing
 ---
 
-dHTC Exercise 4: Hardware Differences in the OSG
+Grid Exercise 4: Hardware Differences in the OSG
 ================================================
 
 The goal of this exercise is to compare hardware differences between our local cluster (CHTC here at UW–Madison) and an
@@ -60,7 +60,7 @@ To create our parameter sweep, we will create a **new** submit file with multipl
 of our parameter (`request_memory`) for each batch of jobs.
 
 1.  If not already, log in to `learn.chtc.wisc.edu`
-1.  Create and change into a new subdirectory called `dhtc-ex4`
+1.  Create and change into a new subdirectory called `grid-ex4`
 1.  Create a submit file that is named `sleep.sub` that executes the command `/bin/sleep 300`.
 
     !!! note

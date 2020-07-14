@@ -2,7 +2,7 @@
 status: testing
 ---
 
-dHTC Exercise 2: Log in to the OSG Submit Server
+Grid Exercise 2: Log in to the OSG Submit Server
 ================================================
 
 The goal of this exercise is to log in to a different submit host so that you can start submitting jobs into the OSG
@@ -62,7 +62,7 @@ You can adjust the level of compression of `tar` by prepending your command with
 compression is between `best` and `fast`).
 
 1.  Log in to `learn.chtc.wisc.edu`
-1.  Create and change into a new folder for this exercise, for example `dhtc-ex2`
+1.  Create and change into a new folder for this exercise, for example `grid-ex2`
 1.  Use `wget` to download the following files from our web server:
     1.  Text file: <http://proxy.chtc.wisc.edu/SQUID/osgschool19/random_text>
     1.  Archive: <http://proxy.chtc.wisc.edu/SQUID/osgschool19/pdbaa.tar.gz>

@@ -27,7 +27,7 @@ Lecture recording will be linked here.
 - [Bonus Exercise 3.2: Explore `condor_status`](/materials/htc/part3-ex2-status.md)
 - [Bonus Exercise 3.3: A job that needs retries](/materials/htc/part3-ex3-job-retry.md)
 
-## Distributed High-Throughput Computing (dHTC)
+## Grid
 
 - [Exercise 1: Refresher – Submitting Multiple Jobs](/materials/osg/ex1-submit-refresher.md)
 - [Exercise 2: Log in to the OSG Submit Server](/materials/osg/ex2-login-scp.md)
