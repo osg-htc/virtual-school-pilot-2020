@@ -34,6 +34,9 @@ Slides ([PDF](/materials/htc/files/osgvsp20-htc-htcondor.pdf),
 
 ## Grid
 
+Slides ([PDF](/materials/osg/files/osgvsp20-running-in-osg.pdf),
+[PowerPoint](/materials/osg/files/osgvsp20-running-in-osg.pptx))
+
 All exercises strongly recommended!
 
 - [Exercise 1: Refresher – Submitting Multiple Jobs](/materials/osg/ex1-submit-refresher.md)
