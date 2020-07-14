@@ -34,7 +34,7 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "OSG Exercise 4: Hardware Differences in the OSG", url: "#_top", children: [
+          {title: "Grid Exercise 4: Hardware Differences in the OSG", url: "#_top", children: [
               {title: "Checking CHTC memory availability", url: "#checking-chtc-memory-availability" },
               {title: "Checking OSG memory availability", url: "#checking-osg-memory-availability" },
               {title: "Analyzing the results", url: "#analyzing-the-results" },
@@ -56,7 +56,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <a name="_top"></a>
     
 
-    <h1 id="osg-exercise-4-hardware-differences-in-the-osg">OSG Exercise 4: Hardware Differences in the OSG<a class="headerlink" href="#osg-exercise-4-hardware-differences-in-the-osg" title="Permanent link">&para;</a></h1>
+    <h1 id="grid-exercise-4-hardware-differences-in-the-osg">Grid Exercise 4: Hardware Differences in the OSG<a class="headerlink" href="#grid-exercise-4-hardware-differences-in-the-osg" title="Permanent link">&para;</a></h1>
 <p>The goal of this exercise is to compare hardware differences between our local cluster (CHTC here at UW–Madison) and an
 OSG glidein pool.
 Specifically, we will look at how easy it is to get access to resources in terms of the amount of memory that is
@@ -102,7 +102,7 @@ queue 2 arguments in (
 of our parameter (<code>request_memory</code>) for each batch of jobs.</p>
 <ol>
 <li>If not already, log in to <code>learn.chtc.wisc.edu</code></li>
-<li>Create and change into a new subdirectory called <code>osg-ex4</code></li>
+<li>Create and change into a new subdirectory called <code>grid-ex4</code></li>
 <li>
 <p>Create a submit file that is named <code>sleep.sub</code> that executes the command <code>/bin/sleep 300</code>.</p>
 <div class="admonition note">
@@ -170,7 +170,7 @@ record progress on your local jobs.</p>
 <h2 id="checking-osg-memory-availability">Checking OSG memory availability<a class="headerlink" href="#checking-osg-memory-availability" title="Permanent link">&para;</a></h2>
 <p>For the second part of the exercise, you will just copy over the directory from the <a href="#checking-chtc-memory-availability">above section</a>
 on <code>learn.chtc.wisc.edu</code> to <code>login04.osgconnect.net</code> and resubmit your jobs to the OSG.
-If you get stuck during the copying process, refer to <a href="../ex2-login-scp/">OSG exercise 4</a>.</p>
+If you get stuck during the copying process, refer to <a href="../ex2-login-scp/">Grid exercise 2</a>.</p>
 <h3 id="monitoring-the-remote-jobs">Monitoring the remote jobs<a class="headerlink" href="#monitoring-the-remote-jobs" title="Permanent link">&para;</a></h3>
 <p>As you did in the first part, use <code>condor_q</code> to track how your sleep jobs are doing.
 You can move onto the next exercise but keep tracking the status of your jobs.
