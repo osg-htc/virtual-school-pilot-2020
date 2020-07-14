@@ -25,7 +25,7 @@ In this first part, you will create the submit file for both the local and OSG j
 
 ### Yet another queue syntax
 
-Earlier today, you learned about the `queue` statement and some of the different ways it can be invoked to submit
+Earlier, you learned about the `queue` statement and some of the different ways it can be invoked to submit
 multiple jobs.
 Similar to the `queue from` statement to submit jobs based on lines from a specific file, you can use `queue in` to
 submit jobs based on a list directly from your submit file:
@@ -65,7 +65,7 @@ of our parameter (`request_memory`) for each batch of jobs.
 
     !!! note
         If you do not remember all of the submit statements to write this file, or just to go faster, find a similar
-        submit file from yesterday.
+        submit file from a previous exercise.
         Copy the file and rename it here, and make sure the argument to `sleep` is `300`.
 
 1.  Use the `queue in` syntax to submit 10 jobs each for the following memory requests: 8, 16, 32, and 64GB.

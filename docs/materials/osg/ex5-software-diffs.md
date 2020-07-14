@@ -12,10 +12,10 @@ software you need won't even be installed.
 Refresher - condor\_status
 --------------------------
 
-The OSG pool, like the local pool you used earlier today, is just another HTCondor pool.
+The OSG pool, like the local pool you used earlier, is just another HTCondor pool.
 This means that the commands you use will be the same and the jobs you submit can have similar payloads but there is one
 major difference: the slots are different!
-You can use the `condor_status` command just as you did yesterday to inspect these differences.
+You can use the `condor_status` command to inspect these differences.
 
 1.  Open two terminal windows side-by-side
 1.  Log in to `learn.chtc.wisc.edu` in one window and `login04.osgconnect.net` in the other
@@ -35,7 +35,7 @@ Rather than inspecting the very long ClassAd for each slot, you will look at a s
 which tells us the operating system version of the server where a slot resides.
 An easy way to show this attribute for all slots is by using `condor_status` in conjunction with the `-autoformat` (or
 `-af` for short) option.
-`-autoformat` like the `-format` option you learned about earlier today will print out the attributes you're interested
+`-autoformat` like the `-format` option you learned about earlier will print out the attributes you're interested
 in for each slot but as you probably guessed, it does some automatic formatting for you.
 So to show the operating system and version of each slot, run the following command in both of your terminal windows:
 
