@@ -29,6 +29,8 @@ Lecture recording will be linked here.
 
 ## Grid
 
+All exercises strongly recommended!
+
 - [Exercise 1: Refresher – Submitting Multiple Jobs](/materials/osg/ex1-submit-refresher.md)
 - [Exercise 2: Log in to the OSG Submit Server](/materials/osg/ex2-login-scp.md)
 - [Exercise 3: Running jobs in the OSG](/materials/osg/ex3-submit-osg.md)
