@@ -26,7 +26,7 @@ def get_hostname():
                              re.MULTILINE).group(1)
     except AttributeError:
         try:
-            hostname = re.search(r'GLIDEIN_Gatekeeper = "(\S+) \S+:9619"',
+            hostname = re.search(r'COLLECTOR_HOST_STRING = "(\S+)"',
                                  machine_ad,
                                  re.MULTILINE).group(1)
         except AttributeError:
