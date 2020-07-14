@@ -2,8 +2,8 @@
 status: testing
 ---
 
-OSG Exercise 4: Hardware Differences in the OSG
-===============================================
+Grid Exercise 4: Hardware Differences in the OSG
+================================================
 
 The goal of this exercise is to compare hardware differences between our local cluster (CHTC here at UW–Madison) and an
 OSG glidein pool.
@@ -60,7 +60,7 @@ To create our parameter sweep, we will create a **new** submit file with multipl
 of our parameter (`request_memory`) for each batch of jobs.
 
 1.  If not already, log in to `learn.chtc.wisc.edu`
-1.  Create and change into a new subdirectory called `osg-ex4`
+1.  Create and change into a new subdirectory called `grid-ex4`
 1.  Create a submit file that is named `sleep.sub` that executes the command `/bin/sleep 300`.
 
     !!! note
@@ -101,7 +101,7 @@ Checking OSG memory availability
 
 For the second part of the exercise, you will just copy over the directory from the [above section](#checking-chtc-memory-availability)
 on `learn.chtc.wisc.edu` to `login04.osgconnect.net` and resubmit your jobs to the OSG.
-If you get stuck during the copying process, refer to [OSG exercise 4](/materials/osg/ex2-login-scp.md).
+If you get stuck during the copying process, refer to [Grid exercise 2](/materials/osg/ex2-login-scp.md).
 
 ### Monitoring the remote jobs
 

@@ -31,7 +31,9 @@ Slides ([PDF](/materials/files/osgvsp20-htc-htcondor.pdf), [PowerPoint](/materia
 - [Bonus Exercise 3.2: Explore `condor_status`](/materials/htc/part3-ex2-status.md)
 - [Bonus Exercise 3.3: A job that needs retries](/materials/htc/part3-ex3-job-retry.md)
 
-## OSG
+## Grid
+
+All exercises strongly recommended!
 
 - [Exercise 1: Refresher – Submitting Multiple Jobs](/materials/osg/ex1-submit-refresher.md)
 - [Exercise 2: Log in to the OSG Submit Server](/materials/osg/ex2-login-scp.md)
