@@ -18,6 +18,6 @@ To prepare the tarball for the exercises, perform the following steps:
 
 1.  Create the tarball with the expected dir structure:
 
-        tar -czvf wn-geoip.tar.gz src/ data/ --transform 's,^,wn-geoip/,'
+        tar -czvf wn-geoip.tar.gz wn-geoip/
 
 1.  Copy the tarball to the CHTC Squid location referenced by the Grid exercises
