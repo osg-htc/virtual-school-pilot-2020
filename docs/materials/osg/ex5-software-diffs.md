@@ -40,7 +40,7 @@ in for each slot but as you probably guessed, it does some automatic formatting 
 So to show the operating system and version of each slot, run the following command in both of your terminal windows:
 
 ``` console
-user@submit-host $ condor_status -autoformat OpSysAndVer
+user@submit-server $ condor_status -autoformat OpSysAndVer
 ```
 
 You will see many values with the type of operating system at the front and the version number at the end (i.e. SL6

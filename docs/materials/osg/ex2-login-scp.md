@@ -5,7 +5,7 @@ status: testing
 Grid Exercise 2: Log in to the OSG Submit Server
 ================================================
 
-The goal of this exercise is to log in to a different submit host so that you can start submitting jobs into the OSG
+The goal of this exercise is to log in to a different submit server so that you can start submitting jobs into the OSG
 instead of the local cluster here at UW-Madison.
 Additionally, you will learn about the `tar` and `scp` commands, which will allow you to efficiently copy files between
 the two submit servers.
@@ -77,11 +77,11 @@ Transferring files
 ### Using secure copy
 
 [Secure copy](https://en.wikipedia.org/wiki/Secure_copy) (`scp`) is a command based on `SSH` that lets you securely copy
-files between two different hosts.
-It takes similar arguments to the `cp` command that you are familiar with but also takes additional host information:
+files between two different servers.
+It takes similar arguments to the `cp` command that you are familiar with but also takes additional server information:
 
 ```console
-user@login04 $ scp <source 1> <source 2>...<source N> [username@]<remote host>:<remote path>
+user@login04 $ scp <source 1> <source 2>...<source N> [username@]<remote server>:<remote path>
 ```
 
 `<remote path>` may be excluded if you want to copy your sources to your remote home directory and `[username@]` may be
@@ -101,7 +101,7 @@ The following command copies `bar` from my home directory on `learn.chtc.wisc.ed
 user@login04 $ scp s20_user@learn.chtc.wisc.edu:bar .
 ```
 
-You can also copy folders between hosts using the `-r` option.
+You can also copy folders between servers using the `-r` option.
 If I kept all my files from the HTC exercise 1.3 in a folder named `htc-1.3` on `learn.chtc.wisc.edu`, I could use
 the following command to copy them to my home directory on `login04.osgconnect.net`:
 
@@ -114,7 +114,7 @@ From `login04.osgconnect.net`, try copying the tarball you created earlier in th
 
 ### Secure copy from your laptop
 
-During your research, you may need to retrieve output files from your submit host to inspect them on your personal
+During your research, you may need to retrieve output files from your submit server to inspect them on your personal
 server, which can also be done with `scp`! To use `scp` on your laptop, follow the instructions relevant to your
 server's operating system:
 
@@ -142,7 +142,7 @@ transferring folders, make sure they don't have a trailing slash (`/`, this mean
 folder instead of the folder itself):
 
 ``` console
-user@learn $ rsync -Pavz <source 1> <source 2>...<source N> [username@]<remote host>:<remote path>
+user@learn $ rsync -Pavz <source 1> <source 2>...<source N> [username@]<remote server>:<remote path>
 ```
 
 `rsync` has many benefits over `scp` but two of its biggest features are built-in compression (so you don't have to
