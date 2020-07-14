@@ -2,11 +2,11 @@
 
 ## School Overview and Intro to HTC
 
-Slides ([PPT](/materials/files/osgvsp20-overview.pptx),[PDF](/materials/files/osgvsp20-overview.pdf))
+Slides ([PDF](/materials/files/osgvsp20-overview.pdf), [PowerPoint](/materials/files/osgvsp20-overview.pptx))
 
 ## Intro to HTCondor Job Execution
 
-Slides ([PPT](/materials/files/osgvsp20-htc-htcondor.pptx),[PDF](/materials/files/osgvsp20-htc-htcondor.pdf))
+Slides ([PDF](/materials/files/osgvsp20-htc-htcondor.pdf), [PowerPoint](/materials/files/osgvsp20-htc-htcondor.pptx))
 
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
