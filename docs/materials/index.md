@@ -1,8 +1,12 @@
 # OSG Virtual School (pilot) Materials
 
-## Intro to HTC and HTCondor
+## School Overview and Intro to HTC
 
-Lecture recording will be linked here.
+Slides ([PDF](/materials/files/osgvsp20-overview.pdf), [PowerPoint](/materials/files/osgvsp20-overview.pptx))
+
+## Intro to HTCondor Job Execution
+
+Slides ([PDF](/materials/files/osgvsp20-htc-htcondor.pdf), [PowerPoint](/materials/files/osgvsp20-htc-htcondor.pptx))
 
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
@@ -14,7 +18,7 @@ Lecture recording will be linked here.
 - [Exercise 1.6: Remove jobs from the queue](/materials/htc/part1-ex6-remove.md)
 - [Bonus Exercise 1.7: Compile and run some C code](/materials/htc/part1-ex7-compile.md)
 
-### Intro Exercises 2: Running Many HTC Jobs
+### Intro Exercises 2: Running Many HTC Jobs (Strongly Recommended)
 
 - [Exercise 2.1: Work with input and output files](/materials/htc/part2-ex1-files.md)
 - [Exercise 2.2: Use `queue N`, `$(Cluster)`, and `$(Process)`](/materials/htc/part2-ex2-queue-n.md)
