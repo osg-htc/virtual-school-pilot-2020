@@ -81,10 +81,11 @@ files between two different hosts.
 It takes similar arguments to the `cp` command that you are familiar with but also takes additional host information:
 
 ```console
-user@login04 $ scp <source 1> <source 2>...<source N> <remote host>:<remote path>
+user@login04 $ scp <source 1> <source 2>...<source N> [username@]<remote host>:<remote path>
 ```
 
-`<remote path>` may be excluded if you want to copy your sources to your remote home directory.
+`<remote path>` may be excluded if you want to copy your sources to your remote home directory and `[username@]` may be
+excluded if your usernames are the same across both servers.
 For example, if I were logged in to `login04.osgconnect.net` and wanted to copy the file `foo` from my current directory to
 my home directory on `learn.chtc.wisc.edu`, the command would look like this:
 
@@ -97,7 +98,7 @@ The following command copies `bar` from my home directory on `learn.chtc.wisc.ed
 `login04.osgconnect.net`:
 
 ``` console
-user@login04 $ scp learn.chtc.wisc.edu:bar .
+user@login04 $ scp s20_user@learn.chtc.wisc.edu:bar .
 ```
 
 You can also copy folders between hosts using the `-r` option.
@@ -105,7 +106,7 @@ If I kept all my files from the HTC exercise 1.3 in a folder named `htc-1.3` on 
 the following command to copy them to my home directory on `login04.osgconnect.net`:
 
 ``` console
-user@login04 $ scp -r learn.chtc.wisc.edu:htc-1.3 .
+user@login04 $ scp -r s20_user@learn.chtc.wisc.edu:htc-1.3 .
 ```
 
 From `login04.osgconnect.net`, try copying the tarball you created earlier in this exercise on `learn.chtc.wisc.edu` to
@@ -141,7 +142,7 @@ transferring folders, make sure they don't have a trailing slash (`/`, this mean
 folder instead of the folder itself):
 
 ``` console
-user@learn $ rsync -Pavz <source 1> <source 2>...<source N> <remote host>:<remote path>
+user@learn $ rsync -Pavz <source 1> <source 2>...<source N> [username@]<remote host>:<remote path>
 ```
 
 `rsync` has many benefits over `scp` but two of its biggest features are built-in compression (so you don't have to
