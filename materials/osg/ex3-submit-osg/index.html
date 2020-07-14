@@ -67,7 +67,17 @@ You will be using the same exact payload as you did in <a href="../../../materia
 <p>Now to create submit files that will run in the OSG!</p>
 <ol>
 <li>If not already logged in, <code>ssh</code> into <code>login04.osgconnect.net</code></li>
-<li>Make a new directory for this exercise, <code>grid-ex3</code> and change into it</li>
+<li>
+<p>Set the default project associated with your account by running the following command:</p>
+<div class="codehilite"><pre><span></span><span class="go">connect project</span>
+</pre></div>
+
+
+<p>If you are given a choice and don't know which project to select, reach out to OSG staff.</p>
+</li>
+<li>
+<p>Make a new directory for this exercise, <code>grid-ex3</code> and change into it</p>
+</li>
 <li>Use <code>scp</code> or <code>rsync</code> from <a href="../../../materials/osg/ex2-login-scp">Grid exercise 2</a> to copy over the executable and input
    file from the <code>grid-ex1</code> directory from <code>learn</code>.</li>
 <li>Re-create the submit file from Grid exercise 1 except this time around change your submit file so that it submits
