@@ -16,7 +16,7 @@ Geolocation uses a registry to match a computer’s network address to an approx
 
 ### Geolocating several servers
 
-Now, let’s try to remember some basic HTCondor ideas from earlier today:
+Now, let’s try to remember some basic HTCondor ideas from the HTC exercises:
 
 1.  Log in to `learn.chtc.wisc.edu`
 1.  Create and change into a new folder for this exercise, for example `grid-ex1`
@@ -34,8 +34,8 @@ Now, let’s try to remember some basic HTCondor ideas from earlier today:
 
         Requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
 
-    Try to do this step without looking at materials from earlier today.
-    But if you are stuck, see [today’s exercise 2.2](/materials/htc/part2-ex2-queue-n.md).
+    Try to do this step without looking at materials from the earlier exercises.
+    But if you are stuck, see [HTC Exercise 2.2](/materials/htc/part2-ex2-queue-n.md).
 
 1.  Submit your jobs and wait for the results
 

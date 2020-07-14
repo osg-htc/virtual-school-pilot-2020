@@ -175,7 +175,9 @@ The `-nobatch` output shows a line for every job and consists of 8 columns:
 Extra Information
 -----------------
 
-Both `condor_status` and `condor_q` have many command-line options, some of which significantly change their output. You will explore a few of the most useful options today and tomorrow, but if you want to experiment now, go ahead! There are a few ways to learn more about the commands:
+Both `condor_status` and `condor_q` have many command-line options, some of which significantly change their output.
+You will explore a few of the most useful options in future exercises, but if you want to experiment now, go ahead!
+There are a few ways to learn more about the commands:
 
 -   Use the (brief) built-in help for the commands, e.g.: `condor_q -h`
 -   Read the installed man(ual) pages for the commands, e.g.: `man condor_q`

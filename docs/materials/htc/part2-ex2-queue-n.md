@@ -208,4 +208,4 @@ username@learn $ condor_q -constraint 'JobBatchName == "1"'
 ```
 
 Do you get the output that you expected? Using the example command above, how would you list your other five jobs?
-(More on constraints in other exercises later today.)
+(More on constraints in later exercises.)
