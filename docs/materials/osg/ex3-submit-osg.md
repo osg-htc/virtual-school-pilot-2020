@@ -19,6 +19,13 @@ You will be using the same exact payload as you did in [Grid exercise 1](/materi
 Now to create submit files that will run in the OSG!
 
 1. If not already logged in, `ssh` into `login04.osgconnect.net`
+1. Set the default project associated with your account by running the following command:
+
+        :::console
+        connect project
+
+    If you are given a choice and don't know which project to select, reach out to OSG staff.
+
 1. Make a new directory for this exercise, `grid-ex3` and change into it
 1. Use `scp` or `rsync` from [Grid exercise 2](/materials/osg/ex2-login-scp) to copy over the executable and input
    file from the `grid-ex1` directory from `learn`.
