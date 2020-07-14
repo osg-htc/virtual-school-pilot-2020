@@ -21,12 +21,12 @@ def get_hostname():
         with open(machine_ad_file_name, 'r') as machine_ad_file:
             machine_ad = machine_ad_file.read()
 
-        hostname = re.search(r'GLIDEIN_Gatekeeper = "(.*):\d*/jobmanager-\w*"',
+        hostname = re.search(r'GLIDEIN_Gatekeeper = "(\S+) \S+:9619"',
                              machine_ad,
                              re.MULTILINE).group(1)
     except AttributeError:
         try:
-            hostname = re.search(r'GLIDEIN_Gatekeeper = "(\S+) \S+:9619"',
+            hostname = re.search(r'COLLECTOR_HOST_STRING = "(\S+)"',
                                  machine_ad,
                                  re.MULTILINE).group(1)
         except AttributeError:
