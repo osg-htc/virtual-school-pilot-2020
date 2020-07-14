@@ -12,7 +12,7 @@ Where in the world are my jobs? (Part 2)
 
 In this version of the geolocating exercise, you will submit jobs to the OSG from `login04.osgconnect.net` and
 hopefully getting back much more interesting results!
-You will be using the same exact payload as you did in [dHTC exercise 1](/materials/osg/ex1-submit-refresher).
+You will be using the same exact payload as you did in [Grid exercise 1](/materials/osg/ex1-submit-refresher).
 
 ### Gathering network information from the OSG
 
@@ -20,9 +20,9 @@ Now to create submit files that will run in the OSG!
 
 1. If not already logged in, `ssh` into `login04.osgconnect.net`
 1. Make a new directory for this exercise, `grid-ex3` and change into it
-1. Use `scp` or `rsync` from [dHTC exercise 2](/materials/osg/ex2-login-scp) to copy over the executable and input
+1. Use `scp` or `rsync` from [Grid exercise 2](/materials/osg/ex2-login-scp) to copy over the executable and input
    file from the `grid-ex1` directory from `learn`.
-1. Re-create the submit file from dHTC exercise 1 except this time around change your submit file so that it submits
+1. Re-create the submit file from Grid exercise 1 except this time around change your submit file so that it submits
    **five hundred** jobs!
 1. Submit your file and wait for the results
 

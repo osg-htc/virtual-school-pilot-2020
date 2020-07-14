@@ -52,7 +52,7 @@ tarballs) whose usage is as follows:
         :::console
         user@learn $ tar -tzvf <archive filename>
 
-Using the above knowledge, log into `learn.chtc.wisc.edu`, create a tarball that contains the dHTC exercise 1 directory,
+Using the above knowledge, log into `learn.chtc.wisc.edu`, create a tarball that contains the Grid exercise 1 directory,
 and verify that it contains all the proper files.
 
 ### Comparing compressed sizes
@@ -120,7 +120,7 @@ server's operating system:
 #### Mac and Linux users
 
 `scp` should be included by default and available via the terminal on both Mac and Linux operating systems.
-Open a terminal window on your laptop and try copying the tarball containing the dHTC exercise 1 from
+Open a terminal window on your laptop and try copying the tarball containing the Grid exercise 1 from
 `login04.osgconnect.net` to your laptop.
 
 #### Windows users
@@ -129,7 +129,7 @@ WinSCP is an `scp` client for Windows operating systems.
 
 1.  Install WinSCP from <https://winscp.net/eng/index.php>
 1.  Start WinSCP and enter your SSH credentials for `login04.osgconnect.net`
-1.  Copy the tarball containing dHTC exercise 1 to your laptop
+1.  Copy the tarball containing Grid exercise 1 to your laptop
 
 ### Extra challenge: Using rsync
 
@@ -150,9 +150,9 @@ Both of these feature are helpful when you're having connectivity issues so that
 from scratch every time your connection fails.
 
 1.  Log in to `login04.osgconnect.net`
-1.  Use `rsync` to transfer the folder containing dHTC exercise 1 on `learn.chtc.wisc.edu` to `login04.osgconnect.net`
+1.  Use `rsync` to transfer the folder containing Grid exercise 1 on `learn.chtc.wisc.edu` to `login04.osgconnect.net`
 1.  In a separate terminal window, log in to `learn.chtc.wisc.edu`
-1.  Create a new file in your dHTC exercise 1 folder on `learn.chtc.wisc.edu` with the `touch` command:
+1.  Create a new file in your Grid exercise 1 folder on `learn.chtc.wisc.edu` with the `touch` command:
 
         :::console
         user@learn $ touch <filename>

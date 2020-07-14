@@ -101,7 +101,7 @@ Checking OSG memory availability
 
 For the second part of the exercise, you will just copy over the directory from the [above section](#checking-chtc-memory-availability)
 on `learn.chtc.wisc.edu` to `login04.osgconnect.net` and resubmit your jobs to the OSG.
-If you get stuck during the copying process, refer to [OSG exercise 2](/materials/osg/ex2-login-scp.md).
+If you get stuck during the copying process, refer to [Grid exercise 2](/materials/osg/ex2-login-scp.md).
 
 ### Monitoring the remote jobs
 
