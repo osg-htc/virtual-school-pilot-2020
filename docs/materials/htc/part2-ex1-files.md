@@ -42,7 +42,7 @@ Next, look at the output that appears after the `Sandbox:` line; it is the outpu
 | `_condor_stderr`  | Saved standard error from the job           |
 | `_condor_stdout`  | Saved standard output from the job          |
 | `condor_exec.exe` | The executable, renamed from `sandbox.sh`   |
-| `tmp/`            | A directory in which to put temporary files |
+| `tmp/`, `var/tmp/`| Directories in which to put temporary files |
 
 So, HTCondor wrote copies of the job and machine ads (for use by the job, if desired), transferred your executable (`sandbox.sh`), renamed it (`condor_exec.exe`), ran it, and saved its standard output and standard error into files. Notice that your submit file, which was in the same directory on the submit machine as your executable, was **not** transferred, nor were any other files that happened to be in directory with the submit file.
 
@@ -85,20 +85,20 @@ for word in sorted(words.keys()):
 1.  Download the input file for the script (263K lines, ~1.4 MB) and save it in your submit directory:
 
         :::console
-        username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool19/mon-2.1-words.txt
+        username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/intro-2.1-words.txt
 
 1.  Create a submit file for the `freq.py` executable.
 1.  Add a line to tell HTCondor to transfer the input file:
 
         :::file
-        transfer_input_files = mon-2.1-words.txt
+        transfer_input_files = intro-2.1-words.txt
 
     As with all submit file commands, it does not matter where this line goes, as long as it comes before the word `queue`.
 
 1.  Do not forget to add a line to name the input file as the argument to the Python script.
 1.  Submit the job, wait for it to finish, and check the output!
 
-If things do not work the first time, keep trying! At this point in the exercises, we are telling you less and less explicitly how to do steps that you have done before. If you get stuck, ask a neighbor or one of the instructors.
+If things do not work the first time, keep trying! At this point in the exercises, we are telling you less and less explicitly how to do steps that you have done before. If you get stuck, ask for help in the #intro-to-htc Slack channel.
 
 !!! note
     If you want to transfer more than one input file, list all of them on a single `transfer_input_files` command,
@@ -179,5 +179,5 @@ In some ways, everything after this exercise shows you how to submit multiple jo
 References
 ----------
 
-There are many more details about HTCondor’s file transfer mechanism not covered here. For more information, read the ["Submitting Jobs Without a Shared Filesystem"](https://htcondor.readthedocs.io/en/v8_9_2/users-manual/submitting-a-job.html#submitting-jobs-without-a-shared-file-system-htcondor-s-file-transfer-mechanism) of the HTCondor Manual.
+There are many more details about HTCondor’s file transfer mechanism not covered here. For more information, read the ["Submitting Jobs Without a Shared Filesystem"](https://htcondor.readthedocs.io/en/latest/users-manual/submitting-a-job.html#submitting-jobs-without-a-shared-file-system-htcondor-s-file-transfer-mechanism) of the HTCondor Manual.
 

@@ -14,7 +14,7 @@ The main part of this exercise should take just a few minutes, but if you have m
 Selecting Jobs
 --------------
 
-The `condor_q` program has many options for selecting which jobs are listed. You have already seen that the default mode (as of version 8.5) is to show only your jobs in "batch" mode:
+The `condor_q` program has many options for selecting which jobs are listed. You have already seen that the default mode is to show only your jobs in "batch" mode:
 
 ``` console
 username@learn $ condor_q
@@ -87,7 +87,7 @@ The output from this command is long and complex. Most of the attributes that HT
 ``` file
 MyType = "Job"
 Err = "sleep.err"
-UserLog = "/home/cat/1-monday-2.1-queue/sleep.log"
+UserLog = "/home/cat/intro-2.1-queue/sleep.log"
 Requirements = ( IsOSGSchoolSlot =?= true ) &&
         ( TARGET.Arch == "X86_64" ) &&
         ( TARGET.OpSys == "LINUX" ) &&

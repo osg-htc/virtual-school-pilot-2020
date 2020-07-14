@@ -86,6 +86,8 @@ queue
 
 Then submit the job as usual!
 
-In summary, it is easy to work with statically linked compiled code. It **is** possible to handle dynamically linked compiled code, but it is trickier. We will only mention this topic briefly on Thursday.
+In summary, it is easy to work with statically linked compiled code.
+It **is** possible to handle dynamically linked compiled code, but it is trickier.
+We will only mention this topic briefly during the lecture on Software.
 
 

@@ -1,0 +1,11 @@
+../maxminddb/__init__.py
+../maxminddb/compat.py
+../maxminddb/const.py
+../maxminddb/decoder.py
+../maxminddb/errors.py
+../maxminddb/file.py
+../maxminddb/reader.py
+PKG-INFO
+SOURCES.txt
+dependency_links.txt
+top_level.txt

@@ -20,17 +20,22 @@ To log in, use a [Secure Shell](http://en.wikipedia.org/wiki/Secure_Shell) (SSH)
 
 -   From a Mac or Linux computer, run the Terminal app and use the `ssh` command, like so:
 
-``` console
-username@learn $ ssh %RED%<USERNAME>%ENDCOLOR%@learn.chtc.wisc.edu
-```
+        :::console
+        username@learn $ ssh %RED%<USERNAME>%ENDCOLOR%@learn.chtc.wisc.edu
 
--   On Windows, we recommend a free client called [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/), but any SSH client should be fine.
+-   On Windows, we recommend a free client called [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/),
+    but any SSH client should be fine.
 
 **If you need help finding or using an SSH client, ask the instructors for help right away**!
 
 ### About Your Password
--   Your username and initial password should have been provided by your mentor. If this is not true, or you have lost the password, reach out to one of the instructors for help. 
--   While the `passwd` command will work (and will change your password temporarily), your initial password will be automatically reset for you on an hourly basis. (So you probably don't want to change your password, in the first place, and definitely want to keep your sheet of paper or memorize the password).
+
+-   Your mentor should have given you your username and password.
+    If this is not true or you have lost the password, reach out to any staff member for help.
+
+-   While the `passwd` command will work (and will change your password temporarily),
+    your initial password will be automatically reset for you on an hourly basis.
+    So consider not changing your password and save the one provided in a secure place.
 
 Running Commands
 ----------------
@@ -57,19 +62,19 @@ username@learn $ date
 username@learn $ uname -a
 ```
 
-A suggestion for the day: Try typing into the command line as many of the commands as you can. Copy-and-paste is fine, of course, but **you WILL learn more if you take the time to type each command, yourself.**
+A suggestion for the day: try typing into the command line as many of the commands as you can.
+Copy-and-paste is fine, of course, but **you WILL learn more if you take the time to type each command yourself.**
 
 Organizing Your Workspace
 -------------------------
 
 You will be doing many different exercises over the next few days, many of them on this submit server. Each exercise may use many files, once finished. To avoid confusion, it may be useful to create a separate directory for each exercise.
 
-For instance, for the rest of this exercise, you may wish to create and use a directory named `monday-1.1-login`, or something like that.
+For instance, for the rest of this exercise, you may wish to create and use a directory named `intro-1.1-login`, or something like that.
 
 ``` console
-username@learn $ mkdir Mon
-username@learn $ mkdir Mon/1.1
-username@learn $ cd Mon/1.1
+username@learn $ mkdir intro-1.1-login
+username@learn $ cd intro-1.1-login
 ```
 
 Showing the Version of HTCondor

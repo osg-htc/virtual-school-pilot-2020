@@ -33,6 +33,12 @@ Slides ([PPT](/materials/files/osgvsp20-htc-htcondor.pptx),[PDF](/materials/file
 
 ## OSG
 
+- [Exercise 1: Refresher – Submitting Multiple Jobs](/materials/osg/ex1-submit-refresher.md)
+- [Exercise 2: Log in to the OSG Submit Server](/materials/osg/ex2-login-scp.md)
+- [Exercise 3: Running jobs in the OSG](/materials/osg/ex3-submit-osg.md)
+- [Exercise 4: Hardware Differences in the OSG](/materials/osg/ex4-hardware-diffs.md)
+- [Exercise 5: Software Differences in the OSG](/materials/osg/ex5-software-diffs.md)
+
 ## Software
 
 ### Software Exercises 1: Basic Software and Wrapper Script Use (Strongly Recommended)
@@ -59,12 +65,14 @@ Slides ([PPT](/materials/files/osgvsp20-htc-htcondor.pptx),[PDF](/materials/file
 
 ## Data
 
-# Bonus Topics
+## Bonus Topics
 
-## Workflows with DAGMan
+### Workflows with DAGMan
 
-Lecture Slides([PPT](/materials/workflows/files/osgvsp20-bonus-dagman.pptx),[PDF](/materials/workflows/files/osgvsp20-bonus-dagman.pdf))
+Lecture slides
+([PPT](/materials/workflows/files/osgvsp20-bonus-dagman.pptx),
+[PDF](/materials/workflows/files/osgvsp20-bonus-dagman.pdf))
 
-## GPUs and Containers
+### GPUs and Containers
 
-## More Grid
+### More Grid

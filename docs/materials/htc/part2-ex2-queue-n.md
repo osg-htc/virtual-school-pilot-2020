@@ -7,7 +7,9 @@ status: testing
 HTC Exercise 2.2: Use queue *N*, $(Cluster), and $(Process)
 ==============================================================
 
-The goal of the next several exercises is to learn to submit many jobs from a single `queue` statement, and then to control filenames and arguments per job.
+The goal of the next several exercises is
+to learn to submit many jobs from a single `queue` statement,
+and to control things like filenames and arguments on a per-job basis when doing so.
 
 Suppose you have a program that you want to run many times with different arguments each time. With what you know so far, you have a couple of choices:
 
@@ -58,7 +60,7 @@ int main(int argc, char *argv[])
 ```
 
 1.  In a new directory for this exercise, save the code to a file named `circlepi.c`
-1.  Compile the code (we will cover this in more detail Wednesday):
+1.  Compile the code (we will cover this in more detail during the Software lecture):
 
         :::console
         username@learn $ gcc -static -o circlepi circlepi.c
@@ -68,11 +70,14 @@ int main(int argc, char *argv[])
         :::console
         username@learn $ ./circlepi 1000
 
-Now suppose that you want to run the program many times, to produce many estimates. This is exactly what a statement like `queue 3` is useful for. Let’s see how it works:
+Now suppose that you want to run the program many times, to produce many estimates.
+To do so, we can tell HTCondor how many jobs to "queue up" via the `queue` statement
+we've been putting at the end of each of our submit files.
+Let’s see how it works:
 
 1.  Write a normal submit file for this program
     -   Pass 1 million (`1000000`) as the command line argument to `circlepi`
-    -   Remember to use `queue 3` instead of just `queue`
+    -   At the end of the file, write `queue 3` instead of just `queue` ("queue 3 jobs" vs. "queue a job").
 1.  Submit the file. Note the slightly different message from `condor_submit`:
 
         :::console
@@ -89,9 +94,15 @@ Here is some sample `condor_q -nobatch` output:
 10228.2   cat             7/25 11:57   0+00:00:00 I  0    0.7 circlepi 1000000000
 ```
 
-In this sample, all three jobs are part of **cluster** `10228`, but the first job was assigned **process** `0`, the second job was assigned process `1`, and the third one was assigned process `2`. (Historical note: Programmers like to start counting from 0, hence the odd numbering scheme.)
+In this sample, all three jobs are part of **cluster** `10228`, 
+but the first job was assigned **process** `0`, 
+the second job was assigned process `1`, 
+and the third one was assigned process `2`.
+(Programmers like to start counting from 0.)
 
-At this time, it is worth reviewing the definition of a ***job ID***. It is a job’s cluster number, a dot (`.`), and the job’s process number. So in the example above, the job ID of the second job is `10228.1`.
+Now we can understand what the first column in the output, the ***job ID***, represents.
+It is a job’s cluster number, a dot (`.`), and the job’s process number.
+So in the example above, the job ID of the second job is `10228.1`.
 
 **Pop Quiz:** Do you remember how to ask HTCondor to list all of the jobs from one cluster? How about one specific job ID?
 
@@ -118,6 +129,7 @@ For example, you can use the `$(Process)` variable to define a separate output f
 output = my-output-file-$(Process).out
 queue 10
 ```
+These variables are sometimes called "submit macros".
 
 Even though the `output` filename is defined only once, HTCondor will create separate output filenames for each job:
 
@@ -126,7 +138,7 @@ Even though the `output` filename is defined only once, HTCondor will create sep
 | First job        | `my-output-file-0.out` |
 | Second job       | `my-output-file-1.out` |
 | Third job        | `my-output-file-2.out` |
-| ...              |                        |
+| ...              | ...                    |
 | Last (tenth) job | `my-output-file-9.out` |
 
 Let’s see how this works for our program that estimates π.
