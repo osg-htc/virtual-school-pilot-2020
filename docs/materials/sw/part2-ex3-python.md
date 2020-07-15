@@ -31,9 +31,9 @@ The first step in our job process is building a Python installation that we can 
 
 1.  Of our options - submit server, interactive job, personal computer - which should we use for this installation/packaging process? Once you have a guess, move to the next step.
 
-1.  Due to the number of people on our submit server, we shouldn't use the submit server. Your own computer probably doesn't have the right operating system. The best place to install will be an interactive job. For this job, we can use the same interactive submit file as Exercise 3.4, with one change. What is it?
+1.  Due to the number of people on our submit server, we shouldn't use the submit server. Your own computer probably doesn't have the right operating system. The best place to install will be an interactive job. For this job, we can use the same interactive submit file as Exercise 2.2, with one change. What is it?
 
-1.  Make a copy of the interactive submit file from [Exercise 3.4](/materials/day2/part3-ex4-prepackaged) and change the `transfer_input_files` line to the Python tarball you just downloaded. Then submit it using the `-i` flag. 
+1.  Make a copy of the interactive submit file from [Exercise 2.2](/materials/sw/part2-ex2-prepackaged) and change the `transfer_input_files` line to the Python tarball you just downloaded. Then submit it using the `-i` flag. 
 
 		:::console
 		username@learn $ condor_submit -i build.submit
@@ -132,7 +132,7 @@ We now have our Python installation and our Python script - we just need to writ
 		:::bash
 		#!/bin/bash
 
-		tar xzf prebuilt_python.tar.gz 
+		tar -xzf prebuilt_python.tar.gz 
 		python/bin/python3 fib.py 90
 
 	or
@@ -140,7 +140,7 @@ We now have our Python installation and our Python script - we just need to writ
 		:::bash
 		#!/bin/bash
 
-		tar xzf prebuilt_python.tar.gz 
+		tar -xzf prebuilt_python.tar.gz 
 		export PATH=$(pwd)/python/bin:$PATH 
 		python3 fib.py 90
 
