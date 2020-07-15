@@ -17,14 +17,7 @@ Data
 We have placed movie files in your Stash, so that they'll be available to our jobs when they run out on OSG.
 
 1.  Log into `login04.osgconnect.net`
-1. Navigate to your local scratch directory:
-
-        :::console
-        user@login04 $ cd /local-scratch2/<USERNAME>
-
-    Replacing `<USERNAME>` with your username
-
-1. Create a directory for this exercise named `stash-unique` and change into it
+1.  Create a directory for this exercise named `stash-unique` and change into it
 1.  How big are the three video files? Which is the smallest? (Find out with `ls -lh /public/<USERNAME>/*.mov`.)
 1.  We're going to need a list of these files later.
     For now, let's save that list to a file in this directory by running `ls` and redirecting the output to a file: 

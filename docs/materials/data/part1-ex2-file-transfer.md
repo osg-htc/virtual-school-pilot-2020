@@ -16,14 +16,8 @@ Setup
 The executable we'll use in this exercise and later today is the same `blastx` executable from previous exercises.
 
 1. Log in to `login04.osgconnect.net`
-1. Navigate to your local scratch directory:
 
-        :::console
-        user@login04 $ cd /local-scratch2/<USERNAME>
-
-    Replacing `<USERNAME>` with your username
-
-1. Change into the `thurs-blast-data` folder that you created in the previous exercise.
+2. Change into the `blast-data` folder that you created in the previous exercise.
 
 ### Review: HTCondor File Transfer
 

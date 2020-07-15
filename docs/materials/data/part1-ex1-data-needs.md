@@ -14,14 +14,8 @@ Setup
 -----
 
 1. Log in to `login04.osgconnect.net`
-1. Navigate to your local scratch directory:
 
-        :::console
-        user@login04 $ cd /local-scratch2/<USERNAME>
-
-    Replacing `<USERNAME>` with your username
-
-1. Create a directory for this exercise named `blast-data` and change into it
+2. Create a directory for this exercise named `blast-data` and change into it
 
 ### Copy the Input Files ###
 

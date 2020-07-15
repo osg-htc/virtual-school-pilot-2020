@@ -14,12 +14,6 @@ Setup
 -----
 
 1. Log in to `login04.osgconnect.net`
-1. Navigate to your local scratch directory:
-
-        :::console
-        user@login04 $ cd /local-scratch2/<USERNAME>
-
-    Replacing `<USERNAME>` with your username
 
 1. Create a directory for this exercise named `blast-split` and change into it.
 1. Copy over the following files from the [previous exercise](/materials/data/part1-ex2-file-transfer.md):

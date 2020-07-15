@@ -64,7 +64,7 @@ directory on `login04.osgconnect.net`:
 
 ``` console
 user@login04 $ module load stashcache
-user@login04 $ stashcp /osgconnect/public/<USERNAME>/pdbaa_files.tar.gz /local-scratch2/<USERNAME>/
+user@login04 $ stashcp /osgconnect/public/<USERNAME>/pdbaa_files.tar.gz /home/<USERNAME>/
 ```
 
 Replacing all instances of `<USERNAME>` with your username on `login04.osgconnect.net`.
