@@ -34,10 +34,10 @@ reference database, the BLAST program.
 
 	All the other links are either for source code or other operating systems. 
 	
-1. While logged into `login05.osgconnect.net`, create a directory for this exercise. Then download the appropriate `tar.gz` file and un-tar it. You can download the file directly from the BLAST website using `wget` or download our local copy with the command below: 
+1. While logged into `login04.osgconnect.net`, create a directory for this exercise. Then download the appropriate `tar.gz` file and un-tar it. You can download the file directly from the BLAST website using `wget` or download our local copy with the command below: 
 
         :::console
-        user@login $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool19/ncbi-blast-2.10.1+-x64-linux.tar.gz
+        user@login $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/ncbi-blast-2.10.1+-x64-linux.tar.gz
         user@login $ tar -xzf ncbi-blast-2.10.1+-x64-linux.tar.gz
 
 1.  We're going to be using the `blastx` binary in our job. Where is it in the directory you just downloaded?
