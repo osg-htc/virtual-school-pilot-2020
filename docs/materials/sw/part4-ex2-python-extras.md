@@ -12,7 +12,7 @@ If you have time and  did the previous Python exercise ([Exercise 2.3](/material
 Arguments
 ---------
 
-Similar to what was shown in a [previous bonus exercise](), 
+Similar to what was shown in a [previous bonus exercise](/materials/sw/part4-ex1-arguments), 
 can you modify your submit file and shell script so that the number provided to the `fib.py` script is an argument from the submit file? 
 
 Multiple Jobs
