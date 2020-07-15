@@ -95,6 +95,7 @@ get_version(){
 get_version 'R'
 get_version 'cmake'
 get_version 'python'
+get_version 'python3'
 ```
 
 If there's a specific command line program that your research requires, feel free to add it to the script!
