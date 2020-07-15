@@ -45,6 +45,10 @@ following submit file:
 ```
 executable = /bin/sleep
 
+request_cpus = 1
+request_memory = 1MB
+request_disk = 1MB
+
 queue 2 arguments in (
 5
 10
