@@ -54,7 +54,14 @@ pages:
       - Exercise 4.2:             materials/sw/part4-ex2-python-extras.md
       - Exercise 4.3:             materials/sw/part4-ex3-docker.md
     - Data Exercises:
-      - Placeholder:              materials/data/temp.md
+      - Exercise 1.1:	          materials/data/part1-ex1-data-needs.md
+      - Exercise 1.2:             materials/data/part1-ex2-file-transfer.md
+      - Exercise 1.3:             materials/data/part1-ex3-blast-split.md
+      - Exercise 2.1:             materials/data/part2-ex1-blast-proxy.md
+      - Exercise 2.2:             materials/data/part2-ex2-stashcache-shared.md
+      - Exercise 2.3:             materials/data/part2-ex3-stashcache-unique.md
+      - Bonus Exercise 3.1:       materials/data/part3-ex1-input.md
+      - Bonus Exercise 3.2:       materials/data/part3-ex2-output.md
   - Staff:                        staff.md
 
 markdown_extensions:
