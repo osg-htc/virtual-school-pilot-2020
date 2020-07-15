@@ -120,7 +120,7 @@ Fortunately, the Matlab compiler has pre-written most of this wrapper script for
 Submitting the Job
 ------------------
 
-1.  Copy an existing submit file into your current directory. The submit file we used for  [Exercise 1.2](/materials/sw/part1-ex2-wrapper.md) example would be a good candidate, as that example also used a wrapper script. 
+1.  Copy an existing submit file into your current directory. The submit file we used for  [Exercise 2.2](/materials/sw/part2-ex2-prepackaged) example would be a good candidate, as that example also used a wrapper script. 
 
 2. Modify your submit file for this job. 
 
