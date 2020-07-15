@@ -68,7 +68,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>Our wrapper script will be a bash script that runs several commands.</p>
 <ol>
 <li>
-<p>In the same directory as the last exercise (still logged into <code>login05.osgconnect.net</code>) make a file called <code>run_blast.sh</code>. </p>
+<p>In the same directory as the last exercise (still logged into <code>login04.osgconnect.net</code>) make a file called <code>run_blast.sh</code>. </p>
 </li>
 <li>
 <p>The first line we'll place in the script is the basic command for running blast. Based on our previous submit file, what command needs to go into the script? Once you have an idea, check against the example below:  </p>
@@ -100,7 +100,7 @@ ncbi-blast-2.10.1+/bin/blastx -db pdbaa/pdbaa -query mouse.fa -out results.txt
 </li>
 <li>
 <p>Note that since the <code>blastx</code> program is no longer listed as the executable, it will be need to be included in <code>transfer_input_files</code>. Instead of transferring just that program, we will transfer the original downloaded <code>tar.gz</code> file. To achieve efficiency, we'll also transfer the pdbaa database as the original <code>tar.gz</code> file instead of as the unzipped folder: </p>
-<div class="codehilite"><pre><span></span>transfer_input_files = <span style="color:blue">pdbaa.tar.gz</span>, mouse.fa, ncbi-blast-2.9.0+-x64-linux.tar.gz
+<div class="codehilite"><pre><span></span>transfer_input_files = <span style="color:blue">pdbaa.tar.gz</span>, mouse.fa, ncbi-blast-2.10.1+-x64-linux.tar.gz
 </pre></div>
 
 
