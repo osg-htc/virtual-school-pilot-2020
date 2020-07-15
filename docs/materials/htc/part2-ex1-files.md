@@ -179,5 +179,5 @@ In some ways, everything after this exercise shows you how to submit multiple jo
 References
 ----------
 
-There are many more details about HTCondor’s file transfer mechanism not covered here. For more information, read the ["Submitting Jobs Without a Shared Filesystem"](https://htcondor.readthedocs.io/en/latest/users-manual/submitting-a-job.html#submitting-jobs-without-a-shared-file-system-htcondor-s-file-transfer-mechanism) of the HTCondor Manual.
+There are many more details about HTCondor’s file transfer mechanism not covered here. For more information, read the ["Submitting Jobs Without a Shared Filesystem"](https://htcondor.readthedocs.io/en/latest/users-manual/file-transfer.html) of the HTCondor Manual.
 
