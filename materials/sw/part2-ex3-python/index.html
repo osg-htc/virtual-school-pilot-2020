@@ -81,10 +81,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>Of our options - submit server, interactive job, personal computer - which should we use for this installation/packaging process? Once you have a guess, move to the next step.</p>
 </li>
 <li>
-<p>Due to the number of people on our submit server, we shouldn't use the submit server. Your own computer probably doesn't have the right operating system. The best place to install will be an interactive job. For this job, we can use the same interactive submit file as Exercise 3.4, with one change. What is it?</p>
+<p>Due to the number of people on our submit server, we shouldn't use the submit server. Your own computer probably doesn't have the right operating system. The best place to install will be an interactive job. For this job, we can use the same interactive submit file as Exercise 2.2, with one change. What is it?</p>
 </li>
 <li>
-<p>Make a copy of the interactive submit file from <a href="../../../materials/day2/part3-ex4-prepackaged">Exercise 3.4</a> and change the <code>transfer_input_files</code> line to the Python tarball you just downloaded. Then submit it using the <code>-i</code> flag. </p>
+<p>Make a copy of the interactive submit file from <a href="../../../materials/sw/part2-ex2-prepackaged">Exercise 2.2</a> and change the <code>transfer_input_files</code> line to the Python tarball you just downloaded. Then submit it using the <code>-i</code> flag. </p>
 <div class="codehilite"><pre><span></span><span class="gp">username@learn $</span> condor_submit -i build.submit
 </pre></div>
 
@@ -211,7 +211,7 @@ between the <code>make</code> and <code>make install</code> steps.  As this step
 <p>Your final <code>run_fib.sh</code> script should look something like this: </p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
 
-tar xzf prebuilt_python.tar.gz 
+tar -xzf prebuilt_python.tar.gz 
 python/bin/python3 fib.py <span class="m">90</span>
 </pre></div>
 
@@ -219,7 +219,7 @@ python/bin/python3 fib.py <span class="m">90</span>
 <p>or</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
 
-tar xzf prebuilt_python.tar.gz 
+tar -xzf prebuilt_python.tar.gz 
 <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/python/bin:<span class="nv">$PATH</span> 
 python3 fib.py <span class="m">90</span>
 </pre></div>

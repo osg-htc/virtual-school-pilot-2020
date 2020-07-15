@@ -63,7 +63,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>Containers are another way to manage software installations. We don't have the time to go fully into the details of building and using containers, but can use pre-existing containers to run jobs. </p>
 <p>One caveat for using containers: not all systems will support them. HTCondor has built-in features for using Docker and many Open Science Grid resources have Singularity installed, but they are not always available everywhere. </p>
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<p>Make sure you are logged into <code>login05.osgconnect.net</code> (the OSG Connect submit server for this workshop).  For this exercise we will be using Singularity containers that are hosted by OSG Connect, in a very similar way to the software modules. </p>
+<p>Make sure you are logged into <code>login04.osgconnect.net</code> (the OSG Connect submit server for this workshop).  For this exercise we will be using Singularity containers that are hosted by OSG Connect, in a very similar way to the software modules. </p>
 <p>To get an idea on what container images are available on the OSG, take a look at the directory path <code>/cvmfs/singularity.opensciencegrid.org/opensciencegrid</code>.  </p>
 <h2 id="job-submission">Job Submission<a class="headerlink" href="#job-submission" title="Permanent link">&para;</a></h2>
 <p>For this job, we will use the OSG Connect Ubuntu "Xenial" image. Copy a submit file you used for a previous exercise on OSG Connect and add the following lines: </p>
