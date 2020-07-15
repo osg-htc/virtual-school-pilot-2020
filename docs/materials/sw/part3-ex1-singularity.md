@@ -17,7 +17,7 @@ One caveat for using containers: not all systems will support them. HTCondor has
 Setup
 -----
 
-Make sure you are logged into `login05.osgconnect.net` (the OSG Connect submit server for this workshop).  For this exercise we will be using Singularity containers that are hosted by OSG Connect, in a very similar way to the software modules. 
+Make sure you are logged into `login04.osgconnect.net` (the OSG Connect submit server for this workshop).  For this exercise we will be using Singularity containers that are hosted by OSG Connect, in a very similar way to the software modules. 
 
 To get an idea on what container images are available on the OSG, take a look at the directory path `/cvmfs/singularity.opensciencegrid.org/opensciencegrid`.  
 
