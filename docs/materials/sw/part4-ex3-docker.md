@@ -12,7 +12,7 @@ In this exercise, you will run the same Python script as the other Python exerci
 Setup
 -----
 
-For this exercise, you will need to be logged into `learn.chtc.wisc.edu`, not `login.osgconnect.net`. If you haven't done one of the previous Python exercises, 
+For this exercise, you will need to be logged into `learn.chtc.wisc.edu`, not `login04.osgconnect.net`. If you haven't done one of the previous Python exercises, 
 make sure to get a copy of the script and recommended commands [here](/materials/sw/part2-ex3-python). 
 
 Submit File Changes
