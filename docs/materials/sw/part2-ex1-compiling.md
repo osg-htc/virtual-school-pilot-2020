@@ -21,7 +21,7 @@ For this compiling example, we will use a script written in C. C code depends on
 
 Our C code prints 7 rows of Pascal's triangle.
 
-1.  Log into the OSG submit node `login05.osgconnect.net`. Create a directory for this exercise and `cd` into it.
+1.  Log into the OSG submit node `login04.osgconnect.net`. Create a directory for this exercise and `cd` into it.
 1.  Copy and paste the following code into a file named `pascal.c`.
 
 		:::c++

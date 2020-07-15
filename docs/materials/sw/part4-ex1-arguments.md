@@ -19,6 +19,7 @@ But in our world of job submission, the arguments will be listed in the submit f
 Identifying Potential Arguments
 -------------------------------
 
+1.  Log into your account on the submit server where you ran Exercise 2.2 (`learn.chtc.wisc.edu`).
 1.  Find the directory you used to submit Open BUGS jobs and open your `run_openbugs.sh` wrapper script.
 1.  What values might we want to input to the script via arguments? Hint: anything that we might want to change if we were to run the script many times.
 

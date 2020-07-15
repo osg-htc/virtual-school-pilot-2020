@@ -26,7 +26,7 @@ For this exercise, we will be using the Bayseian inference package OpenBUGS. Ope
 1. Because you can't download the OpenBUGS source tarball directly, download it from our "squid" webserver: 
 
 		:::console
-		username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool19/OpenBUGS-3.2.3.tar.gz
+		username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/OpenBUGS-3.2.3.tar.gz
 
 Where to Prepare
 ----------------
@@ -156,10 +156,10 @@ We're almost ready! We need two more pieces to run a OpenBUGS job.
 1.  Download the necessary input files to your directory on the submit server and then untar them. 
 
 		:::console
-		username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool19/openbugs_files.tar.gz
+		username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/openbugs_files.tar.gz
 		username@learn $ tar -xzf openbugs_files.tar.gz
 
-1.  Our last step is to create a submit file for our Open BUGS job. Think about which lines this submit file will need. Make a copy of a previous submit file (you could use the blast submit file from the [previous exercise](/materials/day2/part3-ex3-wrapper) as a base) and modify it as you think necessary.
+1.  Our last step is to create a submit file for our Open BUGS job. Think about which lines this submit file will need. Make a copy of a previous submit file (you could use the blast submit file from a [previous exercise](/materials/sw/part1-ex1-download) as a base) and modify it as you think necessary.
 
 1.  The two most important lines to modify for this job are listed below; check them against your own submit file: 
 
