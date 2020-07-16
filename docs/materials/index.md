@@ -47,6 +47,8 @@ All exercises strongly recommended!
 
 ## Software
 
+Slides ([PDF](/materials/sw/files/osgvsp20-software.pdf), [PowerPoint](/materials/sw/files/osgvsp20-software.pptx))
+
 ### Software Exercises 1: Basic Software and Wrapper Script Use (Strongly Recommended)
 
 - [Exercise 1.1: Work With Downloaded Software](/materials/sw/part1-ex1-download.md)
