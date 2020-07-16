@@ -72,7 +72,7 @@ First, you'll create a new submit file that passes the input filename as an argu
 filenames.
 Follow the below steps:
 
-1. Copy the submit file from the [previous exercise](/materials/data/part1-ex2-blast-split.md) to a new file called `blast_split.sub` and modify the "queue" line of the submit file to the
+1. Copy the submit file from the [previous exercise](/materials/data/part1-ex2-file-transfer.md) to a new file called `blast_split.sub` and modify the "queue" line of the submit file to the
    following:
 
         queue inputfile matching mouse_rna.fa.*
