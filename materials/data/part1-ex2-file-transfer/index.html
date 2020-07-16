@@ -109,13 +109,13 @@ For this version of the job, let's compress our blast database files to send the
 </pre></div>
 
 
-<p>Replacing <code>&lt;COMPRESSED FILENAME&gt;</code> with the name of the tarball that you'd like to create and
-<code>&lt;LIST OF FILES OR DIRECTORIES&gt;</code> with a space-separated list of files and/or directories that you want to 
-Move the tarball to the <code>blast-data</code> directory.</p>
+<p>Replacing <code>&lt;COMPRESSED FILENAME&gt;</code> with the name of the tarball that you would like to create and
+<code>&lt;LIST OF FILES OR DIRECTORIES&gt;</code> with a space-separated list of files and/or directories that you want inside pdbaa_files.tar.gz. 
+Move the resulting tarball to the <code>blast-data</code> directory.</p>
 </li>
 <li>
 <p>Create a wrapper script that will first decompress the <code>pdbaa_files.tar.gz</code> file, and then run blast.</p>
-<p>Because this file will now be our submit file <code>executable</code>, we'll also end up transferring the <code>blastx</code> executable
+<p>Because this file will now be our <code>executable</code> in the submit file, we'll also end up transferring the <code>blastx</code> executable
 with <code>transfer_input_files</code>.
 In the <code>blast-data</code> directory, create a new file, called <code>blast_wrapper.sh</code>, with the following contents:</p>
 <div class="codehilite"><pre><span></span>#!/bin/bash

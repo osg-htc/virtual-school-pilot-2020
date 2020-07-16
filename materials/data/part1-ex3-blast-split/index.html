@@ -75,6 +75,7 @@ Splitting the input will also mean that we don't have to rely on additional larg
 <li><code>blast_wrapper.sh</code></li>
 </ul>
 </li>
+<li>Remember to modify the submit file for the new locations of the above files.</li>
 </ol>
 <h3 id="obtain-the-large-input">Obtain the large input<a class="headerlink" href="#obtain-the-large-input" title="Permanent link">&para;</a></h3>
 <p>We've previously used <code>blastx</code> to analyze a relatively small input file of test data, <code>mouse.fa</code>, but let's imagine that
@@ -114,7 +115,7 @@ filenames.
 Follow the below steps:</p>
 <ol>
 <li>
-<p>Copy the submit file to a new file called <code>blast_split.sub</code> and modify the "queue" line of the submit file to the
+<p>Copy the submit file from the <a href="../part1-ex2-file-transfer/">previous exercise</a> to a new file called <code>blast_split.sub</code> and modify the "queue" line of the submit file to the
    following:</p>
 <div class="codehilite"><pre><span></span>queue inputfile matching mouse_rna.fa.*
 </pre></div>
@@ -180,7 +181,7 @@ Submitting again, the <code>queue</code> statement would see these new files, an
 <h2 id="update-the-resource-requests">Update the resource requests<a class="headerlink" href="#update-the-resource-requests" title="Permanent link">&para;</a></h2>
 <p>After the job finishes successfully, examine the <code>log</code> file for memory and disk usage, and update the requests in the
 submit file.
-In <a href="../../../materials/data/part2-ex1-blast-proxy">Exercise 2.1</a> (after the next lecture) you'll submit many jobs at once <em>and</em>
+In <a href="../../../materials/data/part2-ex1-blast-proxy">Exercise 2.1</a> you'll submit many jobs at once <em>and</em>
 use a different method for handling the <code>pdbaa_files.tar.gz</code> file, which is a bit too large to use regular file transfer
 when submitting many jobs.</p>
 

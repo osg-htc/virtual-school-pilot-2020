@@ -75,7 +75,7 @@ originally placed.</p>
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Make sure you're logged in to <code>login04.osgconnect.net</code></li>
-<li>Transfer the following files from <a href="../part2-ex1-blast-proxy/">Exercise 2.1</a> to a new directory in
+<li>Transfer the following files from the previous <a href="../part2-ex1-blast-proxy/">Exercise 2.1</a> to a new directory in
     your local scratch called <code>stash-shared</code>:<ul>
 <li><code>blast_wrapper.sh</code></li>
 <li><code>blastx</code></li>
@@ -111,8 +111,8 @@ directory on <code>login04.osgconnect.net</code>:</p>
 
 
 <p>Replacing all instances of <code>&lt;USERNAME&gt;</code> with your username on <code>login04.osgconnect.net</code>.
-You should now see the <code>pdbaa_files.tar.gz</code> file in your local scratch directory.
-Notice that we had to include the <strong><code>/user</code></strong> and your username in the file path for <code>stashcp</code>, which make sure you're
+You should now see the <code>pdbaa_files.tar.gz</code> file in your home directory.
+Notice that we had to include the <strong><code>/osgconnect/public</code></strong> and your username in the file path for <code>stashcp</code>, which make sure you're
 copying from <strong>your</strong> <code>public</code> space.</p>
 <h2 id="modify-the-submit-file-and-wrapper">Modify the Submit File and Wrapper<a class="headerlink" href="#modify-the-submit-file-and-wrapper" title="Permanent link">&para;</a></h2>
 <p>You will have to modify the wrapper and submit files to use StashCache:</p>
@@ -156,7 +156,7 @@ requirements = (OSGVO_OS_STRING == &quot;RHEL 7&quot;) &amp;&amp; (HAS_MODULES =
 
 </li>
 </ol>
-<p>And that <code>mouse_rna.fa.*</code> files exist in the current directory (you should have copied them from the previous exercise
+<p>And that <code>mouse_rna.fa.*</code> files exist in the current directory (you should have copied a few them from the previous exercise
 directory).</p>
 <h2 id="submit-the-job">Submit the Job<a class="headerlink" href="#submit-the-job" title="Permanent link">&para;</a></h2>
 <p>Now submit and monitor the job! If your 100 jobs from the previous exercise haven't started running yet, this job will
