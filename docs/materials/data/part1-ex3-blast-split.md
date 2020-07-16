@@ -21,6 +21,7 @@ Setup
     - `blastx`
     - `pdbaa_files.tar.gz`
     - `blast_wrapper.sh`
+1. Remember to modify the submit file for the new locations of the above files.
 
 ### Obtain the large input
 
@@ -71,7 +72,7 @@ First, you'll create a new submit file that passes the input filename as an argu
 filenames.
 Follow the below steps:
 
-1. Copy the submit file to a new file called `blast_split.sub` and modify the "queue" line of the submit file to the
+1. Copy the submit file from the [previous exercise](/materials/data/part1-ex2-file-transfer.md) to a new file called `blast_split.sub` and modify the "queue" line of the submit file to the
    following:
 
         queue inputfile matching mouse_rna.fa.*
@@ -129,7 +130,7 @@ Update the resource requests
 
 After the job finishes successfully, examine the `log` file for memory and disk usage, and update the requests in the
 submit file.
-In [Exercise 2.1](/materials/data/part2-ex1-blast-proxy) (after the next lecture) you'll submit many jobs at once *and*
+In [Exercise 2.1](/materials/data/part2-ex1-blast-proxy) you'll submit many jobs at once *and*
 use a different method for handling the `pdbaa_files.tar.gz` file, which is a bit too large to use regular file transfer
 when submitting many jobs.
 

@@ -14,23 +14,17 @@ to send our data to jobs. This exercise should take 25-30 minutes.
 Data
 ----
 
-We have placed movie files in your Stash, so that they'll be available to our jobs when they run out on OSG.
+We have placed movie files in our Stash, so that they'll be available to our jobs when they run out on OSG.
 
 1.  Log into `login04.osgconnect.net`
-1.  Create a directory for this exercise named `stash-unique` and change into it
-1.  How big are the three video files? Which is the smallest? (Find out with `ls -lh /public/<USERNAME>/*.mov`.)
-1.  We're going to need a list of these files later.
-    For now, let's save that list to a file in this directory by running `ls` and redirecting the output to a file: 
+1.  Create a directory for this exercise named `stash-unique` and change into it.
+1.  We're going to need a list of these files later.  Below is the final list of movie files.  Because of the size, you do not need to download the files to your stash, and instead use the copies in the stash directory.
+    For now, let's save a list of the videos to a file in this directory.  Save it as `movie_list.txt`: 
 
-        :::console
-        user@login04 $ ls /public/<USERNAME>/*.mov > movie_list.txt
-
-    Then open `movie_list.txt` and remove the leading directory structure (`/public/<USERNAME>/`),
-    leaving only the base filenames (e.g. `test_open_terminal.mov`). Or, run the following command which will
-    do this for you:
-
-        :::console
-        user@login04 $ sed -i 's,.*/,,' movie_list.txt
+        :::file
+        ducks.mov
+        teaching.mov
+        test_open_terminal.mov
 
 Software
 --------
@@ -65,7 +59,7 @@ To get the `ffmpeg` program do the following:
 Script
 ------
 
-We want to write a script that uses `ffmpeg` to convert a `.mov` file to a smaller format.
+We want to write a script that runs on the worker node that uses `ffmpeg` to convert a `.mov` file to a smaller format.
 Our script will need to:
 
 1. **Copy** that movie file from Stash to the job's current working directory (as in the
@@ -77,17 +71,15 @@ Our script will need to:
 
 Create a file called `run_ffmpeg.sh`, that does the steps described above.
 Use the name of the smallest `.mov` file in the `ffmpeg` command.
-Once you've written your script, check it against the example below: 
+An example of that script is below: 
 
     :::bash
     #!/bin/bash
 
     module load stashcache
-    stashcp /osgconnect/public/<USERNAME>/test_open_terminal.mov ./
+    stashcp /osgconnect/public/dweitzel/videos/test_open_terminal.mov ./
     ./ffmpeg -i test_open_terminal.mov -b:v 400k -s 640x360 test_open_terminal.mp4
     rm test_open_terminal.mov
-
-In your script, replace `<USERNAME>` with your `login04.osgconnect.net` username.
 
 Ultimately we'll want to submit several jobs (one for each `.mov` file), but to start with, we'll run one job to make
 sure that everything works.
@@ -128,6 +120,9 @@ If your job successfully returned the converted `.mp4` file and did **not** tran
 server, and the `.mp4` file was appropriately scaled down, then we can go ahead and convert all of the files we uploaded
 to Stash.
 
+!!! note "How to view your videos"
+    Remember how we used the stash web server when we used it to distribute blast database?  You can use that web server to view the video files.  Just copy the `.mp4` video into your `/public/<USERNAME>` directory.  The file will be available at `http://stash.osgconnect.net/public/<USERNAME>/<MP4_NAME>.mp4`.
+
 Multiple jobs
 -------------
 
@@ -154,12 +149,11 @@ The final script should look like this:
 #!/bin/bash
 
 module load stashcache
-stashcp /osgconnect/public/<USERNAME>/$1 ./
+stashcp /osgconnect/public/dweitzel/videos/$1 ./
 ./ffmpeg -i $1 -b:v 400k -s 640x360 $2
 rm $1
 ```
 
-Replacing `<USERNAME>` with your own username.
 Note that we use the input file name multiple times in our script, so we'll have to use `$1` multiple times as well.
 
 ### Modify your submit file
@@ -213,11 +207,10 @@ to do so?
         #!/bin/bash
 
         module load stashcache
-        stashcp /osgconnect/public/<USERNAME>/$1 ./
+        stashcp /osgconnect/public/dweitzel/videos/$1 ./
         ./ffmpeg -i $1 -b:v $3 -s $4 $2
         rm $1
 
-    Replacing `<USERNAME>` with your own username
 
 </details>
 

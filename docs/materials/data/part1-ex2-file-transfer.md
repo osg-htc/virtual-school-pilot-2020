@@ -66,13 +66,13 @@ For this version of the job, let's compress our blast database files to send the
         user@login04 $ tar -cvzf <COMPRESSED FILENAME> <LIST OF FILES OR DIRECTORIES>
 
 
-    Replacing `<COMPRESSED FILENAME>` with the name of the tarball that you'd like to create and
-    `<LIST OF FILES OR DIRECTORIES>` with a space-separated list of files and/or directories that you want to 
-    Move the tarball to the `blast-data` directory.
+    Replacing `<COMPRESSED FILENAME>` with the name of the tarball that you would like to create and
+    `<LIST OF FILES OR DIRECTORIES>` with a space-separated list of files and/or directories that you want inside pdbaa_files.tar.gz. 
+    Move the resulting tarball to the `blast-data` directory.
 
 2. Create a wrapper script that will first decompress the `pdbaa_files.tar.gz` file, and then run blast.
 
-    Because this file will now be our submit file `executable`, we'll also end up transferring the `blastx` executable
+    Because this file will now be our `executable` in the submit file, we'll also end up transferring the `blastx` executable
     with `transfer_input_files`.
     In the `blast-data` directory, create a new file, called `blast_wrapper.sh`, with the following contents:
 
