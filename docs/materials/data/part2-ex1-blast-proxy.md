@@ -90,7 +90,7 @@ when the new test job completes.
 user@login04 $ rm *.error *.out *.result *.log
 ```
 
-Submit the test job!
+Submit a single test job!
 
 When the job starts, the wrapper will download the `pdbaa_files.tar.gz` file from the web proxy.
 If the jobs takes longer than two minutes, you can assume that it will complete successfully, and then continue with the

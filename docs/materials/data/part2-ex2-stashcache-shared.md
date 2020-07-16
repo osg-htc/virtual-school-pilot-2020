@@ -26,7 +26,7 @@ Setup
 -----
 
 -   Make sure you're logged in to `login04.osgconnect.net`
--   Transfer the following files from [Exercise 2.1](/materials/data/part2-ex1-blast-proxy.md) to a new directory in
+-   Transfer the following files from the previous [Exercise 2.1](/materials/data/part2-ex1-blast-proxy.md) to a new directory in
     your local scratch called `stash-shared`:
     - `blast_wrapper.sh`
     - `blastx`
@@ -68,8 +68,8 @@ user@login04 $ stashcp /osgconnect/public/<USERNAME>/pdbaa_files.tar.gz /home/<U
 ```
 
 Replacing all instances of `<USERNAME>` with your username on `login04.osgconnect.net`.
-You should now see the `pdbaa_files.tar.gz` file in your local scratch directory.
-Notice that we had to include the **`/user`** and your username in the file path for `stashcp`, which make sure you're
+You should now see the `pdbaa_files.tar.gz` file in your home directory.
+Notice that we had to include the **`/osgconnect/public`** and your username in the file path for `stashcp`, which make sure you're
 copying from **your** `public` space.
 
 Modify the Submit File and Wrapper
@@ -107,7 +107,7 @@ You will have to modify the wrapper and submit files to use StashCache:
         ::file
         queue inputfile matching mouse_rna.fa.*
 
-And that `mouse_rna.fa.*` files exist in the current directory (you should have copied them from the previous exercise
+And that `mouse_rna.fa.*` files exist in the current directory (you should have copied a few them from the previous exercise
 directory).
 
 Submit the Job

@@ -14,7 +14,7 @@ to send our data to jobs. This exercise should take 25-30 minutes.
 Data
 ----
 
-We have placed movie files in your Stash, so that they'll be available to our jobs when they run out on OSG.
+We have placed movie files in our Stash, so that they'll be available to our jobs when they run out on OSG.  Copy them with the stashcp command:
 
 1.  Log into `login04.osgconnect.net`
 1.  Create a directory for this exercise named `stash-unique` and change into it
