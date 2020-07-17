@@ -70,6 +70,8 @@ Slides ([PDF](/materials/sw/files/osgvsp20-software.pdf), [PowerPoint](/material
 - [Exercise 4.1: Using Arguments With Wrapper Scripts](/materials/sw/part4-ex1-arguments.md)
 - [Exercise 4.2: Additional Python ](/materials/sw/part4-ex2-python-extras.md)
 - [Exercise 4.3: Using Software in a Docker Container](/materials/sw/part4-ex3-docker.md)
+- [Exercise 4.4: Building Your Own Docker Container (Beta)](/materials/sw/part4-ex4-docker-build.md)
+- [Exercise 4.5: Using Conda Environments (Beta)](/materials/sw/part4-ex5-conda.md)
 
 ## Data
 

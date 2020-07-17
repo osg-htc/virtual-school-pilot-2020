@@ -53,6 +53,8 @@ pages:
       - Exercise 4.1:             materials/sw/part4-ex1-arguments.md
       - Exercise 4.2:             materials/sw/part4-ex2-python-extras.md
       - Exercise 4.3:             materials/sw/part4-ex3-docker.md
+      - Exercise 4.4:             materials/sw/part4-ex4-docker-build.md
+      - Exercise 4.5:             materials/sw/part4-ex5-conda.md
     - Data Exercises:
       - Exercise 1.1:             materials/data/part1-ex1-data-needs.md
       - Exercise 1.2:             materials/data/part1-ex2-file-transfer.md
