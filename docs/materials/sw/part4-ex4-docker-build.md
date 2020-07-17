@@ -59,6 +59,8 @@ the following contents:
 		# Start with this image as a "base".
 		# It's as if all the commands that created that image were inserted here.
 		# Always use a specific tag like "4.7.12", never "latest"!
+		# The version referenced by "latest" can change, so the build will be 
+		# more stable when building from a specific version tag. 
 		FROM continuumio/miniconda:4.7.12
 
 		# Use RUN to execute commands inside the image as it is being built up.
@@ -80,7 +82,7 @@ the following contents:
 organization; the number `4.7.12` indicates the container version. When we create our 
 new container, we will want to use a similar naming scheme of: 
 
-		USERNMAE/CONTAINER:VERSIONTAG
+		USERNAME/CONTAINER:VERSIONTAG
 
 	In what follows, you will want to replace `USERNAME` with your DockerHub user name. 
 	The `CONTAINER` name and `VERSIONTAG` are your choice; in what follows, we will 
@@ -107,6 +109,9 @@ command line:
 
 		:::console
 		$ docker push USERNAME/py3-numpy:2020-07
+
+	If the push doesn't work, you may need to run `docker login` first, enter your 
+	Docker Hub username and password and then try the push again. 
 
 2. Once your container image is in DockerHub, you can use it in jobs as described 
 in [Exercise 4.3][/materials/sw/part4-ex3-docker]. 
