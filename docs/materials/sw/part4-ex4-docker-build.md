@@ -23,8 +23,7 @@ For this example, create a script called `rand_array.py` on `learn.chtc.wisc.edu
 
 	print(a)
 
-To run this script, we will need a copy of Python with the `numpy` library. To do 
-this, we will create a container with these components. 
+To run this script, we will need a copy of Python with the `numpy` library. 
 
 Getting Set Up
 --------------
