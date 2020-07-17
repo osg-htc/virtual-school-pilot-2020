@@ -161,6 +161,16 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/sw/part4-ex4-docker-build/</loc>
+     <lastmod>2020-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/sw/part4-ex5-conda/</loc>
+     <lastmod>2020-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://opensciencegrid.org/virtual-school-pilot-2020/materials/data/part1-ex1-data-needs/</loc>
      <lastmod>2020-07-17</lastmod>
      <changefreq>daily</changefreq>
