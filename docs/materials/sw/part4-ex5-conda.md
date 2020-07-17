@@ -33,7 +33,7 @@ Create and Pack a Conda Environment
 	you can use the default installation location: 
 
 			:::console	
-			[alice@submit]$ sh Miniconda3-latest-Linux-x86_64.sh
+			[user@login]$ sh Miniconda3-latest-Linux-x86_64.sh
 
 	4. At the end, you can choose whether or 
 	not to "initialize Miniconda3 by running conda init?" The default is no; you would 
@@ -44,22 +44,22 @@ Create and Pack a Conda Environment
 2. Next we'll create our conda "environment" with `numpy` (we've called the environment "py3-numpy"): 
 
 		:::console
-		(base)[alice@submit]$ conda create -n py3-numpy
-		(base)[alice@submit]$ conda activate py3-numpy
-		(py3-numpy)[alice@submit]$ conda install numpy
+		(base)[user@login]$ conda create -n py3-numpy
+		(base)[user@login]$ conda activate py3-numpy
+		(py3-numpy)[user@login]$ conda install numpy
 
 3. Once everything is installed, deactivate the environment to go back to the 
 Miniconda "base" environment.
 
 		:::console
-		(py3-numpy)[alice@submit]$ conda deactivate
+		(py3-numpy)[user@login]$ conda deactivate
 
 4. We'll now install a tool that will pack up the just created conda environment 
 so we can run it elsewhere. Make sure that your job's Miniconda environment is created, but deactivated, so 
 that you're in the "base" Miniconda environment, then run: 
 
 		:::console
-		(base)[alice@submit]$ conda install -c conda-forge conda-pack
+		(base)[user@login]$ conda install -c conda-forge conda-pack
 
 	Enter `y` when it asks you to install. 
 
@@ -67,7 +67,7 @@ that you're in the "base" Miniconda environment, then run:
 tar.gz file with our environment: 
 
 		:::console
-		(base)[alice@submit]$ conda pack -n py3-numpy
+		(base)[user@login]$ conda pack -n py3-numpy
 
 Submit a Job
 -------------
