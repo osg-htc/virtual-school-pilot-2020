@@ -22,7 +22,7 @@ The Program
 If you haven't already, log in to `learn.chtc.wisc.edu`. Download the software package and untar it.
 
 ``` console
-user@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/motif-flanks.tar.gz
+user@learn $ wget http://stash.osgconnect.net/public/osgvsp20/motif-flanks.tar.gz
 user@learn $ tar -xzf motif-flanks.tar.gz
 ```
 

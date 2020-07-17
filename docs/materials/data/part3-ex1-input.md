@@ -45,7 +45,7 @@ Like the previous example, we'll start by downloading our source movie files int
 Run this command **in your Staging directory**, `/staging/<USERNAME>`.
 
 ``` console
-user@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/videos.tar.gz
+user@learn $ wget http://stash.osgconnect.net/public/osgvsp20/videos.tar.gz
 ```
 
 While the files are copying, feel free to open a second connection to `learn.chtc.wisc.edu` and follow the instructions below.

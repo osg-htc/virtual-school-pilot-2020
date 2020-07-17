@@ -27,14 +27,14 @@ For our input file, we'll use an abbreviated fasta file with mouse genome inform
 1. Copy the BLAST executables:
 
         :::console
-        user@login04 $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/ncbi-blast-2.7.1+-x64-linux.tar.gz
+        user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/ncbi-blast-2.7.1+-x64-linux.tar.gz
         user@login04 $ tar -xzvf ncbi-blast-2.7.1+-x64-linux.tar.gz
 
 1.  Download these files to your current directory:
 
         :::console
-        user@login04 $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/pdbaa.tar.gz
-        user@login04 $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/mouse.fa
+        user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/pdbaa.tar.gz
+        user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/mouse.fa
 
 1.  Untar the `pdbaa` database:
 
