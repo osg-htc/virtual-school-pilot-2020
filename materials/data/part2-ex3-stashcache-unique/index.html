@@ -67,7 +67,7 @@ Just like the Blast database in the <a href="../part2-ex2-stashcache-shared/">pr
 files are too large to send to jobs using HTCondor's default file transfer mechanism, so we'll be using the Stash tool
 to send our data to jobs. This exercise should take 25-30 minutes.</p>
 <h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
-<p>We have placed movie files in our Stash, so that they'll be available to our jobs when they run out on OSG.</p>
+<p>A copy of the movie files for this exercise have been placed in <code>/public/osgvsp20</code>, so that they'll be available to our jobs when they run out on OSG.</p>
 <ol>
 <li>Log into <code>login04.osgconnect.net</code></li>
 <li>Create a directory for this exercise named <code>stash-unique</code> and change into it.</li>
@@ -93,11 +93,11 @@ file is smaller.</p>
 </pre></div>
 
 
-<p>To get the <code>ffmpeg</code> program do the following:</p>
+<p>To get the <code>ffmpeg</code> binary do the following:</p>
 <ol>
 <li>
 <p>We'll be downloading the <code>ffmpeg</code> pre-built static binary originally from this page: <a href="http://johnvansickle.com/ffmpeg/">http://johnvansickle.com/ffmpeg/</a>. </p>
-<div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> wget http://proxy.chtc.wisc.edu/osgschool20/ffmpeg-release-64bit-static.tar.xz
+<div class="codehilite"><pre><span></span><span class="gp">user@login04 $</span> wget http://stash.osgconnect.net/public/osgvsp20/ffmpeg-release-64bit-static.tar.xz
 </pre></div>
 
 
@@ -128,7 +128,7 @@ An example of that script is below: </p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
 
 module load stashcache
-stashcp /osgconnect/public/dweitzel/videos/test_open_terminal.mov ./
+stashcp /osgconnect/public/osgvsp20/test_open_terminal.mov ./
 ./ffmpeg -i test_open_terminal.mov -b:v 400k -s 640x360 test_open_terminal.mp4
 rm test_open_terminal.mov
 </pre></div>
@@ -178,7 +178,7 @@ server, and the <code>.mp4</code> file was appropriately scaled down, then we ca
 to Stash.</p>
 <div class="admonition note">
 <p class="admonition-title">How to view your videos</p>
-<p>Remember how we used the stash web server when we used it to distribute blast database?  You can use that web server to view the video files.  Just copy the <code>.mp4</code> video into your <code>/public/&lt;USERNAME&gt;</code> directory.  The file will be available at <code>http://stash.osgconnect.net/public/&lt;USERNAME&gt;/&lt;MP4_NAME&gt;.mp4</code>.</p>
+<p>Remember how we used the stash web server when we used it to distribute our blast database?  You can use that web server to view the video files.  Just copy the <code>.mp4</code> video into your <code>/public/&lt;USERNAME&gt;</code> directory.  The file will be available at <code>http://stash.osgconnect.net/public/&lt;USERNAME&gt;/&lt;MP4_NAME&gt;.mp4</code>.</p>
 </div>
 <h2 id="multiple-jobs">Multiple jobs<a class="headerlink" href="#multiple-jobs" title="Permanent link">&para;</a></h2>
 <p>We wrote the name of the <code>.mov</code> file into our <code>run_ffmpeg.sh</code> executable script.
@@ -198,7 +198,7 @@ The final script should look like this: </p>
 <div class="codehilite"><pre><span></span>#!/bin/bash
 
 module load stashcache
-stashcp /osgconnect/public/dweitzel/videos/$1 ./
+stashcp /osgconnect/public/osgvsp20/$1 ./
 ./ffmpeg -i $1 -b:v 400k -s 640x360 $2
 rm $1
 </pre></div>
@@ -268,7 +268,7 @@ queue mov,mp4,bitrate,size from movie_list.txt
 6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
 
 module load stashcache
-stashcp /osgconnect/public/dweitzel/videos/<span class="nv">$1</span> ./
+stashcp /osgconnect/public/&lt;USERNAME&gt;/<span class="nv">$1</span> ./
 ./ffmpeg -i <span class="nv">$1</span> -b:v <span class="nv">$3</span> -s <span class="nv">$4</span> <span class="nv">$2</span>
 rm <span class="nv">$1</span>
 </pre></div>
@@ -276,6 +276,7 @@ rm <span class="nv">$1</span>
 
 </li>
 </ol>
+<p>Be sure to replace <code>&lt;USERNAME&gt;</code> with your own username.</p>
 <p></details></p>
 
   <br>
