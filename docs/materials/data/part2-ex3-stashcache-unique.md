@@ -14,7 +14,7 @@ to send our data to jobs. This exercise should take 25-30 minutes.
 Data
 ----
 
-We have placed movie files in our Stash, so that they'll be available to our jobs when they run out on OSG.
+A copy of the movie files for this exercise have been placed in `/public/osgvsp20`, so that they'll be available to our jobs when they run out on OSG.
 
 1.  Log into `login04.osgconnect.net`
 1.  Create a directory for this exercise named `stash-unique` and change into it.
@@ -43,12 +43,12 @@ file is smaller.
 user@login04 $ ./ffmpeg -i input.mp4 -b:v 400k -s 640x360 output.mp4
 ```
 
-To get the `ffmpeg` program do the following:
+To get the `ffmpeg` binary do the following:
 
 1.  We'll be downloading the `ffmpeg` pre-built static binary originally from this page: <http://johnvansickle.com/ffmpeg/>. 
 
         :::console
-        user@login04 $ wget http://proxy.chtc.wisc.edu/osgschool20/ffmpeg-release-64bit-static.tar.xz
+        user@login04 $ wget http://stash.osgconnect.net/public/osgvsp20/ffmpeg-release-64bit-static.tar.xz
 
 1.  Once the binary is downloaded, un-tar it, and then copy the main `ffmpeg` program into your current directory: 
 
@@ -77,7 +77,7 @@ An example of that script is below:
     #!/bin/bash
 
     module load stashcache
-    stashcp /osgconnect/public/dweitzel/videos/test_open_terminal.mov ./
+    stashcp /osgconnect/public/osgvsp20/test_open_terminal.mov ./
     ./ffmpeg -i test_open_terminal.mov -b:v 400k -s 640x360 test_open_terminal.mp4
     rm test_open_terminal.mov
 
@@ -121,7 +121,7 @@ server, and the `.mp4` file was appropriately scaled down, then we can go ahead 
 to Stash.
 
 !!! note "How to view your videos"
-    Remember how we used the stash web server when we used it to distribute blast database?  You can use that web server to view the video files.  Just copy the `.mp4` video into your `/public/<USERNAME>` directory.  The file will be available at `http://stash.osgconnect.net/public/<USERNAME>/<MP4_NAME>.mp4`.
+    Remember how we used the stash web server when we used it to distribute our blast database?  You can use that web server to view the video files.  Just copy the `.mp4` video into your `/public/<USERNAME>` directory.  The file will be available at `http://stash.osgconnect.net/public/<USERNAME>/<MP4_NAME>.mp4`.
 
 Multiple jobs
 -------------
@@ -149,7 +149,7 @@ The final script should look like this:
 #!/bin/bash
 
 module load stashcache
-stashcp /osgconnect/public/dweitzel/videos/$1 ./
+stashcp /osgconnect/public/osgvsp20/$1 ./
 ./ffmpeg -i $1 -b:v 400k -s 640x360 $2
 rm $1
 ```
@@ -207,10 +207,11 @@ to do so?
         #!/bin/bash
 
         module load stashcache
-        stashcp /osgconnect/public/dweitzel/videos/$1 ./
+        stashcp /osgconnect/public/<USERNAME>/$1 ./
         ./ffmpeg -i $1 -b:v $3 -s $4 $2
         rm $1
 
+Be sure to replace `<USERNAME>` with your own username.
 
 </details>
 
