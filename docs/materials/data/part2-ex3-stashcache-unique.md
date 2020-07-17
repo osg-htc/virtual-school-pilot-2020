@@ -207,7 +207,7 @@ to do so?
         #!/bin/bash
 
         module load stashcache
-        stashcp /osgconnect/public/<USERNAME>/videos/$1 ./
+        stashcp /osgconnect/public/<USERNAME>/$1 ./
         ./ffmpeg -i $1 -b:v $3 -s $4 $2
         rm $1
 
