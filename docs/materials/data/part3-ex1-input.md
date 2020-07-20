@@ -5,20 +5,20 @@ status: untested
 Bonus Data Exercise 3.1: Large Input Data
 =======================================
 
-In this exercise, we will do a similar version of the [previous exercise](/materials/data/part2-ex3-stashcache-unique.md).
+In this exercise, we will do a similar version of the [previous exercise](/materials/data/part2-ex3-stash-unique.md).
 This exercise should take 10-15 minutes.
 
 Background
 ----------
 
 In the previous exercises, we used two "web-based" tools to stage and deliver our files to jobs:
-[the web proxy](/materials/data/part2-ex1-blast-proxy.md)  and [Stash](/materials/data/part2-ex2-stashcache-shared.md).
+[the web proxy](/materials/data/part2-ex1-blast-proxy.md)  and [Stash](/materials/data/part2-ex2-stash-shared.md).
 Another alternative for handling large files (both input and output), especially if they are unique to each job, is a
 local shared filesystem.
 This is a filesystem that all (or most) of the execute servers can access, so data stored there can be copied to the job
 from that system instead of as a transfer or download.
 
-For this example, we'll be submitting the same jobs as the [previous exercise](/materials/data/part2-ex3-stashcache-unique.md),
+For this example, we'll be submitting the same jobs as the [previous exercise](/materials/data/part2-ex3-stash-unique.md),
 but we will stage our data in a shared filesystem local to CHTC.
 The name of our shared filesystem is Staging and user directories are found as sub-directories  of the path `/staging`.
 This is just one example of what it can look like to use a shared filesystem.
@@ -55,7 +55,7 @@ Once the files have finished downloading, untar them.
 
 Because these jobs will be similar to the previous exercise, we can copy the software (`ffmpeg`), our executable
 (`run_ffmpeg.sh`) and submit file from `login04.osgconnect.net` to `learn.chtc.wisc.edu`, or, feel free to replicate
-these by following the instructions in the [previous exercise](/materials/data/part2-ex3-stashcache-unique.md).
+these by following the instructions in the [previous exercise](/materials/data/part2-ex3-stash-unique.md).
 These files should go into a sub-directory of your **home** directory, **not your Staging directory**.
 
 Ch-ch-ch-changes

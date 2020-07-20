@@ -63,7 +63,7 @@ We want to write a script that runs on the worker node that uses `ffmpeg` to con
 Our script will need to:
 
 1. **Copy** that movie file from Stash to the job's current working directory (as in the
-   [previous exercise](/materials/data/part2-ex2-stashcache-shared.md)
+   [previous exercise](/materials/data/part2-ex2-stash-shared.md)
 1. **Run** the appropriate `ffmpeg` command
 1. **Remove** the original movie file so that it doesn't get transferred back to the submit server.
    This last step is particularly important, as otherwise you will have large files transferring into the submit server
