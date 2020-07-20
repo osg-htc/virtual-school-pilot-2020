@@ -77,6 +77,17 @@ Slides ([PDF](/materials/sw/files/osgvsp20-software.pdf), [PowerPoint](/material
 
 ## Bonus Topics
 
+### Self-Checkpointing (Fri., July 17)
+
+Lecture slides
+([PDF](/materials/files/osgvsp20-bonus-checkpointing.pdf),
+[Keynote](/materials/files/osgvsp20-bonus-checkpointing.key),
+[PowerPoint export](/materials/files/osgvsp20-bonus-checkpointing.pptx))
+
+No separate exercise(s).
+Rather, if this applies to you:
+Try to get it working for your own code and let us know how it goes!
+
 ### Workflows with DAGMan
 
 Lecture slides
