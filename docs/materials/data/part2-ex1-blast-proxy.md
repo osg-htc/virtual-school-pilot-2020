@@ -137,5 +137,5 @@ Submit all 100 jobs!
 They may take a while to all complete, but it will still be faster than the many hours it would have taken to blast the
 single, large `mouse_rna.fa` file without splitting it up.
 In the meantime, as long as the first several jobs are running for longer than two minutes, you can move on to the [next
-exercise](/materials/data/part2-ex2-stashcache-shared)
+exercise](/materials/data/part2-ex2-stash-shared)
 

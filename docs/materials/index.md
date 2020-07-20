@@ -75,6 +75,26 @@ Slides ([PDF](/materials/sw/files/osgvsp20-software.pdf), [PowerPoint](/material
 
 ## Data
 
+Slides ([PDF](/materials/data/files/osgvsp20-data.pdf),
+[PowerPoint](/materials/data/files/osgvsp20-data.pptx))
+
+### Data Exercises 1: HTCondor File Transfer (Strongly Recommended)
+
+- [Exercise 1.1: Understanding a job's data needs](/materials/data/part1-ex1-data-needs.md)
+- [Exercise 1.2: Using data compression with HTCondor file transfer](/materials/data/part1-ex2-file-transfer.md)
+- [Exercise 1.3: Splitting input](/materials/data/part1-ex3-blast-split.md)
+
+### Data Exercises 2: Using Stash (Strongly Recommended)
+
+- [Exercise 2.1: Using a web proxy for shared input](/materials/data/part2-ex1-blast-proxy.md)
+- [Exercise 2.2: Stash for shared input](/materials/data/part2-ex2-stash-shared.md)
+- [Exercise 2.3: Stash for shared output](/materials/data/part2-ex3-stash-unique.md)
+
+### Bonus Exercises: Shared File Systems
+
+- [Exercise 3.1: Shared filesystems for large input](/materials/data/part3-ex1-input.md)
+- [Exercise 3.2: Shared filesystems for large output](/materials/data/part3-ex2-output.md)
+
 ## Bonus Topics
 
 ### Self-Checkpointing (Fri., July 17)
