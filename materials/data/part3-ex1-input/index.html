@@ -60,16 +60,16 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <h1 id="bonus-data-exercise-31-large-input-data">Bonus Data Exercise 3.1: Large Input Data<a class="headerlink" href="#bonus-data-exercise-31-large-input-data" title="Permanent link">&para;</a></h1>
-<p>In this exercise, we will do a similar version of the <a href="../part2-ex3-stashcache-unique/">previous exercise</a>.
+<p>In this exercise, we will do a similar version of the <a href="/materials/data/part2-ex3-stashcache-unique.md">previous exercise</a>.
 This exercise should take 10-15 minutes.</p>
 <h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
 <p>In the previous exercises, we used two "web-based" tools to stage and deliver our files to jobs:
-<a href="../part2-ex1-blast-proxy/">the web proxy</a>  and <a href="../part2-ex2-stashcache-shared/">Stash</a>.
+<a href="../part2-ex1-blast-proxy/">the web proxy</a>  and <a href="/materials/data/part2-ex2-stashcache-shared.md">Stash</a>.
 Another alternative for handling large files (both input and output), especially if they are unique to each job, is a
 local shared filesystem.
 This is a filesystem that all (or most) of the execute servers can access, so data stored there can be copied to the job
 from that system instead of as a transfer or download.</p>
-<p>For this example, we'll be submitting the same jobs as the <a href="../part2-ex3-stashcache-unique/">previous exercise</a>,
+<p>For this example, we'll be submitting the same jobs as the <a href="/materials/data/part2-ex3-stashcache-unique.md">previous exercise</a>,
 but we will stage our data in a shared filesystem local to CHTC.
 The name of our shared filesystem is Staging and user directories are found as sub-directories  of the path <code>/staging</code>.
 This is just one example of what it can look like to use a shared filesystem.
@@ -96,7 +96,7 @@ Once the files have finished downloading, untar them.</p>
 <h3 id="software-executable-submit-file">Software, Executable, Submit File<a class="headerlink" href="#software-executable-submit-file" title="Permanent link">&para;</a></h3>
 <p>Because these jobs will be similar to the previous exercise, we can copy the software (<code>ffmpeg</code>), our executable
 (<code>run_ffmpeg.sh</code>) and submit file from <code>login04.osgconnect.net</code> to <code>learn.chtc.wisc.edu</code>, or, feel free to replicate
-these by following the instructions in the <a href="../part2-ex3-stashcache-unique/">previous exercise</a>.
+these by following the instructions in the <a href="/materials/data/part2-ex3-stashcache-unique.md">previous exercise</a>.
 These files should go into a sub-directory of your <strong>home</strong> directory, <strong>not your Staging directory</strong>.</p>
 <h2 id="ch-ch-ch-changes">Ch-ch-ch-changes<a class="headerlink" href="#ch-ch-ch-changes" title="Permanent link">&para;</a></h2>
 <p>What changes will we need to make to our previous job submission in order to submit it in CHTC, using the Staging
@@ -169,9 +169,9 @@ Alter your submit file (if necessary) to  run a job that converts the <code>test
     </div>
     
     <div class="wm-article-nav">
-      <a href="../part2-ex3-stashcache-unique/" class="btn btn-xs btn-default pull-left">
+      <a href="../part2-ex3-stash-unique/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../part2-ex3-stashcache-unique/" class="btn btn-xs btn-link">
+        Previous</a><a href="../part2-ex3-stash-unique/" class="btn btn-xs btn-link">
         Exercise 2.3
       </a>
     </div>
