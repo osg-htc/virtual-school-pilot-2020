@@ -7,7 +7,7 @@ Data Exercise 2.3: Using Stash for unique large input
 
 In this exercise, we will run a multimedia program that converts and manipulates video files.
 In particular, we want to convert large `.mov` files to smaller (10-100s of MB) `mp4` files.
-Just like the Blast database in the [previous exercise](/materials/data/part2-ex2-stashcache-shared.md), these video
+Just like the Blast database in the [previous exercise](/materials/data/part2-ex2-stash-shared.md), these video
 files are too large to send to jobs using HTCondor's default file transfer mechanism, so we'll be using the Stash tool
 to send our data to jobs. This exercise should take 25-30 minutes.
 
