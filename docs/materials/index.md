@@ -75,6 +75,21 @@ Slides ([PDF](/materials/sw/files/osgvsp20-software.pdf), [PowerPoint](/material
 
 ## Data
 
+Slides ([PDF](/materials/data/files/osgvsp20-data.pdf),
+[PowerPoint](/materials/data/files/osgvsp20-data.pptx))
+
+### Data Exercises 1: HTCondor File Transfer (Strongly Recommended)
+
+- [Exercise 3.1: Using Software in a Singularity Container](/materials/sw/part3-ex1-singularity.md)
+
+### Data Exercises 2: Using Stash (Strongly Recommended)
+
+- [Exercise 3.1: Using Software in a Singularity Container](/materials/sw/part3-ex1-singularity.md)
+
+### Bonus Exercises: Shared File Systems
+
+- [Exercise 4.1: Using Arguments With Wrapper Scripts](/materials/sw/part4-ex1-arguments.md)
+
 ## Bonus Topics
 
 ### Self-Checkpointing (Fri., July 17)
