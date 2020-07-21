@@ -21,7 +21,7 @@ parameters:
 ![simple Dag](/materials/workflows/files/osgvsp20-workflows-part1-ex1-simple-dag.gif)
 
 DAGMan has many abilities, such as throttling jobs, recovery from failures, and more.  More information about DAGMan can
-be found at [in the HTCondor manual](https://htcondor.readthedocs.io/en/v8_9_2/users-manual/dagman-applications.html).
+be found at [in the HTCondor manual](https://htcondor.readthedocs.io/en/latest/users-manual/dagman-workflows.html).
 
 ## Submitting a Simple DAG
 
