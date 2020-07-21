@@ -114,6 +114,12 @@ Lecture slides
 ([PPT](/materials/workflows/files/osgvsp20-bonus-dagman.pptx),
 [PDF](/materials/workflows/files/osgvsp20-bonus-dagman.pdf))
 
+- [Exercise 1.1: Coordinating set of jobs: A simple DAG](/materials/workflows/part1-ex1-simple-dag.md)
+- [Exercise 1.2: A brief detour through the Mandelbrot set](/materials/workflows/part1-ex2-mandelbrot.md)
+- [Exercise 1.3: A more complex DAG](/materials/workflows/part1-ex3-complex-dag.md)
+- [Exercise 1.4: Handling jobs that fail with DAGMan](/materials/workflows/part1-ex4-failed-dag.md)
+- [Bonus Exercise 4.5: HTCondor challenges](/materials/workflows/part1-ex5-challenges.md)
+
 ### GPUs and Containers
 
 ### More Grid
