@@ -18,7 +18,7 @@ For example, you may wish to run a large parameter sweep but before the sweep ru
 the sweep runs, you need to collate the results.  This might look like this, assuming you want to sweep over five
 parameters:
 
-![simple Dag](/materials/day4/workflows/osgvsp20-workflows-part1-ex1-simple-dag.gif)
+![simple Dag](/materials/workflows/files/osgvsp20-workflows-part1-ex1-simple-dag.gif)
 
 DAGMan has many abilities, such as throttling jobs, recovery from failures, and more.  More information about DAGMan can
 be found at [in the HTCondor manual](https://htcondor.readthedocs.io/en/v8_9_2/users-manual/dagman-applications.html).
