@@ -63,7 +63,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <h1 id="workflows-exercise-13-a-more-complex-dag">Workflows Exercise 1.3: A More Complex DAG<a class="headerlink" href="#workflows-exercise-13-a-more-complex-dag" title="Permanent link">&para;</a></h1>
 <p>The objective of this exercise is to run a real set of jobs with DAGMan.</p>
 <h2 id="make-your-job-submission-files">Make Your Job Submission Files<a class="headerlink" href="#make-your-job-submission-files" title="Permanent link">&para;</a></h2>
-<p>We'll run our <code>goatbrot</code> example. If you didn't read about it yet, <a href="../part1-ex2-mandelbrot/">please do so now</a>. We are going to make a DAG with four simultaneous jobs (<code>goatbrot</code>) and one final node to stitch them together (<code>montage</code>). This means we have five jobs. We're going to run <code>goatbrot</code> with more iterations (100,000) so each job will take longer to run.</p>
+<p>We'll run our <code>goatbrot</code> example. If you didn't read about it yet, <a href="../../../materials/workflows/part1-ex2-mandelbrot">please do so now</a>. We are going to make a DAG with four simultaneous jobs (<code>goatbrot</code>) and one final node to stitch them together (<code>montage</code>). This means we have five jobs. We're going to run <code>goatbrot</code> with more iterations (100,000) so each job will take longer to run.</p>
 <p>You can create your five jobs. The goatbrot jobs are very similar to each other, but they have slightly different parameters and output files.</p>
 <h3 id="goatbrot1sub">goatbrot1.sub<a class="headerlink" href="#goatbrot1sub" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>executable              = /usr/local/bin/goatbrot
