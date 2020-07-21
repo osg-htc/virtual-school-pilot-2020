@@ -26,7 +26,7 @@ Setup
 -----
 
 -   Make sure you're logged in to `login04.osgconnect.net`
--   Transfer the following files from the previous [Exercise 2.1](/materials/data/part2-ex1-blast-proxy.md) to a new directory in `/home` called `stash-shared`:
+-   Copy the following files from the previous [Exercise 2.1](/materials/data/part2-ex1-blast-proxy.md) to a new directory in `/home/<username>` called `stash-shared`:
     - `blast_wrapper.sh`
     - `blastx`
     - `mouse_rna.fa.1`

@@ -56,7 +56,7 @@ Now, you'll repeat the last exercise (with a single input query file) but have H
 In the wrapper script, we have to add some special lines so that we can pull from the HTTP proxy.
 In `blast_wrapper.sh`, we will have to add commands to pull the data file:
 
-```bash hl_lines="4 8"
+```bash hl_lines="4 8 14"
 #!/bin/bash
 
 # Set the http_proxy environment which wget uses
@@ -68,7 +68,7 @@ wget -S http://stash.osgconnect.net/public/<USERNAME>/pdbaa_files.tar.gz
 
 tar xvzf pdbaa_files.tar.gz
 
-./blastx -db pdbaa -query mouse.fa -out mouse.fa.result
+./blastx -db pdbaa -query $1 -out $1.result
 
 rm pdbaa*
 ```
@@ -77,6 +77,8 @@ Be sure to replace `<USERNAME>` with your own username.
 
 The new line will download the `pdbaa_files.tar.gz` from the HTTP proxy, using the closest cache (because `wget` will
 look at the environment variable `http_proxy` for the newest cache).
+
+Also notice the final line of the wrapper script has been modified to delete the pdbaa data files as well as the pdbaa_files.tar.gz file so that it will not be transferred back to the submit server when the job finishes.
 
 In your submit file, you will need to remove the `pdbaa_files.tar.gz` file from the `transfer_input_files`, because we
 are now transferring the tarball via the `wget` command in our wrapper script. 
@@ -90,7 +92,7 @@ when the new test job completes.
 user@login04 $ rm *.error *.out *.result *.log
 ```
 
-Submit a single test job!
+Submit a single test job!  (If your submit file uses a `queue .. matching` statement, a simple way to submit a single job is to temporarily change it to `queue inputfile matching mouse_rna.fa.1`.
 
 When the job starts, the wrapper will download the `pdbaa_files.tar.gz` file from the web proxy.
 If the jobs takes longer than two minutes, you can assume that it will complete successfully, and then continue with the
