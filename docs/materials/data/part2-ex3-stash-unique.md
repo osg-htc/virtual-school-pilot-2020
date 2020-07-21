@@ -105,7 +105,7 @@ Things to consider:
 1.  Add the same requirements as the previous exercise: 
 
         +WantsStashCache = true
-        requirements = (OpSys == "LINUX") && (HAS_MODULES =?= true)
+        requirements = (OSGVO_OS_STRING == "RHEL 7") && (HAS_MODULES =?= true)
 
 Initial Job
 -----------
@@ -167,8 +167,8 @@ Note that we use the input file name multiple times in our script, so we'll have
         :::file
         arguments = $(mov) $(mov).mp4
 
-1. To set these arguments, we will use the `queue .. matching` syntax that we learned in the 
-   [HTC Exercise 1.1](/materials/htc/part2-ex4-queue-matching.md).
+1. To set these arguments, we will use the `queue .. from` syntax that we learned in the 
+   [HTC Exercise 2.3](/materials/htc/part2-ex3-queue-from).
    In our submit file, we can then change our queue statement to:
 
         queue mov from movie_list.txt

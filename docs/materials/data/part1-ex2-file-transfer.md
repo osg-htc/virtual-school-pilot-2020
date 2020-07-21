@@ -50,7 +50,7 @@ queue
 
 ### Implement file compression
 
-In our first blast job from yesterday, the database files in the `pdbaa` directory were all transferred, as is, but we
+In our first blast job from the Software exercises ([1.1](/materials/sw/part1-ex1-download)), the database files in the `pdbaa` directory were all transferred, as is, but we
 could instead transfer them as a single, compressed file using `tar`.
 For this version of the job, let's compress our blast database files to send them to the submit node as a single
 `tar.gz` file (otherwise known as a tarball), by following the below steps:
@@ -129,4 +129,4 @@ How does it compare to the directory from Tuesday, and why?
 
 When you've completed the above, continue with the [next exercise](/materials/data/part1-ex3-blast-split).
 
-
+/
