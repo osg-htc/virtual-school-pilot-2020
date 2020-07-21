@@ -104,15 +104,16 @@ In <code>blast_wrapper.sh</code>, we will have to add commands to pull the data 
 </span>
 tar xvzf pdbaa_files.tar.gz
 
-./blastx -db pdbaa -query mouse.fa -out mouse.fa.result
+./blastx -db pdbaa -query <span class="nv">$1</span> -out <span class="nv">$1</span>.result
 
-rm pdbaa*
-</pre></div>
+<span class="hll">rm pdbaa*
+</span></pre></div>
 
 
 <p>Be sure to replace <code>&lt;USERNAME&gt;</code> with your own username.</p>
 <p>The new line will download the <code>pdbaa_files.tar.gz</code> from the HTTP proxy, using the closest cache (because <code>wget</code> will
 look at the environment variable <code>http_proxy</code> for the newest cache).</p>
+<p>Also notice the final line of the wrapper script has been modified to delete the pdbaa data files as well as the pdbaa_files.tar.gz file so that it will not be transferred back to the submit server when the job finishes.</p>
 <p>In your submit file, you will need to remove the <code>pdbaa_files.tar.gz</code> file from the <code>transfer_input_files</code>, because we
 are now transferring the tarball via the <code>wget</code> command in our wrapper script. </p>
 <h3 id="submit-the-test-job">Submit the test job<a class="headerlink" href="#submit-the-test-job" title="Permanent link">&para;</a></h3>
@@ -122,7 +123,7 @@ when the new test job completes.</p>
 </pre></div>
 
 
-<p>Submit a single test job!</p>
+<p>Submit a single test job!  (If your submit file uses a <code>queue .. matching</code> statement, a simple way to submit a single job is to temporarily change it to <code>queue inputfile matching mouse_rna.fa.1</code>.</p>
 <p>When the job starts, the wrapper will download the <code>pdbaa_files.tar.gz</code> file from the web proxy.
 If the jobs takes longer than two minutes, you can assume that it will complete successfully, and then continue with the
 rest of the exercise.</p>

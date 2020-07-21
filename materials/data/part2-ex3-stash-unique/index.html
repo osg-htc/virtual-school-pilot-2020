@@ -160,7 +160,7 @@ Things to consider:</p>
 <li>
 <p>Add the same requirements as the previous exercise: </p>
 <div class="codehilite"><pre><span></span>+WantsStashCache = true
-requirements = (OpSys == &quot;LINUX&quot;) &amp;&amp; (HAS_MODULES =?= true)
+requirements = (OSGVO_OS_STRING == &quot;RHEL 7&quot;) &amp;&amp; (HAS_MODULES =?= true)
 </pre></div>
 
 
@@ -219,8 +219,8 @@ rm $1
 
 </li>
 <li>
-<p>To set these arguments, we will use the <code>queue .. matching</code> syntax that we learned in the 
-   <a href="../../htc/part2-ex4-queue-matching/">HTC Exercise 1.1</a>.
+<p>To set these arguments, we will use the <code>queue .. from</code> syntax that we learned in the 
+   <a href="../../../materials/htc/part2-ex3-queue-from">HTC Exercise 2.3</a>.
    In our submit file, we can then change our queue statement to:</p>
 <div class="codehilite"><pre><span></span>queue mov from movie_list.txt
 </pre></div>
