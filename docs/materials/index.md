@@ -122,4 +122,9 @@ Lecture slides
 
 ### GPUs and Containers
 
+Lecture slides
+([PPT](/materials/files/osgvsp20-gpus-containers.pptx),
+[PDF](/materials/files/osgvsp20-gpus-containers.pdf))
+
+
 ### More Grid
