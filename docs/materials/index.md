@@ -126,5 +126,9 @@ Lecture slides
 ([PDF](/materials/files/osgvsp20-gpus-containers.pdf),
 [PowerPoint](/materials/files/osgvsp20-gpus-containers.pptx))
 
+### Final Talk (Fri., July 24) &mdash; What&rsquo;s Next?
 
-### More Grid
+Lecture slides
+([PDF](/materials/files/osgvsp20-final-whats-next.pdf),
+[Keynote](/materials/files/osgvsp20-final-whats-next.key),
+[PowerPoint export](/materials/files/osgvsp20-final-whats-next.pptx))
