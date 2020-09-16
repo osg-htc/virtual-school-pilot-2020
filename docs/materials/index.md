@@ -2,14 +2,17 @@
 
 ## School Overview and Intro to HTC
 
-Slides ([PDF](/materials/files/osgvsp20-overview.pdf), [PowerPoint](/materials/files/osgvsp20-overview.pptx))
+View the slides
+([PDF](/materials/files/osgvsp20-overview.pdf),
+[PowerPoint](/materials/files/osgvsp20-overview.pptx))
 
 ## Intro to HTCondor Job Execution
 
-Slides ([PDF](/materials/htc/files/osgvsp20-htc-htcondor.pdf),
+View the slides
+([PDF](/materials/htc/files/osgvsp20-htc-htcondor.pdf),
 [PowerPoint](/materials/htc/files/osgvsp20-htc-htcondor.pptx))
-
-Video: [YouTube](https://www.youtube.com/watch?v=oMAvxsFJaw4)
+and a recording of the lecture
+([YouTube](https://www.youtube.com/watch?v=oMAvxsFJaw4))
 
 ### Intro Exercises 1: Running and Viewing Simple Jobs (Strongly Recommended)
 
@@ -36,10 +39,11 @@ Video: [YouTube](https://www.youtube.com/watch?v=oMAvxsFJaw4)
 
 ## Grid
 
-Slides ([PDF](/materials/osg/files/osgvsp20-running-in-osg.pdf),
+View the slides
+([PDF](/materials/osg/files/osgvsp20-running-in-osg.pdf),
 [PowerPoint](/materials/osg/files/osgvsp20-running-in-osg.pptx))
-
-Video: [YouTube](https://www.youtube.com/watch?v=ZrOYdIjDPu0)
+and a recording of the lecture
+([YouTube](https://www.youtube.com/watch?v=ZrOYdIjDPu0))
 
 All exercises strongly recommended!
 
@@ -51,9 +55,11 @@ All exercises strongly recommended!
 
 ## Software
 
-Slides ([PDF](/materials/sw/files/osgvsp20-software.pdf), [PowerPoint](/materials/sw/files/osgvsp20-software.pptx))
-
-Video: [YouTube](https://www.youtube.com/watch?v=oqwlaPt9KOg)
+View the slides
+([PDF](/materials/sw/files/osgvsp20-software.pdf),
+[PowerPoint](/materials/sw/files/osgvsp20-software.pptx))
+and a recording of the lecture
+([YouTube](https://www.youtube.com/watch?v=oqwlaPt9KOg))
 
 ### Software Exercises 1: Basic Software and Wrapper Script Use (Strongly Recommended)
 
@@ -81,10 +87,11 @@ Video: [YouTube](https://www.youtube.com/watch?v=oqwlaPt9KOg)
 
 ## Data
 
-Slides ([PDF](/materials/data/files/osgvsp20-data.pdf),
+View the slides
+([PDF](/materials/data/files/osgvsp20-data.pdf),
 [PowerPoint](/materials/data/files/osgvsp20-data.pptx))
-
-Video: [YouTube](https://www.youtube.com/watch?v=wAQoiSBnTEg)
+and a recording of the lecture
+([YouTube](https://www.youtube.com/watch?v=wAQoiSBnTEg))
 
 ### Data Exercises 1: HTCondor File Transfer (Strongly Recommended)
 
@@ -107,7 +114,7 @@ Video: [YouTube](https://www.youtube.com/watch?v=wAQoiSBnTEg)
 
 ### Self-Checkpointing (Fri., July 17)
 
-Lecture slides
+View the slides
 ([PDF](/materials/files/osgvsp20-bonus-checkpointing.pdf),
 [Keynote](/materials/files/osgvsp20-bonus-checkpointing.key),
 [PowerPoint export](/materials/files/osgvsp20-bonus-checkpointing.pptx))
@@ -118,7 +125,7 @@ Try to get it working for your own code and let us know how it goes!
 
 ### Workflows with DAGMan
 
-Lecture slides
+View the slides
 ([PPT](/materials/workflows/files/osgvsp20-bonus-dagman.pptx),
 [PDF](/materials/workflows/files/osgvsp20-bonus-dagman.pdf))
 
@@ -130,13 +137,13 @@ Lecture slides
 
 ### GPUs and Containers
 
-Lecture slides
+View the slides
 ([PDF](/materials/files/osgvsp20-gpus-containers.pdf),
 [PowerPoint](/materials/files/osgvsp20-gpus-containers.pptx))
 
 ### Final Talk (Fri., July 24) &mdash; What&rsquo;s Next?
 
-Lecture slides
+View the slides
 ([PDF](/materials/files/osgvsp20-final-whats-next.pdf),
 [Keynote](/materials/files/osgvsp20-final-whats-next.key),
 [PowerPoint export](/materials/files/osgvsp20-final-whats-next.pptx))
